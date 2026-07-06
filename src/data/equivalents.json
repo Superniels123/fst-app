@@ -1,0 +1,1692 @@
+[
+  {
+    "categorie": "Ceramic Oxide Powders",
+    "pac_alloy": "701NS",
+    "samenstelling": "Gray Aluminum Oxide",
+    "hardheid": "Rc 55",
+    "korrelgrootte": "-270+11um",
+    "praxair": "ALO 105",
+    "amdry": "187F",
+    "metco": "101NS"
+  },
+  {
+    "categorie": "Ceramic Oxide Powders",
+    "pac_alloy": "701B",
+    "samenstelling": "Gray Aluminum Oxide",
+    "hardheid": "Rc 52",
+    "korrelgrootte": "-140+22um",
+    "praxair": "ALO 159",
+    "amdry": "187C",
+    "metco": "101BNS"
+  },
+  {
+    "categorie": "Ceramic Oxide Powders",
+    "pac_alloy": "702",
+    "samenstelling": "Titanium Dioxide",
+    "hardheid": "Rc53",
+    "korrelgrootte": "-270+11um",
+    "praxair": null,
+    "amdry": null,
+    "metco": "102"
+  },
+  {
+    "categorie": "Ceramic Oxide Powders",
+    "pac_alloy": "705-1",
+    "samenstelling": "White Aluminum Oxide",
+    "hardheid": "Rc55",
+    "korrelgrootte": "-270+11um",
+    "praxair": "ALO 101",
+    "amdry": null,
+    "metco": "105NS"
+  },
+  {
+    "categorie": "Ceramic Oxide Powders",
+    "pac_alloy": "705-2",
+    "samenstelling": "White Aluminum Oxide",
+    "hardheid": "Rc55",
+    "korrelgrootte": "-270+11um",
+    "praxair": null,
+    "amdry": null,
+    "metco": "105NS"
+  },
+  {
+    "categorie": "Ceramic Oxide Powders",
+    "pac_alloy": "705SF",
+    "samenstelling": "White Aluminum Oxide",
+    "hardheid": "Rc60",
+    "korrelgrootte": "-400+5um",
+    "praxair": null,
+    "amdry": null,
+    "metco": "105SF"
+  },
+  {
+    "categorie": "Ceramic Oxide Powders",
+    "pac_alloy": "1106",
+    "samenstelling": "Chromium Oxide",
+    "hardheid": "Rc58",
+    "korrelgrootte": "-140+15um",
+    "praxair": null,
+    "amdry": null,
+    "metco": "106NS"
+  },
+  {
+    "categorie": "Ceramic Oxide Powders",
+    "pac_alloy": "1106F",
+    "samenstelling": "Chromium Oxide",
+    "hardheid": "Rc62",
+    "korrelgrootte": "-325+11um",
+    "praxair": "CRO 167",
+    "amdry": "125F",
+    "metco": "106F"
+  },
+  {
+    "categorie": "Ceramic Oxide Powders",
+    "pac_alloy": "1106SF",
+    "samenstelling": "Chromium Oxide",
+    "hardheid": "Rc65",
+    "korrelgrootte": "-400+8um",
+    "praxair": "CRO 179",
+    "amdry": null,
+    "metco": "106Sf"
+  },
+  {
+    "categorie": "Ceramic Oxide Powders",
+    "pac_alloy": "710",
+    "samenstelling": "50% ALO/50% TIO Blend",
+    "hardheid": "Rc50",
+    "korrelgrootte": "-270+11um",
+    "praxair": null,
+    "amdry": null,
+    "metco": null
+  },
+  {
+    "categorie": "Ceramic Oxide Powders",
+    "pac_alloy": "730",
+    "samenstelling": "ALO/13% TIO Composite",
+    "hardheid": "Rc62",
+    "korrelgrootte": "-270+11um",
+    "praxair": "ALO 187",
+    "amdry": null,
+    "metco": "130"
+  },
+  {
+    "categorie": "Ceramic Oxide Powders",
+    "pac_alloy": "731",
+    "samenstelling": "ALO/40% TIO Composite",
+    "hardheid": "Rc60",
+    "korrelgrootte": "-325+5um",
+    "praxair": "ALO 121",
+    "amdry": null,
+    "metco": "131VF"
+  },
+  {
+    "categorie": "Ceramic Oxide Powders",
+    "pac_alloy": "732",
+    "samenstelling": "Chromium Oxide/Silica",
+    "hardheid": "Rc62",
+    "korrelgrootte": "-140+15um",
+    "praxair": null,
+    "amdry": null,
+    "metco": "136CP"
+  },
+  {
+    "categorie": "Ceramic Oxide Powders",
+    "pac_alloy": "732F",
+    "samenstelling": "Chromium Oxide/Silica",
+    "hardheid": "Rc65",
+    "korrelgrootte": "-270+11um",
+    "praxair": "CRO 192",
+    "amdry": null,
+    "metco": "136F"
+  },
+  {
+    "categorie": "Ceramic Oxide Powders",
+    "pac_alloy": "732SF",
+    "samenstelling": "Chromium Oxide/Silica",
+    "hardheid": "Rc65",
+    "korrelgrootte": "-325+8um",
+    "praxair": null,
+    "amdry": null,
+    "metco": "136SF"
+  },
+  {
+    "categorie": "Ceramic Oxide Powders",
+    "pac_alloy": "801",
+    "samenstelling": "Zirconia/5% Calcia",
+    "hardheid": "Rc25",
+    "korrelgrootte": "-270+11um",
+    "praxair": null,
+    "amdry": null,
+    "metco": "201NS"
+  },
+  {
+    "categorie": "Ceramic Oxide Powders",
+    "pac_alloy": "801B",
+    "samenstelling": "Zirconia/5% Calcia",
+    "hardheid": "Rc20",
+    "korrelgrootte": "-140+325 Mesh",
+    "praxair": null,
+    "amdry": "118",
+    "metco": "201BNS"
+  },
+  {
+    "categorie": "Ceramic Oxide Powders",
+    "pac_alloy": "2020",
+    "samenstelling": "Zirconia/20% Yttria",
+    "hardheid": "Rc30",
+    "korrelgrootte": "-170+11um",
+    "praxair": "ZRO 110",
+    "amdry": "146F",
+    "metco": "202NS"
+  },
+  {
+    "categorie": "Ceramic Oxide Powders",
+    "pac_alloy": "2020D",
+    "samenstelling": "Zirconia/20% Yttria",
+    "hardheid": "Rc28",
+    "korrelgrootte": "-170+400 Mesh",
+    "praxair": null,
+    "amdry": null,
+    "metco": null
+  },
+  {
+    "categorie": "Ceramic Oxide Powders",
+    "pac_alloy": "2003",
+    "samenstelling": "Zirconia/7% Yttria",
+    "hardheid": "Rc20",
+    "korrelgrootte": "-170+11um",
+    "praxair": null,
+    "amdry": null,
+    "metco": "203NS"
+  },
+  {
+    "categorie": "Ceramic Oxide Powders",
+    "pac_alloy": "2008P",
+    "samenstelling": "Zirconia/8% Yttria",
+    "hardheid": "Rc25",
+    "korrelgrootte": "-140+15um",
+    "praxair": "ZRO 113",
+    "amdry": null,
+    "metco": "204NSG"
+  },
+  {
+    "categorie": "Ceramic Oxide Powders",
+    "pac_alloy": "2008PC",
+    "samenstelling": "Zirconia/8% Yttria",
+    "hardheid": "Rc20",
+    "korrelgrootte": "-140+325 Mesh",
+    "praxair": "ZRO 182",
+    "amdry": null,
+    "metco": null
+  },
+  {
+    "categorie": "Ceramic Oxide Powders",
+    "pac_alloy": "2008PRR",
+    "samenstelling": "Zirconia/8% Yttria",
+    "hardheid": "Rc24",
+    "korrelgrootte": "-200+325 Mesh",
+    "praxair": "ZRO 154",
+    "amdry": null,
+    "metco": "204BNS"
+  },
+  {
+    "categorie": "Ceramic Oxide Powders",
+    "pac_alloy": "810",
+    "samenstelling": "Magnesium/Zirconate",
+    "hardheid": "Rc28",
+    "korrelgrootte": "-200+11um",
+    "praxair": null,
+    "amdry": null,
+    "metco": null
+  },
+  {
+    "categorie": "Ceramic Oxide Powders",
+    "pac_alloy": "810S",
+    "samenstelling": "Magnesium/Zirconate",
+    "hardheid": "Rc28",
+    "korrelgrootte": "-200+11um",
+    "praxair": "ZRO 103",
+    "amdry": null,
+    "metco": "210NS"
+  },
+  {
+    "categorie": "Ceramic Oxide Powders",
+    "pac_alloy": "810P",
+    "samenstelling": "Magnesium/Zirconate",
+    "hardheid": "Rc28",
+    "korrelgrootte": "-200+11um",
+    "praxair": null,
+    "amdry": null,
+    "metco": "210NS-1"
+  },
+  {
+    "categorie": "Ceramic Oxide Powders",
+    "pac_alloy": "2008PWA",
+    "samenstelling": "Zirconia-8Yttria",
+    "hardheid": null,
+    "korrelgrootte": "-140+15 um",
+    "praxair": "ZRO 114",
+    "amdry": "333",
+    "metco": "204NS"
+  },
+  {
+    "categorie": "Cermet Blends",
+    "pac_alloy": "3010",
+    "samenstelling": "Boron Nitride/AL+NiCrAl",
+    "hardheid": "R15y 50",
+    "korrelgrootte": "-120+325 Mesh",
+    "praxair": null,
+    "amdry": null,
+    "metco": "301NS"
+  },
+  {
+    "categorie": "Cermet Blends",
+    "pac_alloy": "3010C",
+    "samenstelling": "Boron Nitride/ Al+NiCrAl",
+    "hardheid": "R15y 50",
+    "korrelgrootte": "-100+325 Mesh",
+    "praxair": null,
+    "amdry": null,
+    "metco": "301CNS"
+  },
+  {
+    "categorie": "Cermet Blends",
+    "pac_alloy": "3030",
+    "samenstelling": "65% MgO-ZrO+NiCr Blend",
+    "hardheid": "Rc32",
+    "korrelgrootte": "-230+11um",
+    "praxair": "ZRO 119",
+    "amdry": "337.0",
+    "metco": "303NS"
+  },
+  {
+    "categorie": "Cermet Blends",
+    "pac_alloy": "3030-1",
+    "samenstelling": "65% MgO-ZrO+NiCr Blend",
+    "hardheid": "Rc35",
+    "korrelgrootte": "-200+5um",
+    "praxair": null,
+    "amdry": null,
+    "metco": "303NS-1"
+  },
+  {
+    "categorie": "Cermet Blends",
+    "pac_alloy": "4100",
+    "samenstelling": "70% AlO+NiAl Blend",
+    "hardheid": null,
+    "korrelgrootte": "-170+5um",
+    "praxair": null,
+    "amdry": null,
+    "metco": null
+  },
+  {
+    "categorie": "Cermet Blends",
+    "pac_alloy": "4101A",
+    "samenstelling": "70% AlO+NiAl Blend",
+    "hardheid": null,
+    "korrelgrootte": "-170+11um",
+    "praxair": null,
+    "amdry": null,
+    "metco": "410NS"
+  },
+  {
+    "categorie": "Cermet Blends",
+    "pac_alloy": "4101B",
+    "samenstelling": "55% AlO+NiAl Blend",
+    "hardheid": null,
+    "korrelgrootte": "-170+11um",
+    "praxair": null,
+    "amdry": null,
+    "metco": null
+  },
+  {
+    "categorie": "Cermet Blends",
+    "pac_alloy": "4110",
+    "samenstelling": "70% NiAl+AlO Blend",
+    "hardheid": null,
+    "korrelgrootte": "-170+11um",
+    "praxair": null,
+    "amdry": null,
+    "metco": "411NS"
+  },
+  {
+    "categorie": "Cermet Blends",
+    "pac_alloy": "4210",
+    "samenstelling": "65% MgO-ZrO+NiAl Blend",
+    "hardheid": "Rc20",
+    "korrelgrootte": "-170+11um",
+    "praxair": "ZRO 105",
+    "amdry": "341.0",
+    "metco": "421NS"
+  },
+  {
+    "categorie": "Cermet Blends",
+    "pac_alloy": "4410",
+    "samenstelling": "65% MgO-ZrO+NiCr Blend",
+    "hardheid": "Rc58",
+    "korrelgrootte": "-140+11um",
+    "praxair": null,
+    "amdry": null,
+    "metco": "441Ns"
+  },
+  {
+    "categorie": "Chromium Tungsten",
+    "pac_alloy": "123",
+    "samenstelling": "Chromium Carbide",
+    "hardheid": "Rc38",
+    "korrelgrootte": "-140+325 Mesh",
+    "praxair": "CRC 105",
+    "amdry": "306.0",
+    "metco": "70CNS"
+  },
+  {
+    "categorie": "Chromium Tungsten",
+    "pac_alloy": "124",
+    "samenstelling": "Chromium Carbide",
+    "hardheid": "Rc40",
+    "korrelgrootte": "-270+5 um",
+    "praxair": "CRC 107",
+    "amdry": "304.0",
+    "metco": null
+  },
+  {
+    "categorie": "Chromium Tungsten",
+    "pac_alloy": "125",
+    "samenstelling": "Cast Wc/12% Co",
+    "hardheid": "Rc45",
+    "korrelgrootte": "-200+325 Mesh",
+    "praxair": "WC 104",
+    "amdry": "302.0",
+    "metco": "71NS"
+  },
+  {
+    "categorie": "Chromium Tungsten",
+    "pac_alloy": "126",
+    "samenstelling": "Cast Wc/12% Co",
+    "hardheid": "Rc50",
+    "korrelgrootte": "-325+5 um",
+    "praxair": "WC 106",
+    "amdry": "310.0",
+    "metco": "71VFNS"
+  },
+  {
+    "categorie": "Chromium Tungsten",
+    "pac_alloy": "127",
+    "samenstelling": "Sintered Wc/12% Co",
+    "hardheid": "Rc55",
+    "korrelgrootte": "-325+11um",
+    "praxair": "WC 114",
+    "amdry": "927.0",
+    "metco": "72FNS"
+  },
+  {
+    "categorie": "Chromium Tungsten",
+    "pac_alloy": "200",
+    "samenstelling": "Sintered Wc/17% Co",
+    "hardheid": "Rc60",
+    "korrelgrootte": "-270+11um",
+    "praxair": "WC 128",
+    "amdry": "983.0",
+    "metco": "73FNS-1"
+  },
+  {
+    "categorie": "Chromium Tungsten",
+    "pac_alloy": "200S",
+    "samenstelling": "Sintered Wc/17% Co",
+    "hardheid": "Rc58",
+    "korrelgrootte": "-270+20um",
+    "praxair": "WC 128-2",
+    "amdry": null,
+    "metco": "73FNS-2"
+  },
+  {
+    "categorie": "Chromium Tungsten",
+    "pac_alloy": "200SF",
+    "samenstelling": "Sintered Wc/17% Co",
+    "hardheid": "Rc55",
+    "korrelgrootte": "-400+11um",
+    "praxair": null,
+    "amdry": null,
+    "metco": "73SFNS"
+  },
+  {
+    "categorie": "Chromium Tungsten",
+    "pac_alloy": "129",
+    "samenstelling": "CRC+15% NICR Blend",
+    "hardheid": "Rc38",
+    "korrelgrootte": "-140+11um",
+    "praxair": null,
+    "amdry": null,
+    "metco": "80NS"
+  },
+  {
+    "categorie": "Chromium Tungsten",
+    "pac_alloy": "130",
+    "samenstelling": "CrC+25% NiCr Blend",
+    "hardheid": "Rc40",
+    "korrelgrootte": "-140+11um",
+    "praxair": "CRC 108",
+    "amdry": null,
+    "metco": "81NS"
+  },
+  {
+    "categorie": "Chromium Tungsten",
+    "pac_alloy": "131",
+    "samenstelling": "CrC+25% NiCr Blend",
+    "hardheid": "Rc58",
+    "korrelgrootte": "-325+5 um",
+    "praxair": "CRC 106",
+    "amdry": "305.0",
+    "metco": "81VFNS"
+  },
+  {
+    "categorie": "Chromium Tungsten",
+    "pac_alloy": "131-1",
+    "samenstelling": "CrC+7% NiCr Blend",
+    "hardheid": "Rc60",
+    "korrelgrootte": "-325+5 um",
+    "praxair": "CRC 184",
+    "amdry": "364.0",
+    "metco": "82VFNS"
+  },
+  {
+    "categorie": "Chromium Tungsten",
+    "pac_alloy": "133",
+    "samenstelling": "CrC+CoNiCrSi+NiAl Blend",
+    "hardheid": "Rc45",
+    "korrelgrootte": "-170+11um",
+    "praxair": null,
+    "amdry": null,
+    "metco": "430NS"
+  },
+  {
+    "categorie": "Chromium Tungsten",
+    "pac_alloy": "911",
+    "samenstelling": "Wc-Co+NiCrSi+NiAl Blend",
+    "hardheid": "Rc42",
+    "korrelgrootte": "-170+11um",
+    "praxair": null,
+    "amdry": null,
+    "metco": "439NS"
+  },
+  {
+    "categorie": "Clearance Control",
+    "pac_alloy": "904",
+    "samenstelling": "Aromatic Polyester",
+    "hardheid": "R15y 40",
+    "korrelgrootte": "-170+11um",
+    "praxair": null,
+    "amdry": null,
+    "metco": "600NS"
+  },
+  {
+    "categorie": "Clearance Control",
+    "pac_alloy": "905-3",
+    "samenstelling": "Polyester/ Al-Si Blend",
+    "hardheid": "R15y 68-70",
+    "korrelgrootte": "-170+11um",
+    "praxair": "ALO 202",
+    "amdry": null,
+    "metco": "601NS"
+  },
+  {
+    "categorie": "Clearance Control",
+    "pac_alloy": "138",
+    "samenstelling": "Graphite/75% Ni CLAD",
+    "hardheid": "R15y 45",
+    "korrelgrootte": "-170+325 Mesh",
+    "praxair": "NI 114",
+    "amdry": "952.0",
+    "metco": "307NS"
+  },
+  {
+    "categorie": "Clearance Control",
+    "pac_alloy": "138-1",
+    "samenstelling": "Graphite/75% Ni CLAD",
+    "hardheid": "R15y 45",
+    "korrelgrootte": "-200+400 Mesh",
+    "praxair": null,
+    "amdry": null,
+    "metco": "307-1"
+  },
+  {
+    "categorie": "Clearance Control",
+    "pac_alloy": "138-3",
+    "samenstelling": "Graphite/75% Ni CLAD",
+    "hardheid": "R15y 45",
+    "korrelgrootte": "-100+325 Mesh",
+    "praxair": "NI 114-2",
+    "amdry": null,
+    "metco": "307-2"
+  },
+  {
+    "categorie": "Clearance Control",
+    "pac_alloy": "138-2",
+    "samenstelling": "Graphite/75% Ni CLAD",
+    "hardheid": "R15y 45",
+    "korrelgrootte": "-170+325 Mesh",
+    "praxair": "NI 120",
+    "amdry": null,
+    "metco": "307-3"
+  },
+  {
+    "categorie": "Clearance Control",
+    "pac_alloy": "140",
+    "samenstelling": "Graphite/ 85% Ni CLAD",
+    "hardheid": "R15y 60",
+    "korrelgrootte": "-170+325 Mesh",
+    "praxair": "NI 126",
+    "amdry": "953.0",
+    "metco": "308NS"
+  },
+  {
+    "categorie": "Clearance Control",
+    "pac_alloy": "140-1",
+    "samenstelling": "Graphite/85% Ni CLAD",
+    "hardheid": "R15y 60",
+    "korrelgrootte": "-170+325 Mesh",
+    "praxair": "NI 115",
+    "amdry": null,
+    "metco": "308-3"
+  },
+  {
+    "categorie": "Clearance Control",
+    "pac_alloy": "140-2",
+    "samenstelling": "Graphite/ 85% Ni CLAD",
+    "hardheid": "R15y 60",
+    "korrelgrootte": "-170+325 Mesh",
+    "praxair": "NI 126-1",
+    "amdry": null,
+    "metco": "308-1"
+  },
+  {
+    "categorie": "Clearance Control",
+    "pac_alloy": "141-3",
+    "samenstelling": "Graphite/ 80% Ni CLAD",
+    "hardheid": "R15y 55",
+    "korrelgrootte": "-140+325 Mesh",
+    "praxair": "NI 765",
+    "amdry": null,
+    "metco": "309-3"
+  },
+  {
+    "categorie": "Clearance Control",
+    "pac_alloy": "16904",
+    "samenstelling": "AlBr Polyester Blend",
+    "hardheid": null,
+    "korrelgrootte": "-120+11 um",
+    "praxair": null,
+    "amdry": null,
+    "metco": "605NS"
+  },
+  {
+    "categorie": "Clearance Control",
+    "pac_alloy": "90414",
+    "samenstelling": "Aluminum Bronze Polyester Comp",
+    "hardheid": null,
+    "korrelgrootte": "-120+11 um",
+    "praxair": null,
+    "amdry": null,
+    "metco": "610NS"
+  },
+  {
+    "categorie": "Exothermic Composits",
+    "pac_alloy": "909/909R",
+    "samenstelling": "Nickel/20% Aluminum",
+    "hardheid": "Rc30",
+    "korrelgrootte": "-140+270 Mesh",
+    "praxair": "NI 108",
+    "amdry": "381.0",
+    "metco": "404NS"
+  },
+  {
+    "categorie": "Exothermic Composits",
+    "pac_alloy": "920",
+    "samenstelling": "Nicrmo/Aluminum",
+    "hardheid": "Rc32",
+    "korrelgrootte": "-140+325 Mesh",
+    "praxair": null,
+    "amdry": null,
+    "metco": "442"
+  },
+  {
+    "categorie": "Exothermic Composits",
+    "pac_alloy": "908C",
+    "samenstelling": "Nicr/Aluminum",
+    "hardheid": "Rb90",
+    "korrelgrootte": "-140+325 Mesh",
+    "praxair": "NI 122",
+    "amdry": "960.0",
+    "metco": "443NS"
+  },
+  {
+    "categorie": "Exothermic Composits",
+    "pac_alloy": "922",
+    "samenstelling": "Nicrmofe/Aluminum",
+    "hardheid": "Rb80",
+    "korrelgrootte": "-140+325 Mesh",
+    "praxair": "NI 430",
+    "amdry": "384.0",
+    "metco": "444"
+  },
+  {
+    "categorie": "Exothermic Composits",
+    "pac_alloy": "940",
+    "samenstelling": "Aluminum Bronze/Aluminum",
+    "hardheid": "Rb55",
+    "korrelgrootte": "-140+325 Mesh",
+    "praxair": null,
+    "amdry": null,
+    "metco": "445"
+  },
+  {
+    "categorie": "Exothermic Composits",
+    "pac_alloy": "912",
+    "samenstelling": "Nickel/Moly/Aluminum",
+    "hardheid": "Rb80",
+    "korrelgrootte": "-140+325 Mesh",
+    "praxair": "NI 453",
+    "amdry": "387.0",
+    "metco": "447NS"
+  },
+  {
+    "categorie": "Exothermic Composits",
+    "pac_alloy": "930",
+    "samenstelling": "Carbon Steel/Aluminum",
+    "hardheid": "Rb85",
+    "korrelgrootte": "-140+325 Mesh",
+    "praxair": null,
+    "amdry": null,
+    "metco": "448"
+  },
+  {
+    "categorie": "Exothermic Composits",
+    "pac_alloy": "932",
+    "samenstelling": "High Carbon Steel/Aluminum",
+    "hardheid": "Rc30",
+    "korrelgrootte": "-140+325 Mesh",
+    "praxair": null,
+    "amdry": null,
+    "metco": "449"
+  },
+  {
+    "categorie": "Exothermic Composits",
+    "pac_alloy": "906",
+    "samenstelling": "Nickel/5% Aluminum",
+    "hardheid": "Rc75",
+    "korrelgrootte": "-170+325 Mesh",
+    "praxair": "NI 109",
+    "amdry": "956.0",
+    "metco": "450NS"
+  },
+  {
+    "categorie": "Exothermic Composits",
+    "pac_alloy": "906PA",
+    "samenstelling": "Pre-Alloyed Ni-5AI",
+    "hardheid": null,
+    "korrelgrootte": "-170+325 Mesh",
+    "praxair": "NI 185",
+    "amdry": "380.0",
+    "metco": "480NS"
+  },
+  {
+    "categorie": "Exothermic Composits",
+    "pac_alloy": "6906",
+    "samenstelling": "Sintered Ni-5Al",
+    "hardheid": null,
+    "korrelgrootte": "-170 + 325 Mesh",
+    "praxair": "NI 1037",
+    "amdry": null,
+    "metco": null
+  },
+  {
+    "categorie": "MCrAIY Powders",
+    "pac_alloy": "9020AM",
+    "samenstelling": "Proprietary NiCrAIY",
+    "hardheid": null,
+    "korrelgrootte": "-325+11 um",
+    "praxair": "NI 535",
+    "amdry": null,
+    "metco": "4469"
+  },
+  {
+    "categorie": "MCrAIY Powders",
+    "pac_alloy": "9030AM",
+    "samenstelling": "Proprietary NiCrAIY",
+    "hardheid": null,
+    "korrelgrootte": "-325+11 um",
+    "praxair": "NI 548",
+    "amdry": null,
+    "metco": null
+  },
+  {
+    "categorie": "MCrAIY Powders",
+    "pac_alloy": "9330AM",
+    "samenstelling": "Proprietary CoNiCrAIY",
+    "hardheid": null,
+    "korrelgrootte": "-325+5 um",
+    "praxair": "CO 249",
+    "amdry": null,
+    "metco": null
+  },
+  {
+    "categorie": "MCrAIY Powders",
+    "pac_alloy": "9330AMf",
+    "samenstelling": "HVOF CoNiCrAIY",
+    "hardheid": null,
+    "korrelgrootte": "-325+22 um",
+    "praxair": "CO 249-4",
+    "amdry": null,
+    "metco": "4198"
+  },
+  {
+    "categorie": "MCrAIY Powders",
+    "pac_alloy": "9348AM",
+    "samenstelling": "Proprietary CoCrAIY",
+    "hardheid": null,
+    "korrelgrootte": "-325+5 um",
+    "praxair": "CO 110",
+    "amdry": "345",
+    "metco": "360"
+  },
+  {
+    "categorie": "MCrAIY Powders",
+    "pac_alloy": "9386AM",
+    "samenstelling": "Proprietary NiCoCrAIY",
+    "hardheid": null,
+    "korrelgrootte": "-325+5 um",
+    "praxair": "NI 192",
+    "amdry": "386",
+    "metco": null
+  },
+  {
+    "categorie": "MCrAIY Powders",
+    "pac_alloy": "9620AM",
+    "samenstelling": "Ni-22Cr-10AI-1Y",
+    "hardheid": null,
+    "korrelgrootte": "-140+270 Mesh",
+    "praxair": "NI 343",
+    "amdry": "962",
+    "metco": null
+  },
+  {
+    "categorie": "MCrAIY Powders",
+    "pac_alloy": "9620AMF",
+    "samenstelling": "Ni-22Cr-10AI-1Y",
+    "hardheid": null,
+    "korrelgrootte": "-325+22 um",
+    "praxair": "NI 343",
+    "amdry": "962",
+    "metco": null
+  },
+  {
+    "categorie": "MCrAIY Powders",
+    "pac_alloy": "9970AM",
+    "samenstelling": "Fe-24Cr-8AI-.5Y",
+    "hardheid": null,
+    "korrelgrootte": "-325+11 um",
+    "praxair": "FE 124",
+    "amdry": null,
+    "metco": null
+  },
+  {
+    "categorie": "MCrAIY Powders",
+    "pac_alloy": "9630AM",
+    "samenstelling": "Ni-25Cr-6AI-.5Y",
+    "hardheid": null,
+    "korrelgrootte": "-170+325 Mesh",
+    "praxair": "NI 278",
+    "amdry": "963",
+    "metco": null
+  },
+  {
+    "categorie": "MCrAIY Powders",
+    "pac_alloy": "9640AM",
+    "samenstelling": "Ni-31Cr-11AI-.6Y",
+    "hardheid": null,
+    "korrelgrootte": "-170+325 Mesh",
+    "praxair": "NI 246-4",
+    "amdry": "964",
+    "metco": null
+  },
+  {
+    "categorie": "MCrAIY Powders",
+    "pac_alloy": "9950AM",
+    "samenstelling": "Co-32Ni-21Cr-8AI-.5Y",
+    "hardheid": null,
+    "korrelgrootte": "-325+11 um",
+    "praxair": "CO 210-1",
+    "amdry": "9954",
+    "metco": null
+  },
+  {
+    "categorie": "MCrAIY Powders",
+    "pac_alloy": "9950AMC",
+    "samenstelling": "Co-32Ni-21Cr-8AI-.5Y",
+    "hardheid": null,
+    "korrelgrootte": "-170+400 Mesh",
+    "praxair": "CO 159",
+    "amdry": "995C",
+    "metco": null
+  },
+  {
+    "categorie": "MCrAIY Powders",
+    "pac_alloy": "9950AMF",
+    "samenstelling": "Co-32Ni-21Cr-8AI-.5Y",
+    "hardheid": null,
+    "korrelgrootte": "-325+22 um",
+    "praxair": "CO 210-24",
+    "amdry": "995",
+    "metco": "4195"
+  },
+  {
+    "categorie": "MCrAIY Powders",
+    "pac_alloy": "92231AM",
+    "samenstelling": "Proprietary MCrAIY",
+    "hardheid": null,
+    "korrelgrootte": "-325+5 um",
+    "praxair": "CO 301",
+    "amdry": null,
+    "metco": "4201"
+  },
+  {
+    "categorie": "MCrAIY Powders",
+    "pac_alloy": "92453AM",
+    "samenstelling": "Proprietary MCrAIY",
+    "hardheid": null,
+    "korrelgrootte": "-325+5 um",
+    "praxair": "NI 666",
+    "amdry": null,
+    "metco": "4485"
+  },
+  {
+    "categorie": "MCrAIY Powders",
+    "pac_alloy": "93652AM",
+    "samenstelling": "Proprietary NiCoCrAIY",
+    "hardheid": null,
+    "korrelgrootte": "-200+400 Mesh",
+    "praxair": "NI 171",
+    "amdry": "365-2",
+    "metco": "382NS-2"
+  },
+  {
+    "categorie": "MCrAIY Powders",
+    "pac_alloy": "93651AM",
+    "samenstelling": "Proprietary NiCoCrAIY",
+    "hardheid": null,
+    "korrelgrootte": "-325+5 um",
+    "praxair": "NI 130",
+    "amdry": "365-1",
+    "metco": null
+  },
+  {
+    "categorie": "MCrAIY Powders",
+    "pac_alloy": "9610AM",
+    "samenstelling": "Ni-17Cr-6AI-.5Y",
+    "hardheid": null,
+    "korrelgrootte": "-325+11 um",
+    "praxair": "NI 346",
+    "amdry": "961",
+    "metco": null
+  },
+  {
+    "categorie": "MCrAIY Powders",
+    "pac_alloy": "9376AM",
+    "samenstelling": "Proprietary MCrAIY",
+    "hardheid": null,
+    "korrelgrootte": "-325+5 um",
+    "praxair": "NI 191",
+    "amdry": "376",
+    "metco": null
+  },
+  {
+    "categorie": "MCrAIY Powders",
+    "pac_alloy": "9386AM",
+    "samenstelling": "Proprietary MCrAIY",
+    "hardheid": null,
+    "korrelgrootte": "-325+5 um",
+    "praxair": "NI 192",
+    "amdry": "386",
+    "metco": null
+  },
+  {
+    "categorie": "MCrAIY Powders",
+    "pac_alloy": "9917AM",
+    "samenstelling": "Ni-Cr-Ta-Y-Si-C AI203 Blend",
+    "hardheid": null,
+    "korrelgrootte": "-270 + 11 um",
+    "praxair": null,
+    "amdry": null,
+    "metco": null
+  },
+  {
+    "categorie": "MCrAIY Powders",
+    "pac_alloy": "4610",
+    "samenstelling": "Ni-Cr-AI-Co-Yttria",
+    "hardheid": null,
+    "korrelgrootte": "-140+325 Mesh",
+    "praxair": null,
+    "amdry": null,
+    "metco": "461NS"
+  },
+  {
+    "categorie": "MCrAIY Powders",
+    "pac_alloy": "9290AMF",
+    "samenstelling": "Co-29Cr-6AI.3Y",
+    "hardheid": null,
+    "korrelgrootte": "-325+22 um",
+    "praxair": "CO 242-3",
+    "amdry": null,
+    "metco": "4197"
+  },
+  {
+    "categorie": "MCrAIY Powders",
+    "pac_alloy": "9620AMPS",
+    "samenstelling": "Ni-22Cr-10AI-1Y",
+    "hardheid": null,
+    "korrelgrootte": "-140+400 Mesh",
+    "praxair": "NI 211",
+    "amdry": null,
+    "metco": null
+  },
+  {
+    "categorie": "MCrAIY Powders",
+    "pac_alloy": "8239",
+    "samenstelling": "Ni-17Cr-12AI-23Co-.5Y",
+    "hardheid": null,
+    "korrelgrootte": "-325+15 um",
+    "praxair": "NI 191-4",
+    "amdry": null,
+    "metco": null
+  },
+  {
+    "categorie": "MCrAIY Powders",
+    "pac_alloy": "8246",
+    "samenstelling": "Ni-20Cr-8.5AI-23Co-.6Y-4Ta",
+    "hardheid": null,
+    "korrelgrootte": "-400+15 um",
+    "praxair": "NI 482-2",
+    "amdry": null,
+    "metco": "997"
+  },
+  {
+    "categorie": "Metal Alloy Powders",
+    "pac_alloy": "96C",
+    "samenstelling": "316 Stainless Steel",
+    "hardheid": "Rb90",
+    "korrelgrootte": "-140 +325 Mesh",
+    "praxair": null,
+    "amdry": "SS316C",
+    "metco": "41C"
+  },
+  {
+    "categorie": "Metal Alloy Powders",
+    "pac_alloy": "96F",
+    "samenstelling": "316 Stainless Steel",
+    "hardheid": "Rb85",
+    "korrelgrootte": "-325 + 15 um",
+    "praxair": "FE 101",
+    "amdry": "SS316F",
+    "metco": "41F"
+  },
+  {
+    "categorie": "Metal Alloy Powders",
+    "pac_alloy": "97",
+    "samenstelling": "431 Stainless Steel",
+    "hardheid": "Rc32",
+    "korrelgrootte": "-120 +325 Mesh",
+    "praxair": null,
+    "amdry": "SS431",
+    "metco": "42C"
+  },
+  {
+    "categorie": "Metal Alloy Powders",
+    "pac_alloy": "98C-1",
+    "samenstelling": "Nickel/20% Chromium",
+    "hardheid": "Rb92",
+    "korrelgrootte": "-140+325 Mesh",
+    "praxair": "NI 107",
+    "amdry": "315",
+    "metco": "43C"
+  },
+  {
+    "categorie": "Metal Alloy Powders",
+    "pac_alloy": "98F",
+    "samenstelling": "Nickel/20% Chromium",
+    "hardheid": "Rb90",
+    "korrelgrootte": "-270+11um",
+    "praxair": "NI 106",
+    "amdry": "317",
+    "metco": "43F"
+  },
+  {
+    "categorie": "Metal Alloy Powders",
+    "pac_alloy": "98F-1",
+    "samenstelling": "Nickel/20% Chromium",
+    "hardheid": "Rb90",
+    "korrelgrootte": "-325+5 um",
+    "praxair": "NI 105",
+    "amdry": "319",
+    "metco": "43VF"
+  },
+  {
+    "categorie": "Metal Alloy Powders",
+    "pac_alloy": "99",
+    "samenstelling": "Nickel/Chromium/Iron",
+    "hardheid": "Rb80",
+    "korrelgrootte": "-120+325 Mesh",
+    "praxair": "NI 488",
+    "amdry": null,
+    "metco": "44"
+  },
+  {
+    "categorie": "Metal Alloy Powders",
+    "pac_alloy": "90C",
+    "samenstelling": "Cobalt Base Alloy",
+    "hardheid": "Rc32",
+    "korrelgrootte": "-170+325 Mesh",
+    "praxair": "CO 105",
+    "amdry": "318",
+    "metco": "45C"
+  },
+  {
+    "categorie": "Metal Alloy Powders",
+    "pac_alloy": "90VF",
+    "samenstelling": "Cobalt Base Alloy",
+    "hardheid": "Rc32",
+    "korrelgrootte": "-325+5 um",
+    "praxair": "CO 103",
+    "amdry": "316",
+    "metco": "45VF"
+  },
+  {
+    "categorie": "Metal Alloy Powders",
+    "pac_alloy": "91C",
+    "samenstelling": "Cobalt Aluminum Alloy",
+    "hardheid": "Rc25",
+    "korrelgrootte": "-200+325 Mesh",
+    "praxair": null,
+    "amdry": "353",
+    "metco": null
+  },
+  {
+    "categorie": "Metal Alloy Powders",
+    "pac_alloy": "91F",
+    "samenstelling": "Cobalt Aluminum Alloy",
+    "hardheid": "Rc25",
+    "korrelgrootte": "-325+11um",
+    "praxair": null,
+    "amdry": null,
+    "metco": null
+  },
+  {
+    "categorie": "Metal Alloy Powders",
+    "pac_alloy": "16",
+    "samenstelling": "Aluminum Bronze",
+    "hardheid": "Rb80",
+    "korrelgrootte": "-120+325 Mesh",
+    "praxair": "CU 114",
+    "amdry": "332",
+    "metco": "51NS"
+  },
+  {
+    "categorie": "Metal Alloy Powders",
+    "pac_alloy": "16F",
+    "samenstelling": "Aluminum Bronze",
+    "hardheid": "Rb85",
+    "korrelgrootte": "-270+11um",
+    "praxair": "CU 104",
+    "amdry": null,
+    "metco": "51F"
+  },
+  {
+    "categorie": "Metal Alloy Powders",
+    "pac_alloy": "901",
+    "samenstelling": "Aluminum/12% Silicon",
+    "hardheid": "Rb85",
+    "korrelgrootte": "-140+325 Mesh",
+    "praxair": "AL 102",
+    "amdry": "392C",
+    "metco": "52C"
+  },
+  {
+    "categorie": "Metal Alloy Powders",
+    "pac_alloy": "19",
+    "samenstelling": "Pure Aluminum",
+    "hardheid": "Rb42",
+    "korrelgrootte": "-170+325 Mesh",
+    "praxair": null,
+    "amdry": "357",
+    "metco": "54NS"
+  },
+  {
+    "categorie": "Metal Alloy Powders",
+    "pac_alloy": "19NS",
+    "samenstelling": "Pure Aluminum",
+    "hardheid": "Rb45",
+    "korrelgrootte": "-200+325 Mesh",
+    "praxair": "AL 104",
+    "amdry": null,
+    "metco": "54NS-1"
+  },
+  {
+    "categorie": "Metal Alloy Powders",
+    "pac_alloy": "10",
+    "samenstelling": "Pure Cooper",
+    "hardheid": "Rb82",
+    "korrelgrootte": "-170+325 Mesh",
+    "praxair": "CU 105",
+    "amdry": "911",
+    "metco": "55"
+  },
+  {
+    "categorie": "Metal Alloy Powders",
+    "pac_alloy": "900",
+    "samenstelling": "Pure Nickel",
+    "hardheid": "Rb65",
+    "korrelgrootte": "-200+325 Mesh",
+    "praxair": null,
+    "amdry": "917C",
+    "metco": "56NS"
+  },
+  {
+    "categorie": "Metal Alloy Powders",
+    "pac_alloy": "900F",
+    "samenstelling": "Pure Nickel",
+    "hardheid": "Rb68",
+    "korrelgrootte": "-325+11um",
+    "praxair": "NI 101",
+    "amdry": "917F",
+    "metco": "56FNS"
+  },
+  {
+    "categorie": "Metal Alloy Powders",
+    "pac_alloy": "12",
+    "samenstelling": "Copper/38% Nickel",
+    "hardheid": "Rb70",
+    "korrelgrootte": "-200+325 Mesh",
+    "praxair": "CU 103",
+    "amdry": "942",
+    "metco": "57NS"
+  },
+  {
+    "categorie": "Metal Alloy Powders",
+    "pac_alloy": "12F",
+    "samenstelling": "Copper/38% Nickel",
+    "hardheid": "Rb70",
+    "korrelgrootte": "-325+11um",
+    "praxair": null,
+    "amdry": null,
+    "metco": "57VF"
+  },
+  {
+    "categorie": "Metal Alloy Powders",
+    "pac_alloy": "658C",
+    "samenstelling": "Copper/Nickel/Indium",
+    "hardheid": "Rb70",
+    "korrelgrootte": "-200+325 Mesh",
+    "praxair": "CU 102",
+    "amdry": "500C",
+    "metco": "58NS"
+  },
+  {
+    "categorie": "Metal Alloy Powders",
+    "pac_alloy": "658F",
+    "samenstelling": "Copper/Nickel/Indium",
+    "hardheid": "Rb72",
+    "korrelgrootte": "-325+11um",
+    "praxair": "CU 101",
+    "amdry": "500F",
+    "metco": null
+  },
+  {
+    "categorie": "Metal Alloy Powders",
+    "pac_alloy": "118NS",
+    "samenstelling": "Pure Molybdenum",
+    "hardheid": "Rc35",
+    "korrelgrootte": "-170+325 Mesh",
+    "praxair": null,
+    "amdry": "313",
+    "metco": "63NS"
+  },
+  {
+    "categorie": "Metal Alloy Powders",
+    "pac_alloy": "118FNS",
+    "samenstelling": "Pure Molybdenum",
+    "hardheid": "Rc38",
+    "korrelgrootte": "-325+5 um",
+    "praxair": null,
+    "amdry": "338",
+    "metco": null
+  },
+  {
+    "categorie": "Metal Alloy Powders",
+    "pac_alloy": "T400",
+    "samenstelling": "Cobalt/Moly/Chromium",
+    "hardheid": "Rc42",
+    "korrelgrootte": "-325+11um",
+    "praxair": "CO 109",
+    "amdry": null,
+    "metco": "66FNS"
+  },
+  {
+    "categorie": "Metal Alloy Powders",
+    "pac_alloy": "T800",
+    "samenstelling": "Cobalt/Moly/Chromium",
+    "hardheid": "Rc47",
+    "korrelgrootte": "-325+11um",
+    "praxair": "CO 111",
+    "amdry": null,
+    "metco": "68FNS"
+  },
+  {
+    "categorie": "Metal Alloy Powders",
+    "pac_alloy": "625",
+    "samenstelling": "Super Alloy 625",
+    "hardheid": "Rc30",
+    "korrelgrootte": "-170+325 Mesh",
+    "praxair": null,
+    "amdry": null,
+    "metco": null
+  },
+  {
+    "categorie": "Metal Alloy Powders",
+    "pac_alloy": "718B",
+    "samenstelling": "Super Alloy718",
+    "hardheid": "Rc32",
+    "korrelgrootte": "-170+325 Mesh",
+    "praxair": null,
+    "amdry": "718",
+    "metco": null
+  },
+  {
+    "categorie": "Metal Alloy Powders",
+    "pac_alloy": "718F",
+    "samenstelling": "Super Alloy718",
+    "hardheid": "Rc32",
+    "korrelgrootte": "-325+15 um",
+    "praxair": null,
+    "amdry": null,
+    "metco": null
+  },
+  {
+    "categorie": "Metal Alloy Powders",
+    "pac_alloy": "CPTI",
+    "samenstelling": "Irregular Pure Titanium",
+    "hardheid": null,
+    "korrelgrootte": "-170+325 Mesh",
+    "praxair": null,
+    "amdry": null,
+    "metco": null
+  },
+  {
+    "categorie": "Metal Alloy Powders",
+    "pac_alloy": "CPTI",
+    "samenstelling": "Spherical Titanium Beads",
+    "hardheid": null,
+    "korrelgrootte": "-25+35 Mesh",
+    "praxair": null,
+    "amdry": null,
+    "metco": null
+  },
+  {
+    "categorie": "Molybdenum",
+    "pac_alloy": "118NS",
+    "samenstelling": "Pure Molybdenum",
+    "hardheid": null,
+    "korrelgrootte": "-170+325 Mesh",
+    "praxair": "MO 102",
+    "amdry": "313.0",
+    "metco": "63NS"
+  },
+  {
+    "categorie": "Molybdenum",
+    "pac_alloy": "118FNS",
+    "samenstelling": "Pure Molybdenum, Fine",
+    "hardheid": null,
+    "korrelgrootte": "-325+5 um",
+    "praxair": "MO 103",
+    "amdry": "338.0",
+    "metco": null
+  },
+  {
+    "categorie": "Molybdenum",
+    "pac_alloy": "135",
+    "samenstelling": "Ni Alloy + Moly Blend 70/30",
+    "hardheid": null,
+    "korrelgrootte": null,
+    "praxair": null,
+    "amdry": null,
+    "metco": "501"
+  },
+  {
+    "categorie": "Molybdenum",
+    "pac_alloy": "902",
+    "samenstelling": "Moly + Ni Alloy Blend 75/25",
+    "hardheid": null,
+    "korrelgrootte": null,
+    "praxair": null,
+    "amdry": null,
+    "metco": "505"
+  },
+  {
+    "categorie": "Molybdenum",
+    "pac_alloy": "117",
+    "samenstelling": "Mo-3C",
+    "hardheid": null,
+    "korrelgrootte": "-170+315 Mesh",
+    "praxair": null,
+    "amdry": null,
+    "metco": "64"
+  },
+  {
+    "categorie": "Self Fluxing",
+    "pac_alloy": "65",
+    "samenstelling": "NiCrSiB Alloy",
+    "hardheid": "Rc35",
+    "korrelgrootte": "-120+325 Mesh",
+    "praxair": null,
+    "amdry": "754",
+    "metco": "12C"
+  },
+  {
+    "categorie": "Self Fluxing",
+    "pac_alloy": "69E",
+    "samenstelling": "NiCrSiB Alloy",
+    "hardheid": "Rc52",
+    "korrelgrootte": "-140+325 Mesh",
+    "praxair": null,
+    "amdry": "755",
+    "metco": "14C"
+  },
+  {
+    "categorie": "Self Fluxing",
+    "pac_alloy": "69F",
+    "samenstelling": "NiCrSiB Alloy",
+    "hardheid": "Rc50",
+    "korrelgrootte": "-270+15um",
+    "praxair": null,
+    "amdry": null,
+    "metco": "14F"
+  },
+  {
+    "categorie": "Self Fluxing",
+    "pac_alloy": "60E",
+    "samenstelling": "NiCrSiB Alloy",
+    "hardheid": "Rc60",
+    "korrelgrootte": "-140+325 Mesh",
+    "praxair": "NI 167",
+    "amdry": "761",
+    "metco": "15E"
+  },
+  {
+    "categorie": "Self Fluxing",
+    "pac_alloy": "60F",
+    "samenstelling": "NiCrSiB Alloy",
+    "hardheid": "Rc60",
+    "korrelgrootte": "-270+15um",
+    "praxair": "NI 167-1",
+    "amdry": null,
+    "metco": "15F"
+  },
+  {
+    "categorie": "Self Fluxing",
+    "pac_alloy": "600",
+    "samenstelling": "NiCrSiBMoCu Alloy",
+    "hardheid": "Rc62",
+    "korrelgrootte": "-120+325 Mesh",
+    "praxair": "NI 553",
+    "amdry": "769",
+    "metco": "16C"
+  },
+  {
+    "categorie": "Self Fluxing",
+    "pac_alloy": "63",
+    "samenstelling": "CoNiCrSiB",
+    "hardheid": "Rc52",
+    "korrelgrootte": "-120+325 Mesh",
+    "praxair": "NI 563",
+    "amdry": null,
+    "metco": "18C"
+  },
+  {
+    "categorie": "Self Fluxing",
+    "pac_alloy": "64",
+    "samenstelling": "NiCrSiBMoW",
+    "hardheid": "Rc58",
+    "korrelgrootte": "-120+325 Mesh",
+    "praxair": null,
+    "amdry": "779",
+    "metco": "19E"
+  },
+  {
+    "categorie": "Self Fluxing",
+    "pac_alloy": "86",
+    "samenstelling": "35% Wc-Co+NI Base Blend",
+    "hardheid": "Rc60",
+    "korrelgrootte": "-120-325 Mesh",
+    "praxair": "NI 546",
+    "amdry": "731C",
+    "metco": "31C"
+  },
+  {
+    "categorie": "Self Fluxing",
+    "pac_alloy": "87",
+    "samenstelling": "80% Wc-Co+Ni Base Blend",
+    "hardheid": "Rc62",
+    "korrelgrootte": "-120+325 Mesh",
+    "praxair": "WC 572",
+    "amdry": null,
+    "metco": "32C"
+  },
+  {
+    "categorie": "Self Fluxing",
+    "pac_alloy": "89F",
+    "samenstelling": "50% Wc-Co+Ni base Blend",
+    "hardheid": "Rc58",
+    "korrelgrootte": "-270+15um",
+    "praxair": "WC 487",
+    "amdry": null,
+    "metco": "34F"
+  },
+  {
+    "categorie": "Self Fluxing",
+    "pac_alloy": "89FP",
+    "samenstelling": "50% Wc-Co+Ni Base Blend",
+    "hardheid": "Rc58",
+    "korrelgrootte": "-270+15um",
+    "praxair": null,
+    "amdry": null,
+    "metco": "34FP"
+  },
+  {
+    "categorie": "Self Fluxing",
+    "pac_alloy": "81",
+    "samenstelling": "35% Wc-Ni+Ni Base Blend",
+    "hardheid": "Rc60",
+    "korrelgrootte": "-140+325 Mesh",
+    "praxair": "WC 562",
+    "amdry": "736C",
+    "metco": "36C"
+  },
+  {
+    "categorie": "Super Alloys",
+    "pac_alloy": "6CO",
+    "samenstelling": "Stellite 6",
+    "hardheid": null,
+    "korrelgrootte": "-170+325 Mesh",
+    "praxair": "CO 106",
+    "amdry": null,
+    "metco": null
+  },
+  {
+    "categorie": "Super Alloys",
+    "pac_alloy": "25F",
+    "samenstelling": "L-605",
+    "hardheid": null,
+    "korrelgrootte": "-325+15 um",
+    "praxair": "CO 308",
+    "amdry": null,
+    "metco": null
+  },
+  {
+    "categorie": "Super Alloys",
+    "pac_alloy": "X40",
+    "samenstelling": "X-40/HS31",
+    "hardheid": null,
+    "korrelgrootte": "-140+325 Mesh",
+    "praxair": "CO 285",
+    "amdry": "X40",
+    "metco": null
+  },
+  {
+    "categorie": "Super Alloys",
+    "pac_alloy": "64",
+    "samenstelling": "CM64",
+    "hardheid": null,
+    "korrelgrootte": "-140+325 Mesh",
+    "praxair": "CO 114-2",
+    "amdry": null,
+    "metco": null
+  },
+  {
+    "categorie": "Super Alloys",
+    "pac_alloy": "R80",
+    "samenstelling": "Rene 80",
+    "hardheid": null,
+    "korrelgrootte": "-140+325 Mesh",
+    "praxair": "NI 183",
+    "amdry": "Rene 80",
+    "metco": null
+  },
+  {
+    "categorie": "Super Alloys",
+    "pac_alloy": "82",
+    "samenstelling": "IN 82",
+    "hardheid": null,
+    "korrelgrootte": "-120+325 Mesh",
+    "praxair": "NI 639",
+    "amdry": null,
+    "metco": null
+  },
+  {
+    "categorie": "Super Alloys",
+    "pac_alloy": "C276",
+    "samenstelling": "C-276",
+    "hardheid": null,
+    "korrelgrootte": "-325+15 um",
+    "praxair": "NI 544",
+    "amdry": null,
+    "metco": null
+  },
+  {
+    "categorie": "Super Alloys",
+    "pac_alloy": "509",
+    "samenstelling": "MM 509",
+    "hardheid": null,
+    "korrelgrootte": "-325+11 um",
+    "praxair": "CO 222",
+    "amdry": "MM509",
+    "metco": null
+  },
+  {
+    "categorie": "Super Alloys",
+    "pac_alloy": "625F",
+    "samenstelling": "IN 625",
+    "hardheid": null,
+    "korrelgrootte": "-325+15 um",
+    "praxair": "NI 328-1",
+    "amdry": "625",
+    "metco": "1005.0"
+  },
+  {
+    "categorie": "Super Alloys",
+    "pac_alloy": "713F",
+    "samenstelling": "IN 713",
+    "hardheid": null,
+    "korrelgrootte": "-325+20 um",
+    "praxair": "NI 396",
+    "amdry": "713F",
+    "metco": null
+  },
+  {
+    "categorie": "Super Alloys",
+    "pac_alloy": "718",
+    "samenstelling": "IN 718",
+    "hardheid": null,
+    "korrelgrootte": "-170+325 Mesh",
+    "praxair": "NI 202",
+    "amdry": "718",
+    "metco": null
+  },
+  {
+    "categorie": "Super Alloys",
+    "pac_alloy": "718F",
+    "samenstelling": "IN 718",
+    "hardheid": null,
+    "korrelgrootte": "-325+15 um",
+    "praxair": "NI 202-2",
+    "amdry": null,
+    "metco": "1006.0"
+  },
+  {
+    "categorie": "Super Alloys",
+    "pac_alloy": "738F",
+    "samenstelling": "IN 738",
+    "hardheid": null,
+    "korrelgrootte": "-325+15 um",
+    "praxair": "NI 284",
+    "amdry": null,
+    "metco": null
+  },
+  {
+    "categorie": "Super Alloys",
+    "pac_alloy": "8106",
+    "samenstelling": "FSX-414",
+    "hardheid": null,
+    "korrelgrootte": "-325+11 um",
+    "praxair": "CO 263-2",
+    "amdry": null,
+    "metco": null
+  },
+  {
+    "categorie": "Super Alloys",
+    "pac_alloy": "8121",
+    "samenstelling": "IN 671",
+    "hardheid": null,
+    "korrelgrootte": "-325+15 um",
+    "praxair": "NI 681",
+    "amdry": null,
+    "metco": null
+  },
+  {
+    "categorie": "Super Alloys",
+    "pac_alloy": "8122",
+    "samenstelling": "MM 002",
+    "hardheid": null,
+    "korrelgrootte": "-170+325 Mesh",
+    "praxair": "NI 378",
+    "amdry": null,
+    "metco": null
+  },
+  {
+    "categorie": "Super Alloys",
+    "pac_alloy": "46GEHV",
+    "samenstelling": "Stellite 6",
+    "hardheid": null,
+    "korrelgrootte": "-325+20 um",
+    "praxair": "106-1",
+    "amdry": null,
+    "metco": null
+  },
+  {
+    "categorie": "Super Alloys",
+    "pac_alloy": "46HVT",
+    "samenstelling": "Stellite 6",
+    "hardheid": null,
+    "korrelgrootte": "-270+22 um",
+    "praxair": "106-1",
+    "amdry": null,
+    "metco": null
+  }
+]

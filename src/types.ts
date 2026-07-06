@@ -19,3 +19,21 @@ export interface Parameter {
   gas: string | null
   pad: string
 }
+
+export interface Equivalent {
+  categorie: string
+  pac_alloy: string
+  samenstelling: string | null
+  hardheid: string | null
+  korrelgrootte: string | null
+  praxair: string | null
+  amdry: string | null
+  metco: string | null
+}
+
+export interface ApprovalRow {
+  pac_product: string
+  omschrijving: string | null
+  metco: string | null
+  approvals: Record<string, string>
+}

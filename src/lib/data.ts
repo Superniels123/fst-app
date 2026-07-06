@@ -1,7 +1,9 @@
 import { supabase } from './supabaseClient'
-import type { Material, Parameter } from '../types'
+import type { Material, Parameter, Equivalent, ApprovalRow } from '../types'
 import materialsJson from '../data/materials.json'
 import parametersJson from '../data/parameters.json'
+import equivalentsJson from '../data/equivalents.json'
+import approvalsMatrixJson from '../data/approvals_matrix.json'
 
 export async function getMaterials(): Promise<Material[]> {
   const { data, error } = await supabase.from('materials').select('*').order('primaire_code')
@@ -19,4 +21,16 @@ export async function getParameters(): Promise<Parameter[]> {
   const { data, error } = await supabase.from('parameters').select('*').order('gun')
   if (error || !data || data.length === 0) return parametersJson as Parameter[]
   return data as Parameter[]
+}
+
+export async function getEquivalents(): Promise<Equivalent[]> {
+  const { data, error } = await supabase.from('equivalents').select('*').order('pac_alloy')
+  if (error || !data || data.length === 0) return equivalentsJson as Equivalent[]
+  return data as Equivalent[]
+}
+
+export async function getApprovals(): Promise<ApprovalRow[]> {
+  const { data, error } = await supabase.from('approvals_matrix').select('*').order('pac_product')
+  if (error || !data || data.length === 0) return approvalsMatrixJson as ApprovalRow[]
+  return data as ApprovalRow[]
 }

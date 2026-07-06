@@ -1,0 +1,91 @@
+[
+  {
+    "pac_product": "6CO, Rev.F.",
+    "omschrijving": null,
+    "metco": null,
+    "approvals": {
+      "GE": "P16AG9"
+    }
+  },
+  {
+    "pac_product": "10W",
+    "omschrijving": null,
+    "metco": null,
+    "approvals": {}
+  },
+  {
+    "pac_product": "10",
+    "omschrijving": "Pure Copper",
+    "metco": "55",
+    "approvals": {
+      "GE": "B50TF42-S4,CLA"
+    }
+  },
+  {
+    "pac_product": "12 Rev.C.",
+    "omschrijving": "Cu 38%Ni",
+    "metco": "57NS",
+    "approvals": {
+      "GE": "B20TF42-S4, CLA"
+    }
+  },
+  {
+    "pac_product": "13 WIRE Rev.B.",
+    "omschrijving": null,
+    "metco": null,
+    "approvals": {
+      "GE": "B20A4-S4, CL"
+    }
+  },
+  {
+    "pac_product": "13 Rev.A",
+    "omschrijving": null,
+    "metco": null,
+    "approvals": {
+      "GE": "B20A4B1-S4 CL"
+    }
+  },
+  {
+    "pac_product": "D15 Rev. A",
+    "omschrijving": null,
+    "metco": null,
+    "approvals": {
+      "GE": "B50TF173-S9, CLA"
+    }
+  },
+  {
+    "pac_product": "16 Rev. D",
+    "omschrijving": "Aluminum Bronse",
+    "metco": "51NS",
+    "approvals": {
+      "GE": "B50TF161-S8, CLA",
+      "RR": "9507/24"
+    }
+  },
+  {
+    "pac_product": "16F Rev.B.",
+    "omschrijving": "Aluminum Bronse",
+    "metco": "51F",
+    "approvals": {
+      "GE": "B50TF161-S8 CLB",
+      "RR": "9507/29"
+    }
+  },
+  {
+    "pac_product": "16W Rev.B.",
+    "omschrijving": "Aluminum Bronse",
+    "metco": null,
+    "approvals": {
+      "GE": "B50TF161-S8, CLC"
+    }
+  },
+  {
+    "pac_product": "19/19NS/19SP Rev.B.",
+    "omschrijving": "Pure Aluminum",
+    "metco": "54",
+    "approvals": {
+      "GE": "B50TF57-S5, CLA",
+      "PWA": "PWA 1320"
+    }
+  }
+]
