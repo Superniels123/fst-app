@@ -26,9 +26,10 @@ export default function Home() {
         <Stat label="Types" value={4} />
         <Stat label="Uitgefaseerd" value={total - actief} />
       </div>
-      <div className="mt-8 flex gap-3">
+      <div className="mt-8 flex flex-wrap gap-3">
         <Link to="/materialen" className="inline-block bg-fst-green text-white font-semibold px-5 py-2.5 rounded-md hover:bg-fst-greenDark transition-colors">Materialen →</Link>
         <Link to="/parameters" className="inline-block border border-fst-green text-fst-green font-semibold px-5 py-2.5 rounded-md hover:bg-fst-greenTint transition-colors">Parameters →</Link>
+        <Link to="/quote?wizard=1" className="inline-block border border-fst-green text-fst-green font-semibold px-5 py-2.5 rounded-md hover:bg-fst-greenTint transition-colors">Nieuwe quote via wizard →</Link>
       </div>
     </div>
   )
