@@ -1,10 +1,8 @@
 import { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
-import { pdf } from '@react-pdf/renderer'
 import type { Quote, QuoteLine } from '../types'
 import { getQuote } from '../lib/data'
 import { supabase } from '../lib/supabaseClient'
-import OffertePDF from '../pdf/OffertePDF'
 
 const eur = new Intl.NumberFormat('nl-NL', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 })
 
@@ -51,9 +49,9 @@ export default function OfferteDetail() {
       const madeBy = (u?.user_metadata?.full_name as string) || (u?.user_metadata?.name as string) || u?.email || '—'
       const systemName = deriveSystemName(data.lines)
       const datum = new Date().toISOString().slice(0, 10)
-      const blob = await pdf(
-        <OffertePDF quote={data.quote} lines={data.lines} madeBy={madeBy} systemName={systemName} schetsen={schetsen} datum={datum} />,
-      ).toBlob()
+      // Dynamische import: @react-pdf/renderer wordt pas nu geladen.
+      const { generateOffertePDFBlob } = await import('../pdf/generateOffertePDF')
+      const blob = await generateOffertePDFBlob({ quote: data.quote, lines: data.lines, madeBy, systemName, schetsen, datum })
       const url = URL.createObjectURL(blob)
       const a = document.createElement('a')
       a.href = url
@@ -91,7 +89,7 @@ export default function OfferteDetail() {
         <div className="flex flex-col sm:flex-row sm:items-center gap-3">
           <button onClick={genereerPDF} disabled={generating}
             className="rounded-md bg-fst-green px-4 py-2.5 text-sm font-semibold text-white hover:bg-fst-greenDark disabled:opacity-40 disabled:cursor-not-allowed transition-colors">
-            {generating ? 'Genereren…' : 'Genereer offerte (PDF)'}
+            {generating ? 'PDF voorbereiden…' : 'Genereer offerte (PDF)'}
           </button>
           <label className="inline-flex items-center gap-2 rounded-md border border-gray-300 px-4 py-2.5 text-sm font-semibold text-gray-600 hover:bg-gray-50 cursor-pointer">
             Schets toevoegen
