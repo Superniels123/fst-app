@@ -1,0 +1,1915 @@
+[
+  {
+    "map": "C-200",
+    "codes": [
+      "C-200"
+    ],
+    "primaire_code": "C-200",
+    "type": "C",
+    "type_naam": "keramiek",
+    "naam": "Y2O3",
+    "status": "actief",
+    "oem_bronnen": [
+      "DSMTS-0122.1_Pure_Yttria_Powders.pdf"
+    ],
+    "fst_datasheet": "C-200 Y2O3.docx",
+    "bestanden": [
+      "C-200 Y2O3.docx",
+      "C-200 Y2O3.pdf",
+      "DSMTS-0122.1_Pure_Yttria_Powders.pdf"
+    ],
+    "pad": "01_Materialen/C-Keramiek/C-200",
+    "controle_nodig": false
+  },
+  {
+    "map": "C-234",
+    "codes": [
+      "C-234"
+    ],
+    "primaire_code": "C-234",
+    "type": "C",
+    "type_naam": "keramiek",
+    "naam": "ZrO2 24MgO",
+    "status": "actief",
+    "oem_bronnen": [
+      "DSMTS-0037.5_MgO_ZrO.pdf",
+      "IKH_12101.pdf"
+    ],
+    "fst_datasheet": "C-234 ZrO2 24MgO.docx",
+    "bestanden": [
+      "C-234 ZrO2 24MgO.docx",
+      "C-234 ZrO2 24MgO.pdf",
+      "DSMTS-0037.5_MgO_ZrO.pdf",
+      "IKH_12101.pdf"
+    ],
+    "pad": "01_Materialen/C-Keramiek/C-234",
+    "controle_nodig": false
+  },
+  {
+    "map": "C-241",
+    "codes": [
+      "C-241"
+    ],
+    "primaire_code": "C-241",
+    "type": "C",
+    "type_naam": "keramiek",
+    "naam": "ZrO2 5CaO",
+    "status": "actief",
+    "oem_bronnen": [
+      "DSM-0264.0_CaO_ZrO.pdf",
+      "IKH_11201.pdf"
+    ],
+    "fst_datasheet": "C-241 ZrO2 5CaO.docx",
+    "bestanden": [
+      "C-241 ZrO2 5CaO.docx",
+      "C-241 ZrO2 5CaO.pdf",
+      "DSM-0264.0_CaO_ZrO.pdf",
+      "IKH_11201.pdf"
+    ],
+    "pad": "01_Materialen/C-Keramiek/C-241",
+    "controle_nodig": false
+  },
+  {
+    "map": "C-292",
+    "codes": [
+      "C-292"
+    ],
+    "primaire_code": "C-292",
+    "type": "C",
+    "type_naam": "keramiek",
+    "naam": "ZrO2 8Y2O3 HOSP",
+    "status": "actief",
+    "oem_bronnen": [],
+    "fst_datasheet": "C-292 ZrO2 8Y2O3 HOSP.docx",
+    "bestanden": [
+      "C-292 ZrO2 8Y2O3 HOSP.docx",
+      "C-292 ZrO2 8Y2O3 HOSP.pdf"
+    ],
+    "pad": "01_Materialen/C-Keramiek/C-292",
+    "controle_nodig": false
+  },
+  {
+    "map": "C-295",
+    "codes": [
+      "C-295"
+    ],
+    "primaire_code": "C-295",
+    "type": "C",
+    "type_naam": "keramiek",
+    "naam": "ZrO2 8Y2O3 SD",
+    "status": "actief",
+    "oem_bronnen": [
+      "DSMTS-0035.6_20YO_ZrO.pdf",
+      "IKH_14004_V2_ZrO2-Y2O3-92-8-spray-dried.pdf"
+    ],
+    "fst_datasheet": "C-295 ZrO2 8Y2O3 SD.docx",
+    "bestanden": [
+      "C-295 ZrO2 8Y2O3 SD.docx",
+      "C-295 ZrO2 8Y2O3 SD.pdf",
+      "DSMTS-0035.6_20YO_ZrO.pdf",
+      "IKH_14004_V2_ZrO2-Y2O3-92-8-spray-dried.pdf"
+    ],
+    "pad": "01_Materialen/C-Keramiek/C-295",
+    "controle_nodig": false
+  },
+  {
+    "map": "C-297",
+    "codes": [
+      "C-297"
+    ],
+    "primaire_code": "C-297",
+    "type": "C",
+    "type_naam": "keramiek",
+    "naam": "ZrO2 8Y2O3 FC",
+    "status": "actief",
+    "oem_bronnen": [],
+    "fst_datasheet": "C-297 ZrO2 8Y2O3 FC.docx",
+    "bestanden": [
+      "C-297 ZrO2 8Y2O3 FC.docx",
+      "C-297 ZrO2 8Y2O3 FC.pdf"
+    ],
+    "pad": "01_Materialen/C-Keramiek/C-297",
+    "controle_nodig": false
+  },
+  {
+    "map": "C-328",
+    "codes": [
+      "C-328"
+    ],
+    "primaire_code": "C-328",
+    "type": "C",
+    "type_naam": "keramiek",
+    "naam": "Al2O3 3TiO2",
+    "status": "actief",
+    "oem_bronnen": [
+      "DSM-0236.0_Al2O3_3TiO2 (1).pdf",
+      "IKH_2001.pdf"
+    ],
+    "fst_datasheet": "C-328 Al2O3 3TiO2.docx",
+    "bestanden": [
+      "C-328 Al2O3 3TiO2.docx",
+      "C-328 Al2O3 3TiO2.pdf",
+      "DSM-0236.0_Al2O3_3TiO2 (1).pdf",
+      "IKH_2001.pdf"
+    ],
+    "pad": "01_Materialen/C-Keramiek/C-328",
+    "controle_nodig": false
+  },
+  {
+    "map": "C-338",
+    "codes": [
+      "C-338"
+    ],
+    "primaire_code": "C-338",
+    "type": "C",
+    "type_naam": "keramiek",
+    "naam": "Al2O3 13TiO2 FC",
+    "status": "actief",
+    "oem_bronnen": [
+      "DSMTS-0084.3_Al2O3_13TiO2 (1).pdf"
+    ],
+    "fst_datasheet": "C-338 Al2O3 13TiO2 FC.docx",
+    "bestanden": [
+      "C-338 Al2O3 13TiO2 FC.docx",
+      "C-338 Al2O3 13TiO2 FC.pdf",
+      "DSMTS-0084.3_Al2O3_13TiO2 (1).pdf"
+    ],
+    "pad": "01_Materialen/C-Keramiek/C-338",
+    "controle_nodig": false
+  },
+  {
+    "map": "C-339",
+    "codes": [
+      "C-339"
+    ],
+    "primaire_code": "C-339",
+    "type": "C",
+    "type_naam": "keramiek",
+    "naam": "Al2O3 13TiO2 Blend",
+    "status": "actief",
+    "oem_bronnen": [
+      "ALO TIO 87-13 IKH_2102.pdf"
+    ],
+    "fst_datasheet": "C-339 Al2O3 13TiO2 Blend.docx",
+    "bestanden": [
+      "ALO TIO 87-13 IKH_2102.pdf",
+      "C-339 Al2O3 13TiO2 Blend.docx",
+      "C-339 Al2O3 13TiO2 Blend.pdf"
+    ],
+    "pad": "01_Materialen/C-Keramiek/C-339",
+    "controle_nodig": false
+  },
+  {
+    "map": "C-342",
+    "codes": [
+      "C-342"
+    ],
+    "primaire_code": "C-342",
+    "type": "C",
+    "type_naam": "keramiek",
+    "naam": "Al2O3 40TiO2 FC",
+    "status": "actief",
+    "oem_bronnen": [
+      "DSMTS-0083.2_Al2O3_40TiO2 (1).pdf"
+    ],
+    "fst_datasheet": "C-342 Al2O3 40TiO2 FC.docx",
+    "bestanden": [
+      "C-342 Al2O3 40TiO2 FC.docx",
+      "C-342 Al2O3 40TiO2 FC.pdf",
+      "DSMTS-0083.2_Al2O3_40TiO2 (1).pdf"
+    ],
+    "pad": "01_Materialen/C-Keramiek/C-342",
+    "controle_nodig": false
+  },
+  {
+    "map": "C-351",
+    "codes": [
+      "C-351"
+    ],
+    "primaire_code": "C-351",
+    "type": "C",
+    "type_naam": "keramiek",
+    "naam": "Spinel Al203 MgO",
+    "status": "actief",
+    "oem_bronnen": [
+      "tsp-magnesium-aluminate-spinel-170-tds.pdf",
+      "tsp-spinel-170-171-172-sds.pdf"
+    ],
+    "fst_datasheet": "C-351 Spinel Al203 MgO.docx",
+    "bestanden": [
+      "C-351 Spinel Al203 MgO.docx",
+      "C-351 Spinel Al2O3 MgO.pdf",
+      "tsp-magnesium-aluminate-spinel-170-tds.pdf",
+      "tsp-spinel-170-171-172-sds.pdf"
+    ],
+    "pad": "01_Materialen/C-Keramiek/C-351",
+    "controle_nodig": false
+  },
+  {
+    "map": "C-408",
+    "codes": [
+      "C-408"
+    ],
+    "primaire_code": "C-408",
+    "type": "C",
+    "type_naam": "keramiek",
+    "naam": "TiO2",
+    "status": "actief",
+    "oem_bronnen": [
+      "DSM-0217.2_TiO2.pdf"
+    ],
+    "fst_datasheet": "C-408 TiO2.docx",
+    "bestanden": [
+      "C-408 TiO2.docx",
+      "C-408 TiO2.pdf",
+      "DSM-0217.2_TiO2.pdf"
+    ],
+    "pad": "01_Materialen/C-Keramiek/C-408",
+    "controle_nodig": false
+  },
+  {
+    "map": "C-410",
+    "codes": [
+      "C-410"
+    ],
+    "primaire_code": "C-410",
+    "type": "C",
+    "type_naam": "keramiek",
+    "naam": "TiO 45CrO",
+    "status": "actief",
+    "oem_bronnen": [
+      "DSMTS-0064.1_TiO2_45Cr2O3 (1).pdf"
+    ],
+    "fst_datasheet": "C-410 TiO 45CrO.docx",
+    "bestanden": [
+      "C-410 TiO 45CrO (AutoRecovered).docx",
+      "C-410 TiO 45CrO.docx",
+      "C-410 TiO 45CrO.pdf",
+      "DSMTS-0064.1_TiO2_45Cr2O3 (1).pdf"
+    ],
+    "pad": "01_Materialen/C-Keramiek/C-410",
+    "controle_nodig": false
+  },
+  {
+    "map": "C-506",
+    "codes": [
+      "C-506"
+    ],
+    "primaire_code": "C-506",
+    "type": "C",
+    "type_naam": "keramiek",
+    "naam": "Al2O3",
+    "status": "actief",
+    "oem_bronnen": [],
+    "fst_datasheet": "C-506 Al2O3.docx",
+    "bestanden": [
+      "C-506 Al2O3.docx",
+      "C-506 Al2O3.pdf"
+    ],
+    "pad": "01_Materialen/C-Keramiek/C-506",
+    "controle_nodig": false
+  },
+  {
+    "map": "C-507",
+    "codes": [
+      "C-507"
+    ],
+    "primaire_code": "C-507",
+    "type": "C",
+    "type_naam": "keramiek",
+    "naam": "Al2O3 HP",
+    "status": "actief",
+    "oem_bronnen": [
+      "tsp-alumina-oxide-highpurity-190-153pt-tds.pdf"
+    ],
+    "fst_datasheet": "C-507 Al2O3 HP.docx",
+    "bestanden": [
+      "C-507 AL2O3 HP.pdf",
+      "C-507 Al2O3 HP.docx",
+      "tsp-alumina-oxide-highpurity-190-153pt-tds.pdf"
+    ],
+    "pad": "01_Materialen/C-Keramiek/C-507",
+    "controle_nodig": false
+  },
+  {
+    "map": "C-604",
+    "codes": [
+      "C-604"
+    ],
+    "primaire_code": "C-604",
+    "type": "C",
+    "type_naam": "keramiek",
+    "naam": "Cr2O3 RS",
+    "status": "actief",
+    "oem_bronnen": [],
+    "fst_datasheet": "C-604 Cr2O3 RS.docx",
+    "bestanden": [
+      "C-604 Cr2O3 RS.docx",
+      "C-604 Cr2O3 RS.pdf",
+      "CRO 99,9 IKH_6003.pdf",
+      "Metco vs Amperit vs FST.docx"
+    ],
+    "pad": "01_Materialen/C-Keramiek/C-604",
+    "controle_nodig": false
+  },
+  {
+    "map": "C-607",
+    "codes": [
+      "C-607"
+    ],
+    "primaire_code": "C-607",
+    "type": "C",
+    "type_naam": "keramiek",
+    "naam": "Cr2O3 FC",
+    "status": "actief",
+    "oem_bronnen": [],
+    "fst_datasheet": "C-607 Cr2O3 FC.docx",
+    "bestanden": [
+      "C-607 Cr2O3 FC.docx",
+      "C-607 Cr2O3 FC.pdf"
+    ],
+    "pad": "01_Materialen/C-Keramiek/C-607",
+    "controle_nodig": false
+  },
+  {
+    "map": "C-650",
+    "codes": [
+      "C-650"
+    ],
+    "primaire_code": "C-650",
+    "type": "C",
+    "type_naam": "keramiek",
+    "naam": "CRO SIO TIO FC",
+    "status": "actief",
+    "oem_bronnen": [
+      "50-144_006.pdf",
+      "DSMTS-0098.3_CrO_SiO_TiO.pdf"
+    ],
+    "fst_datasheet": "C-650 CRO SIO TIO FC.docx",
+    "bestanden": [
+      "50-144_006.pdf",
+      "C-650 CRO SIO TIO FC.docx",
+      "C-650 CRO SIO TIO FC.pdf",
+      "DSMTS-0098.3_CrO_SiO_TiO.pdf"
+    ],
+    "pad": "01_Materialen/C-Keramiek/C-650",
+    "controle_nodig": false
+  },
+  {
+    "map": "C-667_670_677",
+    "codes": [
+      "C-667"
+    ],
+    "primaire_code": "C-667",
+    "type": "C",
+    "type_naam": "keramiek",
+    "naam": "Cr2O3 XTiO2",
+    "status": "actief",
+    "oem_bronnen": [
+      "50-842_006.pdf"
+    ],
+    "fst_datasheet": "C-667, C-670. C-677 Cr2O3 XTiO2.docx",
+    "bestanden": [
+      "50-842_006.pdf",
+      "C-667, C-670. C-677 Cr2O3 XTiO2.docx",
+      "C-667, C-670. C-677 Cr2O3 XTiO2.pdf"
+    ],
+    "pad": "01_Materialen/C-Keramiek/C-667_670_677",
+    "controle_nodig": false
+  },
+  {
+    "map": "K-607",
+    "codes": [
+      "K-607"
+    ],
+    "primaire_code": "K-607",
+    "type": "K",
+    "type_naam": "carbide",
+    "naam": "WC-CrC-Ni 73.20.7",
+    "status": "actief",
+    "oem_bronnen": [
+      "TR 03-04-01 ECB03-3 V'S ECB03-1.pdf"
+    ],
+    "fst_datasheet": "K-607 WC-CrC-Ni 73.20.7.docx",
+    "bestanden": [
+      "K-607 WC-CrC-Ni 73.20.7.docx",
+      "K-607 WC-CrC-Ni 73.20.7.pdf",
+      "TR 03-04-01 ECB03-3 V'S ECB03-1.docx",
+      "TR 03-04-01 ECB03-3 V'S ECB03-1.pdf"
+    ],
+    "pad": "01_Materialen/K-Carbides/K-607",
+    "controle_nodig": false
+  },
+  {
+    "map": "K-611",
+    "codes": [
+      "K-611"
+    ],
+    "primaire_code": "K-611",
+    "type": "K",
+    "type_naam": "carbide",
+    "naam": "WC-Ni 88.12",
+    "status": "actief",
+    "oem_bronnen": [],
+    "fst_datasheet": "K-611 WC-Ni 88.12.docx",
+    "bestanden": [
+      "K-611 WC-Ni 88.12.docx",
+      "K-611 WC-Ni 88.12.pdf"
+    ],
+    "pad": "01_Materialen/K-Carbides/K-611",
+    "controle_nodig": false
+  },
+  {
+    "map": "K-612",
+    "codes": [
+      "K-612"
+    ],
+    "primaire_code": "K-612",
+    "type": "K",
+    "type_naam": "carbide",
+    "naam": "WC-Ni 83.17",
+    "status": "actief",
+    "oem_bronnen": [],
+    "fst_datasheet": "K-612 WC-Ni 83.17.docx",
+    "bestanden": [
+      "K-612 WC-Ni 83.17.docx",
+      "K-612 WC-Ni 83.17.pdf"
+    ],
+    "pad": "01_Materialen/K-Carbides/K-612",
+    "controle_nodig": false
+  },
+  {
+    "map": "K-617",
+    "codes": [
+      "K-617"
+    ],
+    "primaire_code": "K-617",
+    "type": "K",
+    "type_naam": "carbide",
+    "naam": "WC-NiCr 85.10.5",
+    "status": "actief",
+    "oem_bronnen": [
+      "GP10N5C-STD-Specification.pdf"
+    ],
+    "fst_datasheet": "K-617 WC-NiCr 85.10.5.docx",
+    "bestanden": [
+      "GP10N5C-STD-Specification.pdf",
+      "K-617 WC-NiCr 85.10.5.docx",
+      "K-617 WC-NiCr 85.10.5.pdf"
+    ],
+    "pad": "01_Materialen/K-Carbides/K-617",
+    "controle_nodig": false
+  },
+  {
+    "map": "K-623",
+    "codes": [
+      "K-623"
+    ],
+    "primaire_code": "K-623",
+    "type": "K",
+    "type_naam": "carbide",
+    "naam": "WC-Co 88.12 FINE",
+    "status": "actief",
+    "oem_bronnen": [],
+    "fst_datasheet": "K-623 WC-Co 88.12 FINE.docx",
+    "bestanden": [
+      "K-623 WC-Co 88.12 FINE.docx",
+      "K-623 WC-Co 88.12 FINE.pdf"
+    ],
+    "pad": "01_Materialen/K-Carbides/K-623",
+    "controle_nodig": false
+  },
+  {
+    "map": "K-624",
+    "codes": [
+      "K-624"
+    ],
+    "primaire_code": "K-624",
+    "type": "K",
+    "type_naam": "carbide",
+    "naam": "WC-Co 88.12",
+    "status": "actief",
+    "oem_bronnen": [],
+    "fst_datasheet": "K-624 WC-Co 88.12.docx",
+    "bestanden": [
+      "K-624 WC-Co 88.12.docx",
+      "K-624 WC-Co 88.12.pdf"
+    ],
+    "pad": "01_Materialen/K-Carbides/K-624",
+    "controle_nodig": false
+  },
+  {
+    "map": "K-646",
+    "codes": [
+      "K-646"
+    ],
+    "primaire_code": "K-646",
+    "type": "K",
+    "type_naam": "carbide",
+    "naam": "WC-Co-Cr 86.10.4 SC",
+    "status": "actief",
+    "oem_bronnen": [
+      "GP10CA-001-Specification.pdf",
+      "pd-4046.pdf"
+    ],
+    "fst_datasheet": "K-646 WC-Co-Cr 86.10.4 SC.docx",
+    "bestanden": [
+      "GP10CA-001-Specification.pdf",
+      "K-646 WC-Co-Cr 86.10.4 SC.docx",
+      "K-646 WC-Co-Cr 86.10.4 SC.pdf",
+      "pd-4046.pdf"
+    ],
+    "pad": "01_Materialen/K-Carbides/K-646",
+    "controle_nodig": false
+  },
+  {
+    "map": "K-647",
+    "codes": [
+      "K-647"
+    ],
+    "primaire_code": "K-647",
+    "type": "K",
+    "type_naam": "carbide",
+    "naam": "WC-Co-Cr 86.10.4 M",
+    "status": "actief",
+    "oem_bronnen": [],
+    "fst_datasheet": "K-647 WC-Co-Cr 86.10.4 M.docx",
+    "bestanden": [
+      "K-647 WC-Co-Cr 86.10.4 M.docx",
+      "K-647 WC-Co-Cr 86.10.4 M.pdf"
+    ],
+    "pad": "01_Materialen/K-Carbides/K-647",
+    "controle_nodig": false
+  },
+  {
+    "map": "K-648",
+    "codes": [
+      "K-648"
+    ],
+    "primaire_code": "K-648",
+    "type": "K",
+    "type_naam": "carbide",
+    "naam": "WC-Co-Cr 86.10.4 F",
+    "status": "actief",
+    "oem_bronnen": [],
+    "fst_datasheet": "K-648 WC-Co-Cr 86.10.4 F.docx",
+    "bestanden": [
+      "K-648 WC-Co-Cr 86.10.4 F.docx",
+      "K-648 WC-Co-Cr 86.10.4 F.pdf"
+    ],
+    "pad": "01_Materialen/K-Carbides/K-648",
+    "controle_nodig": false
+  },
+  {
+    "map": "K-649",
+    "codes": [
+      "K-649"
+    ],
+    "primaire_code": "K-649",
+    "type": "K",
+    "type_naam": "carbide",
+    "naam": "WC-Co-Cr 86.10.4 SM",
+    "status": "actief",
+    "oem_bronnen": [],
+    "fst_datasheet": "K-649 WC-Co-Cr 86.10.4 SM.docx",
+    "bestanden": [
+      "K-649 WC-Co-Cr 86.10.4 SM.docx",
+      "K-649 WC-Co-Cr 86.10.4 SM.pdf"
+    ],
+    "pad": "01_Materialen/K-Carbides/K-649",
+    "controle_nodig": false
+  },
+  {
+    "map": "K-665",
+    "codes": [
+      "K-665"
+    ],
+    "primaire_code": "K-665",
+    "type": "K",
+    "type_naam": "carbide",
+    "naam": "WC-CoCrNi 85.9.5.1",
+    "status": "actief",
+    "oem_bronnen": [],
+    "fst_datasheet": "K-665 WC-CoCrNi 85.9.5.1.docx",
+    "bestanden": [
+      "K-665 WC-CoCrNi 85.9.5.1.docx",
+      "K-665 WC-CoCrNi 85.9.5.1.pdf"
+    ],
+    "pad": "01_Materialen/K-Carbides/K-665",
+    "controle_nodig": false
+  },
+  {
+    "map": "K-674",
+    "codes": [
+      "K-674"
+    ],
+    "primaire_code": "K-674",
+    "type": "K",
+    "type_naam": "carbide",
+    "naam": "WC-Co 83.17",
+    "status": "actief",
+    "oem_bronnen": [],
+    "fst_datasheet": "K-674 WC-Co 83.17.docx",
+    "bestanden": [
+      "K-674 WC-Co 83.17.docx",
+      "K-674 WC-Co 83.17.pdf"
+    ],
+    "pad": "01_Materialen/K-Carbides/K-674",
+    "controle_nodig": false
+  },
+  {
+    "map": "K-681, K-683 STOP",
+    "codes": [
+      "K-681",
+      "K-683"
+    ],
+    "primaire_code": "K-681",
+    "type": "K",
+    "type_naam": "carbide",
+    "naam": "WC WB",
+    "status": "stop",
+    "oem_bronnen": [],
+    "fst_datasheet": "K-68X WC WB.docx",
+    "bestanden": [
+      "K-68X WC WB.docx"
+    ],
+    "pad": "01_Materialen/K-Carbides/K-681, K-683 STOP",
+    "controle_nodig": false
+  },
+  {
+    "map": "K-804",
+    "codes": [
+      "K-804"
+    ],
+    "primaire_code": "K-804",
+    "type": "K",
+    "type_naam": "carbide",
+    "naam": "CrC-NiCr 80.20",
+    "status": "actief",
+    "oem_bronnen": [
+      "DSMTS-0027.5_Woka7100_CrC-20NiCr (2).pdf",
+      "GP20NC-TDS.pdf"
+    ],
+    "fst_datasheet": "K-804 CrC-NiCr 80.20.docx",
+    "bestanden": [
+      "DSMTS-0027.5_Woka7100_CrC-20NiCr (2).pdf",
+      "GP20NC HS191074-1_0.tif",
+      "GP20NC HS191074-1_6.tif",
+      "GP20NC-TDS.pdf",
+      "GPNi80Cr20-6 SEM.rar",
+      "K-804 CrC-NiCr 80.20.docx",
+      "K-804 CrC-NiCr 80.20.pdf"
+    ],
+    "pad": "01_Materialen/K-Carbides/K-804",
+    "controle_nodig": false
+  },
+  {
+    "map": "K-810",
+    "codes": [
+      "K-810"
+    ],
+    "primaire_code": "K-810",
+    "type": "K",
+    "type_naam": "carbide",
+    "naam": "WC CrC NiCrCo 45-37-18",
+    "status": "actief",
+    "oem_bronnen": [
+      "AMPERIT® 543_Technical Bulletin.pdf",
+      "DSMTS-0056.3_Woka7500_C2C3_37WC_18Alloy (1).pdf"
+    ],
+    "fst_datasheet": "K-810 WC CrC NiCrCo 45-37-18.docx",
+    "bestanden": [
+      "A543.pptx",
+      "AMPERIT® 543_Technical Bulletin.pdf",
+      "DSMTS-0056.3_Woka7500_C2C3_37WC_18Alloy (1).pdf",
+      "K-810 CrC WC NiCrCo 45-37-18.pdf",
+      "K-810 WC CrC NiCrCo 45-37-18.docx"
+    ],
+    "pad": "01_Materialen/K-Carbides/K-810",
+    "controle_nodig": false
+  },
+  {
+    "map": "K-825",
+    "codes": [
+      "K-825"
+    ],
+    "primaire_code": "K-825",
+    "type": "K",
+    "type_naam": "carbide",
+    "naam": "",
+    "status": "actief",
+    "oem_bronnen": [
+      "GP40MoNC-STD-Specification(V1.1).pdf"
+    ],
+    "fst_datasheet": "K-825 Specification.doc",
+    "bestanden": [
+      "GP40MoNC-STD-Specification(V1.1).doc",
+      "GP40MoNC-STD-Specification(V1.1).pdf",
+      "K-825 Specification.doc",
+      "K-825 Specification.pdf"
+    ],
+    "pad": "01_Materialen/K-Carbides/K-825",
+    "controle_nodig": true
+  },
+  {
+    "map": "K-828",
+    "codes": [
+      "K-828"
+    ],
+    "primaire_code": "K-828",
+    "type": "K",
+    "type_naam": "carbide",
+    "naam": "",
+    "status": "actief",
+    "oem_bronnen": [
+      "GP40MoNC-STD-Specification(V1.1).pdf"
+    ],
+    "fst_datasheet": "K-828.23.doc",
+    "bestanden": [
+      "GP40MoNC-STD-Specification(V1.1).doc",
+      "GP40MoNC-STD-Specification(V1.1).pdf",
+      "K-828.23.doc",
+      "K-828.23.pdf"
+    ],
+    "pad": "01_Materialen/K-Carbides/K-828",
+    "controle_nodig": true
+  },
+  {
+    "map": "K-854",
+    "codes": [
+      "K-854"
+    ],
+    "primaire_code": "K-854",
+    "type": "K",
+    "type_naam": "carbide",
+    "naam": "CrC-NiCr 75.25",
+    "status": "actief",
+    "oem_bronnen": [],
+    "fst_datasheet": "K-854 CrC-NiCr 75.25.docx",
+    "bestanden": [
+      "K-854 CrC-NiCr 75.25.docx",
+      "K-854 CrC-NiCr 75.25.pdf"
+    ],
+    "pad": "01_Materialen/K-Carbides/K-854",
+    "controle_nodig": false
+  },
+  {
+    "map": "K-880",
+    "codes": [
+      "K-880"
+    ],
+    "primaire_code": "K-880",
+    "type": "K",
+    "type_naam": "carbide",
+    "naam": "CrC-CoNiCrAlY",
+    "status": "actief",
+    "oem_bronnen": [],
+    "fst_datasheet": "K-880 CrC-CoNiCrAlY.docx",
+    "bestanden": [
+      "K-880 CrC-CoNiCrAlY.docx",
+      "K-880 CrC-CoNiCrAlY.pdf"
+    ],
+    "pad": "01_Materialen/K-Carbides/K-880",
+    "controle_nodig": false
+  },
+  {
+    "map": "M-111",
+    "codes": [
+      "M-111"
+    ],
+    "primaire_code": "M-111",
+    "type": "M",
+    "type_naam": "metaal",
+    "naam": "",
+    "status": "actief",
+    "oem_bronnen": [
+      "A112Si 40 Polyester  (M-111)  lotnr 20011501.pdf",
+      "DSM-0225.0_AlSi-Poly_Abradables.pdf"
+    ],
+    "fst_datasheet": "M-111.docx",
+    "bestanden": [
+      "905-3.ppt",
+      "905-3.xls",
+      "A112Si 40 Polyester  (M-111)  lotnr 20011501.pdf",
+      "DSM-0225.0_AlSi-Poly_Abradables.pdf",
+      "M-111.docx",
+      "M-111.pdf",
+      "MSDS  A112Si 40 Polyester  (M-111)  lotnr 20011501.pdf"
+    ],
+    "pad": "01_Materialen/M-Metalen/M-111",
+    "controle_nodig": true
+  },
+  {
+    "map": "M-113 & 114",
+    "codes": [
+      "M-113"
+    ],
+    "primaire_code": "M-113",
+    "type": "M",
+    "type_naam": "metaal",
+    "naam": "114 ZRO-Poly",
+    "status": "actief",
+    "oem_bronnen": [],
+    "fst_datasheet": "M-113_114 ZRO-Poly.docx",
+    "bestanden": [
+      "M-113_114 ZRO-Poly.docx",
+      "M-113_114 ZRO-Poly.pdf"
+    ],
+    "pad": "01_Materialen/M-Metalen/M-113 & 114",
+    "controle_nodig": false
+  },
+  {
+    "map": "M-22X",
+    "codes": [
+      "M-22X"
+    ],
+    "primaire_code": "M-22X",
+    "type": "M",
+    "type_naam": "metaal",
+    "naam": "Ti-Based",
+    "status": "actief",
+    "oem_bronnen": [
+      "DSM-0222.0_Ti-Ti_Alloys.pdf",
+      "F1580 - 12.pdf",
+      "HDH CP Titanium and Titanium 6Al-4V powder.pdf",
+      "PREP spherical powder.pdf"
+    ],
+    "fst_datasheet": "M-22X Ti-Based.docx",
+    "bestanden": [
+      "DSM-0222.0_Ti-Ti_Alloys.pdf",
+      "F1580 - 12.pdf",
+      "HDH CP Titanium and Titanium 6Al-4V powder.pdf",
+      "M-22X Ti-Based.docx",
+      "M-22X Ti-Based.pdf",
+      "PREP spherical powder.pdf"
+    ],
+    "pad": "01_Materialen/M-Metalen/M-22X",
+    "controle_nodig": false
+  },
+  {
+    "map": "M-300",
+    "codes": [
+      "M-300"
+    ],
+    "primaire_code": "M-300",
+    "type": "M",
+    "type_naam": "metaal",
+    "naam": "Pure Ni",
+    "status": "actief",
+    "oem_bronnen": [
+      "DSMTS-0062.4_99Ni_Powder.pdf"
+    ],
+    "fst_datasheet": "M-300 Pure Ni.docx",
+    "bestanden": [
+      "DSMTS-0062.4_99Ni_Powder.pdf",
+      "M-300 Pure Ni.docx",
+      "M-300 Pure Ni.pdf"
+    ],
+    "pad": "01_Materialen/M-Metalen/M-300",
+    "controle_nodig": false
+  },
+  {
+    "map": "M-301",
+    "codes": [
+      "M-301"
+    ],
+    "primaire_code": "M-301",
+    "type": "M",
+    "type_naam": "metaal",
+    "naam": "NiCr 80-20",
+    "status": "actief",
+    "oem_bronnen": [],
+    "fst_datasheet": "M-301 NiCr 80-20.docx",
+    "bestanden": [
+      "M-301 NiCr 80-20.docx",
+      "M-301 NiCr 80-20.pdf"
+    ],
+    "pad": "01_Materialen/M-Metalen/M-301",
+    "controle_nodig": false
+  },
+  {
+    "map": "M-302 Stop",
+    "codes": [
+      "M-302"
+    ],
+    "primaire_code": "M-302",
+    "type": "M",
+    "type_naam": "metaal",
+    "naam": "",
+    "status": "stop",
+    "oem_bronnen": [],
+    "fst_datasheet": "M-302 STOP.docx",
+    "bestanden": [
+      "M-302 STOP.docx"
+    ],
+    "pad": "01_Materialen/M-Metalen/M-302 Stop",
+    "controle_nodig": true
+  },
+  {
+    "map": "M-307 Stop",
+    "codes": [
+      "M-307"
+    ],
+    "primaire_code": "M-307",
+    "type": "M",
+    "type_naam": "metaal",
+    "naam": "NiCrAl Comp",
+    "status": "stop",
+    "oem_bronnen": [
+      "DSMTS-0091.5_NiCrAl.pdf"
+    ],
+    "fst_datasheet": "M-307 NiCrAl Comp STOP.docx",
+    "bestanden": [
+      "DSMTS-0091.5_NiCrAl.pdf",
+      "M-307 NiCrAl Comp STOP.docx"
+    ],
+    "pad": "01_Materialen/M-Metalen/M-307 Stop",
+    "controle_nodig": false
+  },
+  {
+    "map": "M-321 Stop",
+    "codes": [
+      "M-321"
+    ],
+    "primaire_code": "M-321",
+    "type": "M",
+    "type_naam": "metaal",
+    "naam": "",
+    "status": "stop",
+    "oem_bronnen": [],
+    "fst_datasheet": "M-321 STOP.docx",
+    "bestanden": [
+      "M-321 STOP.docx"
+    ],
+    "pad": "01_Materialen/M-Metalen/M-321 Stop",
+    "controle_nodig": true
+  },
+  {
+    "map": "M-325",
+    "codes": [
+      "M-325"
+    ],
+    "primaire_code": "M-325",
+    "type": "M",
+    "type_naam": "metaal",
+    "naam": "Alloy 625",
+    "status": "actief",
+    "oem_bronnen": [
+      "DSMTS-0085.7_NiCrSuperalloys_Inconel.pdf",
+      "PD-5248.pdf"
+    ],
+    "fst_datasheet": "M-325 Alloy 625.docx",
+    "bestanden": [
+      "DSMTS-0085.7_NiCrSuperalloys_Inconel.pdf",
+      "M-325 Alloy 625.docx",
+      "M-325 Alloy 625.pdf",
+      "PD-5248.pdf"
+    ],
+    "pad": "01_Materialen/M-Metalen/M-325",
+    "controle_nodig": false
+  },
+  {
+    "map": "M-328",
+    "codes": [
+      "M-328"
+    ],
+    "primaire_code": "M-328",
+    "type": "M",
+    "type_naam": "metaal",
+    "naam": "Alloy 718",
+    "status": "actief",
+    "oem_bronnen": [],
+    "fst_datasheet": "M-328 Alloy 718.docx",
+    "bestanden": [
+      "M-328 Alloy 718.docx",
+      "M-328 Alloy 718.pdf"
+    ],
+    "pad": "01_Materialen/M-Metalen/M-328",
+    "controle_nodig": false
+  },
+  {
+    "map": "M-341, M-342",
+    "codes": [
+      "M-341",
+      "M-342"
+    ],
+    "primaire_code": "M-341",
+    "type": "M",
+    "type_naam": "metaal",
+    "naam": "Alloy C276, C22, X",
+    "status": "actief",
+    "oem_bronnen": [
+      "DSMTS-0086.4_NiCrWMoSuperalloys (1).pdf"
+    ],
+    "fst_datasheet": "M-341, M-342, M-344 Alloy C276, C22, X.docx",
+    "bestanden": [
+      "DSMTS-0086.4_NiCrWMoSuperalloys (1).pdf",
+      "M-341, M-342, M-344 Alloy C276, C22, X.docx",
+      "M-341, M-342, M-344 Alloy C276, C22, X.pdf"
+    ],
+    "pad": "01_Materialen/M-Metalen/M-341, M-342",
+    "controle_nodig": false
+  },
+  {
+    "map": "M-352 Stop",
+    "codes": [
+      "M-352"
+    ],
+    "primaire_code": "M-352",
+    "type": "M",
+    "type_naam": "metaal",
+    "naam": "",
+    "status": "stop",
+    "oem_bronnen": [
+      "DSMTS-0029.5_80Ni-20AlClad.pdf"
+    ],
+    "fst_datasheet": "M-352 STOP.docx",
+    "bestanden": [
+      "DSMTS-0029.5_80Ni-20AlClad.pdf",
+      "M-352 STOP.docx"
+    ],
+    "pad": "01_Materialen/M-Metalen/M-352 Stop",
+    "controle_nodig": true
+  },
+  {
+    "map": "M-358",
+    "codes": [
+      "M-358"
+    ],
+    "primaire_code": "M-358",
+    "type": "M",
+    "type_naam": "metaal",
+    "naam": "NiAl 95-5",
+    "status": "actief",
+    "oem_bronnen": [],
+    "fst_datasheet": "M-358 NiAl 95-5.docx",
+    "bestanden": [
+      "M-358 NiAl 95-5.docx",
+      "M-358 NiAl 95-5.pdf"
+    ],
+    "pad": "01_Materialen/M-Metalen/M-358",
+    "controle_nodig": false
+  },
+  {
+    "map": "M-359 Stop",
+    "codes": [
+      "M-359"
+    ],
+    "primaire_code": "M-359",
+    "type": "M",
+    "type_naam": "metaal",
+    "naam": "",
+    "status": "stop",
+    "oem_bronnen": [
+      "DSM-0271.0_Ni-Al.pdf"
+    ],
+    "fst_datasheet": "M-359 STOP.docx",
+    "bestanden": [
+      "DSM-0271.0_Ni-Al.pdf",
+      "M-359 STOP.docx"
+    ],
+    "pad": "01_Materialen/M-Metalen/M-359 Stop",
+    "controle_nodig": true
+  },
+  {
+    "map": "M-373 Stop",
+    "codes": [
+      "M-373"
+    ],
+    "primaire_code": "M-373",
+    "type": "M",
+    "type_naam": "metaal",
+    "naam": "",
+    "status": "stop",
+    "oem_bronnen": [],
+    "fst_datasheet": "M-373 STOP.docx",
+    "bestanden": [
+      "M-373 STOP.docx"
+    ],
+    "pad": "01_Materialen/M-Metalen/M-373 Stop",
+    "controle_nodig": true
+  },
+  {
+    "map": "M-390",
+    "codes": [
+      "M-390"
+    ],
+    "primaire_code": "M-390",
+    "type": "M",
+    "type_naam": "metaal",
+    "naam": "Ni-Graphite 75-25",
+    "status": "actief",
+    "oem_bronnen": [
+      "50-156_006.pdf",
+      "DSM-0227.0_NiGraphite.pdf"
+    ],
+    "fst_datasheet": "M-390 Ni-Graphite 75-25.docx",
+    "bestanden": [
+      "50-156_006.pdf",
+      "Certificate-KF-21R.pdf",
+      "DSM-0227.0_NiGraphite.pdf",
+      "M-390 Ni-Graphite 72-25.pdf",
+      "M-390 Ni-Graphite 75-25.docx",
+      "M-390 Ni-Graphite 75-25.pdf",
+      "MSDS M-390 ENG.docx",
+      "微信图片_20200604142606.jpg"
+    ],
+    "pad": "01_Materialen/M-Metalen/M-390",
+    "controle_nodig": false
+  },
+  {
+    "map": "M-481, M-484, M-489",
+    "codes": [
+      "M-481",
+      "M-484",
+      "M-489"
+    ],
+    "primaire_code": "M-481",
+    "type": "M",
+    "type_naam": "metaal",
+    "naam": "Alloy 1, 6, 12",
+    "status": "actief",
+    "oem_bronnen": [
+      "DSM-0218.3_CoSuperalloy_StelliteType (2).pdf"
+    ],
+    "fst_datasheet": "M-48X Alloy 1, 6, 12.docx",
+    "bestanden": [
+      "DSM-0218.3_CoSuperalloy_StelliteType (2).pdf",
+      "M-48X Alloy 1, 6, 12.docx",
+      "M-48X Alloy 1, 6, 12.pdf"
+    ],
+    "pad": "01_Materialen/M-Metalen/M-481, M-484, M-489",
+    "controle_nodig": false
+  },
+  {
+    "map": "M-494",
+    "codes": [
+      "M-494"
+    ],
+    "primaire_code": "M-494",
+    "type": "M",
+    "type_naam": "metaal",
+    "naam": "T400",
+    "status": "actief",
+    "oem_bronnen": [],
+    "fst_datasheet": "M-494 T400.docx",
+    "bestanden": [
+      "M-494 T400.docx",
+      "M-494 T400.pdf"
+    ],
+    "pad": "01_Materialen/M-Metalen/M-494",
+    "controle_nodig": false
+  },
+  {
+    "map": "M-499",
+    "codes": [
+      "M-499"
+    ],
+    "primaire_code": "M-499",
+    "type": "M",
+    "type_naam": "metaal",
+    "naam": "T800",
+    "status": "actief",
+    "oem_bronnen": [],
+    "fst_datasheet": "M-499 T800.docx",
+    "bestanden": [
+      "M-499 T800.docx",
+      "M-499 T800.pdf"
+    ],
+    "pad": "01_Materialen/M-Metalen/M-499",
+    "controle_nodig": false
+  },
+  {
+    "map": "M-615",
+    "codes": [
+      "M-615"
+    ],
+    "primaire_code": "M-615",
+    "type": "M",
+    "type_naam": "metaal",
+    "naam": "FeCrMn",
+    "status": "actief",
+    "oem_bronnen": [],
+    "fst_datasheet": "M-615 FeCrMn.docx",
+    "bestanden": [
+      "M-615 FeCrMn.docx",
+      "M-615 FeCrMn.pdf"
+    ],
+    "pad": "01_Materialen/M-Metalen/M-615",
+    "controle_nodig": false
+  },
+  {
+    "map": "M-642, M-687",
+    "codes": [
+      "M-642",
+      "M-687"
+    ],
+    "primaire_code": "M-642",
+    "type": "M",
+    "type_naam": "metaal",
+    "naam": "SS420, SS431",
+    "status": "actief",
+    "oem_bronnen": [
+      "DSMTS-0080.7_Martensitic_SS_Powder.pdf"
+    ],
+    "fst_datasheet": "M-642, M-687 SS420, SS431.docx",
+    "bestanden": [
+      "DSMTS-0080.7_Martensitic_SS_Powder.pdf",
+      "M-642, M-687 SS420, SS431.docx",
+      "M-642, M-687 SS420, SS431.pdf"
+    ],
+    "pad": "01_Materialen/M-Metalen/M-642, M-687",
+    "controle_nodig": false
+  },
+  {
+    "map": "M-684",
+    "codes": [
+      "M-684"
+    ],
+    "primaire_code": "M-684",
+    "type": "M",
+    "type_naam": "metaal",
+    "naam": "SS316L",
+    "status": "actief",
+    "oem_bronnen": [
+      "DSMTS-0078.5_AusteniticPowders.pdf"
+    ],
+    "fst_datasheet": "M-684 SS316L.docx",
+    "bestanden": [
+      "DSMTS-0078.5_AusteniticPowders.pdf",
+      "M-684 SS316L.docx",
+      "M-684 SS316L.pdf"
+    ],
+    "pad": "01_Materialen/M-Metalen/M-684",
+    "controle_nodig": false
+  },
+  {
+    "map": "M-688",
+    "codes": [
+      "M-688"
+    ],
+    "primaire_code": "M-688",
+    "type": "M",
+    "type_naam": "metaal",
+    "naam": "Ultrahard Fe-Base",
+    "status": "actief",
+    "oem_bronnen": [
+      "DSMTS-0081.3_Fe_Specialty (1).pdf"
+    ],
+    "fst_datasheet": "M-688 Ultrahard Fe-Base.docx",
+    "bestanden": [
+      "DSMTS-0081.3_Fe_Specialty (1).pdf",
+      "M-688 Ultrahard Fe-Base.docx",
+      "M-688 Ultrahard Fe-Base.pdf"
+    ],
+    "pad": "01_Materialen/M-Metalen/M-688",
+    "controle_nodig": false
+  },
+  {
+    "map": "M-733, M-735, M-737",
+    "codes": [
+      "M-733",
+      "M-735",
+      "M-737"
+    ],
+    "primaire_code": "M-733",
+    "type": "M",
+    "type_naam": "metaal",
+    "naam": "Ni-SF, WC",
+    "status": "actief",
+    "oem_bronnen": [
+      "DSM-0265.0_Self-Fluxing_with_Hardphase.pdf",
+      "GPNi50WC35-STD-(45-106μm)-Specification.pdf",
+      "GPNi60WC35-STD-(45-106μm)-Specification.pdf",
+      "GPNi60WCCo35-STD-(45-125μm)-Specification.pdf"
+    ],
+    "fst_datasheet": "M-733, M-735, M-737 Ni-SF, WC.docx",
+    "bestanden": [
+      "DSM-0265.0_Self-Fluxing_with_Hardphase.pdf",
+      "GPNi50WC35-STD-(45-106μm)-Specification.pdf",
+      "GPNi60WC35-STD-(45-106μm)-Specification.pdf",
+      "GPNi60WCCo35-STD-(45-125μm)-Specification.pdf",
+      "M-733, M-735, M-737 Ni-SF, WC.docx",
+      "M-733, M-735, M-737 Ni-SF, WC.pdf"
+    ],
+    "pad": "01_Materialen/M-Metalen/M-733, M-735, M-737",
+    "controle_nodig": false
+  },
+  {
+    "map": "M-771 Stop",
+    "codes": [
+      "M-771"
+    ],
+    "primaire_code": "M-771",
+    "type": "M",
+    "type_naam": "metaal",
+    "naam": "",
+    "status": "stop",
+    "oem_bronnen": [],
+    "fst_datasheet": "M-771.docx",
+    "bestanden": [
+      "M-771.docx",
+      "M-771.pdf"
+    ],
+    "pad": "01_Materialen/M-Metalen/M-771 Stop",
+    "controle_nodig": true
+  },
+  {
+    "map": "M-772 Stop",
+    "codes": [
+      "M-772"
+    ],
+    "primaire_code": "M-772",
+    "type": "M",
+    "type_naam": "metaal",
+    "naam": "",
+    "status": "stop",
+    "oem_bronnen": [],
+    "fst_datasheet": "M-772.docx",
+    "bestanden": [
+      "M-772.docx",
+      "M-772.pdf"
+    ],
+    "pad": "01_Materialen/M-Metalen/M-772 Stop",
+    "controle_nodig": true
+  },
+  {
+    "map": "M-776 Stop",
+    "codes": [
+      "M-776"
+    ],
+    "primaire_code": "M-776",
+    "type": "M",
+    "type_naam": "metaal",
+    "naam": "",
+    "status": "stop",
+    "oem_bronnen": [],
+    "fst_datasheet": "M-776.docx",
+    "bestanden": [
+      "M-776.docx",
+      "M-776.pdf"
+    ],
+    "pad": "01_Materialen/M-Metalen/M-776 Stop",
+    "controle_nodig": true
+  },
+  {
+    "map": "M-800",
+    "codes": [
+      "M-800"
+    ],
+    "primaire_code": "M-800",
+    "type": "M",
+    "type_naam": "metaal",
+    "naam": "Pure Mo",
+    "status": "actief",
+    "oem_bronnen": [
+      "DSM-00254.0_Pure_Mo_Powders.pdf"
+    ],
+    "fst_datasheet": "M-800 Pure Mo.docx",
+    "bestanden": [
+      "DSM-00254.0_Pure_Mo_Powders.pdf",
+      "M-800 Pure Mo.docx",
+      "M-800 Pure Mo.pdf"
+    ],
+    "pad": "01_Materialen/M-Metalen/M-800",
+    "controle_nodig": false
+  },
+  {
+    "map": "M-801",
+    "codes": [
+      "M-801"
+    ],
+    "primaire_code": "M-801",
+    "type": "M",
+    "type_naam": "metaal",
+    "naam": "Pure Mo AS",
+    "status": "actief",
+    "oem_bronnen": [],
+    "fst_datasheet": "M-801 Pure Mo AS.docx",
+    "bestanden": [
+      "M-801 Pure Mo AS.docx",
+      "M-801 Pure Mo AS.pdf"
+    ],
+    "pad": "01_Materialen/M-Metalen/M-801",
+    "controle_nodig": false
+  },
+  {
+    "map": "M-855",
+    "codes": [
+      "M-855"
+    ],
+    "primaire_code": "M-855",
+    "type": "M",
+    "type_naam": "metaal",
+    "naam": "Mo-25NiCrSiB",
+    "status": "actief",
+    "oem_bronnen": [
+      "DSMTS-0107.0_Mo-NiCrFeBSiC_Blend (1).pdf"
+    ],
+    "fst_datasheet": "M-855 Mo-25NiCrSiB.docx",
+    "bestanden": [
+      "DSMTS-0107.0_Mo-NiCrFeBSiC_Blend (1).pdf",
+      "M-855 Mo-25NiCrSiB.docx",
+      "M-855 Mo-25NiCrSiB.pdf"
+    ],
+    "pad": "01_Materialen/M-Metalen/M-855",
+    "controle_nodig": false
+  },
+  {
+    "map": "M-880",
+    "codes": [
+      "M-880"
+    ],
+    "primaire_code": "M-880",
+    "type": "M",
+    "type_naam": "metaal",
+    "naam": "MoB NiCr",
+    "status": "actief",
+    "oem_bronnen": [
+      "Stucco-27.pdf"
+    ],
+    "fst_datasheet": "M-880 MoB NiCr.docx",
+    "bestanden": [
+      "M-880 MoB NiCr.docx",
+      "M-880 MoB NiCr.pdf",
+      "Stucco-27.docx",
+      "Stucco-27.pdf"
+    ],
+    "pad": "01_Materialen/M-Metalen/M-880",
+    "controle_nodig": false
+  },
+  {
+    "map": "M-901",
+    "codes": [
+      "M-901"
+    ],
+    "primaire_code": "M-901",
+    "type": "M",
+    "type_naam": "metaal",
+    "naam": "Pure Cu",
+    "status": "actief",
+    "oem_bronnen": [
+      "DSMTS-0104.2_Pure_Cu_Powders.pdf"
+    ],
+    "fst_datasheet": "M-901 Pure Cu.docx",
+    "bestanden": [
+      "DSMTS-0104.2_Pure_Cu_Powders.pdf",
+      "M-901 Pure Cu.docx",
+      "M-901 Pure Cu.pdf"
+    ],
+    "pad": "01_Materialen/M-Metalen/M-901",
+    "controle_nodig": false
+  },
+  {
+    "map": "M-931 Stop",
+    "codes": [
+      "M-931"
+    ],
+    "primaire_code": "M-931",
+    "type": "M",
+    "type_naam": "metaal",
+    "naam": "",
+    "status": "stop",
+    "oem_bronnen": [
+      "DSMTS-0061.5_CuNi_CuNiIn_Powders.pdf"
+    ],
+    "fst_datasheet": "M-931 Stop.docx",
+    "bestanden": [
+      "DSMTS-0061.5_CuNi_CuNiIn_Powders.pdf",
+      "M-931 Stop.docx"
+    ],
+    "pad": "01_Materialen/M-Metalen/M-931 Stop",
+    "controle_nodig": true
+  },
+  {
+    "map": "M-950, M952",
+    "codes": [
+      "M-950",
+      "M952"
+    ],
+    "primaire_code": "M-950",
+    "type": "M",
+    "type_naam": "metaal",
+    "naam": "CuAl",
+    "status": "actief",
+    "oem_bronnen": [
+      "DSMTS-0103.2_CuAl_Powders.pdf"
+    ],
+    "fst_datasheet": "M-950, M-952 CuAl.docx",
+    "bestanden": [
+      "DSMTS-0103.2_CuAl_Powders.pdf",
+      "M-950, M-952 CuAl.docx",
+      "M-950, M-952 CuAl.pdf",
+      "M-950.pdf"
+    ],
+    "pad": "01_Materialen/M-Metalen/M-950, M952",
+    "controle_nodig": false
+  },
+  {
+    "map": "M-Ni SF",
+    "codes": [
+      "M-Ni SF"
+    ],
+    "primaire_code": "M-Ni SF",
+    "type": "M",
+    "type_naam": "metaal",
+    "naam": "Ni SF",
+    "status": "actief",
+    "oem_bronnen": [
+      "Nickel and Cobalt Based Self-Fluxing Alloy Powders.pdf"
+    ],
+    "fst_datasheet": "M-&XX Ni SF.docx",
+    "bestanden": [
+      "M-&XX Ni SF.docx",
+      "M-7XX Ni SF.pdf",
+      "Nickel and Cobalt Based Self-Fluxing Alloy Powders.pdf"
+    ],
+    "pad": "01_Materialen/M-Metalen/M-Ni SF",
+    "controle_nodig": false
+  },
+  {
+    "map": "W-200, W-201",
+    "codes": [
+      "W-200",
+      "W-201"
+    ],
+    "primaire_code": "W-200",
+    "type": "W",
+    "type_naam": "wire",
+    "naam": "Pure Al",
+    "status": "actief",
+    "oem_bronnen": [
+      "DSMTS-0003.10_Al_Wire.pdf"
+    ],
+    "fst_datasheet": "W-200, W-201 Pure Al.docx",
+    "bestanden": [
+      "DSMTS-0003.10_Al_Wire.pdf",
+      "W-200, W-201 Pure Al.docx",
+      "W-200, W-201 Pure Al.pdf"
+    ],
+    "pad": "01_Materialen/W-Wire-Draad/W-200, W-201",
+    "controle_nodig": false
+  },
+  {
+    "map": "W-372",
+    "codes": [
+      "W-372"
+    ],
+    "primaire_code": "W-372",
+    "type": "W",
+    "type_naam": "wire",
+    "naam": "NiCrAlY",
+    "status": "actief",
+    "oem_bronnen": [],
+    "fst_datasheet": "W-372 NiCrAlY.docx",
+    "bestanden": [
+      "W-372 NiCrAlY.docx",
+      "W-372 NiCrAlY.pdf"
+    ],
+    "pad": "01_Materialen/W-Wire-Draad/W-372",
+    "controle_nodig": false
+  },
+  {
+    "map": "W-374",
+    "codes": [
+      "W-374"
+    ],
+    "primaire_code": "W-374",
+    "type": "W",
+    "type_naam": "wire",
+    "naam": "NiAlMo",
+    "status": "actief",
+    "oem_bronnen": [],
+    "fst_datasheet": "W-374 NiAlMo.docx",
+    "bestanden": [
+      "W-374 NiAlMo.docx",
+      "W-374 NiAlMo.pdf"
+    ],
+    "pad": "01_Materialen/W-Wire-Draad/W-374",
+    "controle_nodig": false
+  },
+  {
+    "map": "W-375",
+    "codes": [
+      "W-375"
+    ],
+    "primaire_code": "W-375",
+    "type": "W",
+    "type_naam": "wire",
+    "naam": "Ni5Al",
+    "status": "actief",
+    "oem_bronnen": [],
+    "fst_datasheet": "W-375 Ni5Al.docx",
+    "bestanden": [
+      "W-375 Ni5Al.docx",
+      "W-375 Ni5Al.pdf"
+    ],
+    "pad": "01_Materialen/W-Wire-Draad/W-375",
+    "controle_nodig": false
+  },
+  {
+    "map": "W-377",
+    "codes": [
+      "W-377"
+    ],
+    "primaire_code": "W-377",
+    "type": "W",
+    "type_naam": "wire",
+    "naam": "Ni20Al",
+    "status": "actief",
+    "oem_bronnen": [
+      "BONDRITE-BROCHURE.pdf",
+      "DSMTS-0002.9_NiAl_BondCoat.pdf"
+    ],
+    "fst_datasheet": "W-377 Ni20Al.docx",
+    "bestanden": [
+      "BONDRITE-BROCHURE.pdf",
+      "DSMTS-0002.9_NiAl_BondCoat.pdf",
+      "W-377 Ni20Al.docx",
+      "W-377 Ni20Al.pdf"
+    ],
+    "pad": "01_Materialen/W-Wire-Draad/W-377",
+    "controle_nodig": false
+  },
+  {
+    "map": "W-3XX",
+    "codes": [
+      "W-3X"
+    ],
+    "primaire_code": "W-3X",
+    "type": "W",
+    "type_naam": "wire",
+    "naam": "Ni-Cr Based Alloys",
+    "status": "actief",
+    "oem_bronnen": [
+      "DSMTS-0052.7_NiCr_Wires.pdf",
+      "PMET-821-Nickel20Chrome.pdf",
+      "PMET-860-Alloy-625.pdf",
+      "PMET-876-Alloy-C-276.pdf",
+      "PMET-886-Ni-Cr-Al.pdf",
+      "PMET-888-Nickel-Moly-Aluminum.pdf",
+      "PMET-889-Ni-43Cr-0.7Ti.pdf"
+    ],
+    "fst_datasheet": "W-3XX Ni-Cr Based Alloys.docx",
+    "bestanden": [
+      "DSMTS-0052.7_NiCr_Wires.pdf",
+      "PMET-821-Nickel20Chrome.pdf",
+      "PMET-860-Alloy-625.pdf",
+      "PMET-876-Alloy-C-276.pdf",
+      "PMET-886-Ni-Cr-Al.pdf",
+      "PMET-888-Nickel-Moly-Aluminum.pdf",
+      "PMET-889-Ni-43Cr-0.7Ti.pdf",
+      "W-3XX Ni-Cr Based Alloys.docx",
+      "W-3XX Ni-Cr Based Alloys.pdf"
+    ],
+    "pad": "01_Materialen/W-Wire-Draad/W-3XX",
+    "controle_nodig": false
+  },
+  {
+    "map": "W-400",
+    "codes": [
+      "W-400"
+    ],
+    "primaire_code": "W-400",
+    "type": "W",
+    "type_naam": "wire",
+    "naam": "Pure Mo",
+    "status": "actief",
+    "oem_bronnen": [],
+    "fst_datasheet": "W-400 Pure Mo.docx",
+    "bestanden": [
+      "W-400 Pure Mo.docx",
+      "W-400 Pure Mo.pdf"
+    ],
+    "pad": "01_Materialen/W-Wire-Draad/W-400",
+    "controle_nodig": false
+  },
+  {
+    "map": "W-550, M-555",
+    "codes": [
+      "W-550",
+      "M-555"
+    ],
+    "primaire_code": "W-550",
+    "type": "W",
+    "type_naam": "wire",
+    "naam": "Carbon Steel",
+    "status": "actief",
+    "oem_bronnen": [],
+    "fst_datasheet": "W-550, W-555 Carbon Steel.docx",
+    "bestanden": [
+      "W-550, W-555 Carbon Steel.docx",
+      "W-550, W-555 Carbon Steel.pdf"
+    ],
+    "pad": "01_Materialen/W-Wire-Draad/W-550, M-555",
+    "controle_nodig": false
+  },
+  {
+    "map": "W-5XX",
+    "codes": [
+      "W-5X"
+    ],
+    "primaire_code": "W-5X",
+    "type": "W",
+    "type_naam": "wire",
+    "naam": "xx Fe-Cr Stainless Steels",
+    "status": "actief",
+    "oem_bronnen": [
+      "DSMTS-0032.5_FeCr_StainlessSteel_Wire (1).pdf"
+    ],
+    "fst_datasheet": "W-5xx Fe-Cr Stainless Steels.docx",
+    "bestanden": [
+      "DSMTS-0032.5_FeCr_StainlessSteel_Wire (1).pdf",
+      "W-5xx Fe Cr Stainless Steels.pdf",
+      "W-5xx Fe-Cr Stainless Steels.docx"
+    ],
+    "pad": "01_Materialen/W-Wire-Draad/W-5XX",
+    "controle_nodig": false
+  },
+  {
+    "map": "W-700",
+    "codes": [
+      "W-700"
+    ],
+    "primaire_code": "W-700",
+    "type": "W",
+    "type_naam": "wire",
+    "naam": "Pure Copper",
+    "status": "actief",
+    "oem_bronnen": [],
+    "fst_datasheet": "W-700 Pure Copper.docx",
+    "bestanden": [
+      "W-700 Pure Copper.docx",
+      "W-700 Pure Copper.pdf"
+    ],
+    "pad": "01_Materialen/W-Wire-Draad/W-700",
+    "controle_nodig": false
+  },
+  {
+    "map": "W-710, W-712",
+    "codes": [
+      "W-710",
+      "W-712"
+    ],
+    "primaire_code": "W-710",
+    "type": "W",
+    "type_naam": "wire",
+    "naam": "Cu Al",
+    "status": "actief",
+    "oem_bronnen": [],
+    "fst_datasheet": "W-710, W-712 Cu Al.docx",
+    "bestanden": [
+      "W-710, W-712 Cu Al.docx",
+      "W-710, W-712 Cu Al.pdf"
+    ],
+    "pad": "01_Materialen/W-Wire-Draad/W-710, W-712",
+    "controle_nodig": false
+  },
+  {
+    "map": "W-717",
+    "codes": [
+      "W-717"
+    ],
+    "primaire_code": "W-717",
+    "type": "W",
+    "type_naam": "wire",
+    "naam": "Monel",
+    "status": "actief",
+    "oem_bronnen": [
+      "DSMTS-0041.1_NiCu_Wire.pdf"
+    ],
+    "fst_datasheet": "W-717 Monel.docx",
+    "bestanden": [
+      "DSMTS-0041.1_NiCu_Wire.pdf",
+      "W-717 Monel.docx",
+      "W-717 Monel.pdf"
+    ],
+    "pad": "01_Materialen/W-Wire-Draad/W-717",
+    "controle_nodig": false
+  },
+  {
+    "map": "W-970",
+    "codes": [
+      "W-970"
+    ],
+    "primaire_code": "W-970",
+    "type": "W",
+    "type_naam": "wire",
+    "naam": "Babbitt",
+    "status": "actief",
+    "oem_bronnen": [
+      "DSM-0205.0_Sn_SnAlloys.pdf"
+    ],
+    "fst_datasheet": "W-970 Babbitt.docx",
+    "bestanden": [
+      "DSM-0205.0_Sn_SnAlloys.pdf",
+      "W-970 Babbitt.docx",
+      "W-970 Babbitt.pdf"
+    ],
+    "pad": "01_Materialen/W-Wire-Draad/W-970",
+    "controle_nodig": false
+  },
+  {
+    "map": "W-Co Hardcore",
+    "codes": [
+      "W-Co Hardcore"
+    ],
+    "primaire_code": "W-Co Hardcore",
+    "type": "W",
+    "type_naam": "wire",
+    "naam": "W-Co Hardcore",
+    "status": "actief",
+    "oem_bronnen": [],
+    "fst_datasheet": "W-Co Hardcore.docx",
+    "bestanden": [
+      "W-Co Hardcore.docx",
+      "W-Co Hardcore.pdf"
+    ],
+    "pad": "01_Materialen/W-Wire-Draad/W-Co Hardcore",
+    "controle_nodig": false
+  },
+  {
+    "map": "W-Fe Hardcore",
+    "codes": [
+      "W-Fe Hardcore"
+    ],
+    "primaire_code": "W-Fe Hardcore",
+    "type": "W",
+    "type_naam": "wire",
+    "naam": "W-Fe Hardcore",
+    "status": "actief",
+    "oem_bronnen": [],
+    "fst_datasheet": "W-Fe Hardcore.docx",
+    "bestanden": [
+      "W-Fe Hardcore.docx",
+      "W-Fe Hardcore.pdf",
+      "W-Fe Hardcore_v1.docx",
+      "W-Fe Hardcore_v1.pdf",
+      "W-Fe Hardcore_v2.docx",
+      "W-Fe Hardcore_v2.pdf"
+    ],
+    "pad": "01_Materialen/W-Wire-Draad/W-Fe Hardcore",
+    "controle_nodig": false
+  },
+  {
+    "map": "W-Ni Hardcore",
+    "codes": [
+      "W-Ni Hardcore"
+    ],
+    "primaire_code": "W-Ni Hardcore",
+    "type": "W",
+    "type_naam": "wire",
+    "naam": "W-Ni Hardcore",
+    "status": "actief",
+    "oem_bronnen": [],
+    "fst_datasheet": "W-Ni Hardcore rev1.docx",
+    "bestanden": [
+      "W-Ni Hardcore rev1.docx",
+      "W-Ni Hardcore rev1.pdf",
+      "W-Ni Hardcore.docx",
+      "W-Ni Hardcore.pdf"
+    ],
+    "pad": "01_Materialen/W-Wire-Draad/W-Ni Hardcore",
+    "controle_nodig": false
+  }
+]

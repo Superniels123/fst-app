@@ -1,0 +1,140 @@
+[
+  {
+    "bestand": "2700 Ext.docx",
+    "gun": "2700",
+    "gas": null,
+    "pad": "02_Spuitparameters/2700 Ext.docx"
+  },
+  {
+    "bestand": "2700 Ext.pdf",
+    "gun": "2700",
+    "gas": null,
+    "pad": "02_Spuitparameters/2700 Ext.pdf"
+  },
+  {
+    "bestand": "6PII PARAMS.pdf",
+    "gun": "6PII",
+    "gas": null,
+    "pad": "02_Spuitparameters/6PII PARAMS.pdf"
+  },
+  {
+    "bestand": "9MB Ar-H2.docx",
+    "gun": "9MB",
+    "gas": "Ar-H2",
+    "pad": "02_Spuitparameters/9MB Ar-H2.docx"
+  },
+  {
+    "bestand": "9MB Ar-H2.pdf",
+    "gun": "9MB",
+    "gas": "Ar-H2",
+    "pad": "02_Spuitparameters/9MB Ar-H2.pdf"
+  },
+  {
+    "bestand": "9MB Ar-He.docx",
+    "gun": "9MB",
+    "gas": "Ar-He",
+    "pad": "02_Spuitparameters/9MB Ar-He.docx"
+  },
+  {
+    "bestand": "9MB N2-H2.docx",
+    "gun": "9MB",
+    "gas": "N2-H2",
+    "pad": "02_Spuitparameters/9MB N2-H2.docx"
+  },
+  {
+    "bestand": "9MB N2-H2.pdf",
+    "gun": "9MB",
+    "gas": "N2-H2",
+    "pad": "02_Spuitparameters/9MB N2-H2.pdf"
+  },
+  {
+    "bestand": "9MB N2.docx",
+    "gun": "9MB",
+    "gas": "N2",
+    "pad": "02_Spuitparameters/9MB N2.docx"
+  },
+  {
+    "bestand": "DJ PARAMETERS OEM.pdf",
+    "gun": "DJ",
+    "gas": null,
+    "pad": "02_Spuitparameters/DJ PARAMETERS OEM.pdf"
+  },
+  {
+    "bestand": "F1 Ar-H2.docx",
+    "gun": "F1",
+    "gas": "Ar-H2",
+    "pad": "02_Spuitparameters/F1 Ar-H2.docx"
+  },
+  {
+    "bestand": "F1 Ar-H2.pdf",
+    "gun": "F1",
+    "gas": "Ar-H2",
+    "pad": "02_Spuitparameters/F1 Ar-H2.pdf"
+  },
+  {
+    "bestand": "F4 Ar-H2.docx",
+    "gun": "F4",
+    "gas": "Ar-H2",
+    "pad": "02_Spuitparameters/F4 Ar-H2.docx"
+  },
+  {
+    "bestand": "F4 Ar-H2.pdf",
+    "gun": "F4",
+    "gas": "Ar-H2",
+    "pad": "02_Spuitparameters/F4 Ar-H2.pdf"
+  },
+  {
+    "bestand": "HVOF Parameters WCCo and Powder Info.xlsx",
+    "gun": "onbekend",
+    "gas": null,
+    "pad": "02_Spuitparameters/HVOF Parameters WCCo and Powder Info.xlsx"
+  },
+  {
+    "bestand": "JP-5000 spray parameters.pdf",
+    "gun": "JP-5000",
+    "gas": null,
+    "pad": "02_Spuitparameters/JP-5000 spray parameters.pdf"
+  },
+  {
+    "bestand": "JP-5000 spray parameters.xls",
+    "gun": "JP-5000",
+    "gas": null,
+    "pad": "02_Spuitparameters/JP-5000 spray parameters.xls"
+  },
+  {
+    "bestand": "SG100 starting parameter.pdf",
+    "gun": "SG100",
+    "gas": null,
+    "pad": "02_Spuitparameters/SG100 starting parameter.pdf"
+  },
+  {
+    "bestand": "SG100 starting parameter.xlsx",
+    "gun": "SG100",
+    "gas": null,
+    "pad": "02_Spuitparameters/SG100 starting parameter.xlsx"
+  },
+  {
+    "bestand": "CP-0350.0_Metco 101B-NS_Sinplex_Multicoat.pdf",
+    "gun": "Sinplex",
+    "gas": null,
+    "pad": "02_Spuitparameters/Sinplex/CP-0350.0_Metco 101B-NS_Sinplex_Multicoat.pdf"
+  },
+  {
+    "bestand": "D1005_Sinplex_Multicoat.pdf",
+    "gun": "Sinplex",
+    "gas": null,
+    "pad": "02_Spuitparameters/Sinplex/D1005_Sinplex_Multicoat.pdf"
+  },
+  {
+    "bestand": "SInplex Pro - 136F.pdf",
+    "gun": "Sinplex",
+    "gas": null,
+    "pad": "02_Spuitparameters/Sinplex/SInplex Pro - 136F.pdf"
+  },
+  {
+    "bestand": "eGun™ Starting parameter Rev20161108.pdf",
+    "gun": "eGun",
+    "gas": null,
+    "pad": "02_Spuitparameters/eGun™ Starting parameter Rev20161108.pdf"
+  }
+]
