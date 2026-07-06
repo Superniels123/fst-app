@@ -1,91 +1,104 @@
 import { Document, Page, View, Text, Image, StyleSheet } from '@react-pdf/renderer'
 import type { Quote, QuoteLine } from '../types'
+import template from '../data/proposal_template.json'
 
 const GREEN = '#008C3C'
 const GREEN_DARK = '#00662B'
+const TINT = '#E6F0E6'
 const GRAY = '#4b5563'
 const GRAY_LIGHT = '#9ca3af'
 const LINE = '#e5e7eb'
 
 const eur = new Intl.NumberFormat('nl-NL', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 })
 
-const INTRODUCTION =
-  'Thank you for your valued enquiry. Flame Spray Technologies is pleased to provide this quotation and ' +
-  'we thank you for your interest in our company and our products. After you have completed your review, ' +
-  'upon your request, FST are willing to come to your facility and explain the offer in detail. FST is ' +
-  'also willing to think along with you to reach the best possible solution for your application needs. ' +
-  'At Flame Spray Technologies we understand that the investment in a thermal spray system is not only a ' +
-  'financial investment, but also an investment in people and know-how. Flame Spray Technologies is an ' +
-  'ISO 9001:2015 and ISO 14001:2015 approved company.'
+const secties = (template as { standaard_secties: Record<string, string> }).standaard_secties ?? {}
+const blokken = (template as { technische_blokken: Record<string, string> }).technische_blokken ?? {}
+const conditionsRaw = (template as { conditions_of_supply?: string }).conditions_of_supply ?? ''
 
-const SUPPORT = [
-  {
-    kop: 'Coating & Application Support',
-    tekst:
-      'Our coating engineers support you with material selection, parameter development and qualification, ' +
-      'so your system delivers repeatable, specification-compliant coatings from day one.',
-  },
-  {
-    kop: 'Service Organization',
-    tekst:
-      'FST maintains a dedicated service organization for installation, commissioning, training and preventive ' +
-      'maintenance — on site at your facility or remotely.',
-  },
-  {
-    kop: 'Spare Parts Availability',
-    tekst:
-      'A broad range of spare and wear parts is kept in stock for short lead times, keeping your thermal spray ' +
-      'operation running with minimal downtime.',
-  },
+const STD_ORDER = [
+  'INTRODUCTION',
+  'COATING & APPLICATION SUPPORT',
+  'SERVICE ORGANIZATION',
+  'REMOTE DIAGNOSTICS',
+  'MATERIALS AND TECHNOLOGY',
+  'SPARE PARTS AVAILABILITY',
+  'REFERENCES',
 ]
 
+const FALLBACK_TERMS = [
+  'All prices are in EUR and exclusive of VAT.',
+  'This proposal is valid for 30 days from the date stated on the cover.',
+  'Delivery time to be confirmed in mutual consultation upon order.',
+  'Payment in instalments, to be agreed upon order.',
+  'Flame Spray Technologies is an ISO 9001:2015 and ISO 14001:2015 certified company.',
+]
+
+// Splits een tekstblok op dubbele newlines in losse paragrafen (lost door-elkaar-lopen op).
+function paragraphs(text: string): string[] {
+  return String(text || '').split(/\n\s*\n/).map((s) => s.replace(/[ \t]+\n/g, '\n').trim()).filter(Boolean)
+}
+
+// Genormaliseerde "bevat"-match, onafhankelijk van MP-50-prefixen.
+function normalize(s: string): string {
+  return s.toUpperCase().replace(/MP-?50( LF)?/g, '').replace(/\s+/g, ' ').trim()
+}
+
+// Strip systeemprefix/-suffix alleen voor de weergegeven kop.
+function cleanHeading(k: string): string {
+  return k.replace(/^MP-50 LF\s+/i, '').replace(/^MP-50\s+/i, '').replace(/\s+OF THE MP-50$/i, '').trim()
+}
+
 const styles = StyleSheet.create({
-  page: { paddingTop: 48, paddingBottom: 56, paddingHorizontal: 48, fontSize: 10, color: '#1f2937', fontFamily: 'Helvetica', lineHeight: 1.5 },
-  topBar: { position: 'absolute', top: 0, left: 0, right: 0, height: 8, backgroundColor: GREEN },
-  footer: { position: 'absolute', bottom: 24, left: 48, right: 48, flexDirection: 'row', justifyContent: 'space-between', fontSize: 8, color: GRAY_LIGHT, borderTopWidth: 1, borderTopColor: LINE, paddingTop: 6 },
+  page: { paddingTop: 74, paddingBottom: 54, paddingHorizontal: 42, fontSize: 10.5, color: '#1f2937', fontFamily: 'Helvetica', lineHeight: 1.4 },
+  coverPage: { padding: 0, fontSize: 10.5, color: '#1f2937', fontFamily: 'Helvetica', lineHeight: 1.4 },
+
+  // Kop/voet (fixed)
+  header: { position: 'absolute', top: 26, left: 42, right: 42, flexDirection: 'row', justifyContent: 'space-between', borderBottomWidth: 1, borderBottomColor: LINE, paddingBottom: 6, fontSize: 8, color: GRAY_LIGHT },
+  footer: { position: 'absolute', bottom: 26, left: 42, right: 42, borderTopWidth: 1, borderTopColor: LINE, paddingTop: 6, fontSize: 8, color: GRAY_LIGHT, flexDirection: 'row', justifyContent: 'space-between' },
 
   // Cover
-  coverKicker: { fontSize: 11, color: GREEN, fontFamily: 'Helvetica-Bold', letterSpacing: 2 },
-  coverTitle: { fontSize: 40, color: GREEN_DARK, fontFamily: 'Helvetica-Bold', marginTop: 4 },
-  coverSystem: { fontSize: 18, color: '#1f2937', marginTop: 6 },
-  coverBlock: { marginTop: 40, borderTopWidth: 2, borderTopColor: GREEN, paddingTop: 16 },
-  coverRow: { flexDirection: 'row', marginBottom: 6 },
-  coverLabel: { width: 130, color: GRAY, fontFamily: 'Helvetica-Bold' },
+  coverBand: { backgroundColor: GREEN, paddingTop: 64, paddingBottom: 40, paddingHorizontal: 48 },
+  coverKicker: { fontSize: 13, color: '#ffffff', fontFamily: 'Helvetica-Bold', letterSpacing: 3, opacity: 0.9 },
+  coverTitle: { fontSize: 40, color: '#ffffff', fontFamily: 'Helvetica-Bold', marginTop: 6 },
+  coverBody: { paddingHorizontal: 48, paddingTop: 32 },
+  including: { fontSize: 11, color: GRAY, marginBottom: 4 },
+  includingVal: { fontSize: 11, color: '#1f2937' },
+  coverBlock: { marginTop: 40, borderTopWidth: 2, borderTopColor: GREEN, paddingTop: 18 },
+  coverRow: { flexDirection: 'row', marginBottom: 7 },
+  coverLabel: { width: 140, color: GRAY, fontFamily: 'Helvetica-Bold' },
   coverValue: { flex: 1, color: '#1f2937' },
 
-  // Sections
-  h2: { fontSize: 15, color: GREEN_DARK, fontFamily: 'Helvetica-Bold', marginBottom: 8 },
-  h3: { fontSize: 11, color: GREEN_DARK, fontFamily: 'Helvetica-Bold', marginBottom: 3, marginTop: 10 },
-  para: { color: GRAY, marginBottom: 8, textAlign: 'justify' },
+  // Secties
+  chapter: { fontSize: 18, color: GREEN_DARK, fontFamily: 'Helvetica-Bold', marginBottom: 10 },
+  h2: { fontSize: 13, color: GREEN_DARK, fontFamily: 'Helvetica-Bold', marginTop: 14, marginBottom: 5 },
+  para: { color: GRAY, marginBottom: 7 },
 
-  catHead: { fontSize: 10, color: GREEN_DARK, fontFamily: 'Helvetica-Bold', textTransform: 'uppercase', letterSpacing: 0.5, marginTop: 12, marginBottom: 4 },
+  // Revision history
+  table: { borderWidth: 1, borderColor: LINE, borderRadius: 3, marginTop: 6 },
+  tHead: { flexDirection: 'row', backgroundColor: TINT },
+  tRow: { flexDirection: 'row', borderTopWidth: 1, borderTopColor: LINE },
+  tCellHead: { padding: 6, fontSize: 9, fontFamily: 'Helvetica-Bold', color: GREEN_DARK },
+  tCell: { padding: 6, fontSize: 9, color: GRAY },
+
+  // Scope
+  catHead: { fontSize: 10, color: GREEN_DARK, fontFamily: 'Helvetica-Bold', textTransform: 'uppercase', letterSpacing: 0.5, marginTop: 12, marginBottom: 3 },
   lineRow: { flexDirection: 'row', paddingVertical: 3, borderBottomWidth: 1, borderBottomColor: LINE },
   lineDesc: { flex: 1, color: '#1f2937' },
   lineQty: { width: 60, textAlign: 'right', color: GRAY },
 
-  investment: { marginTop: 24, backgroundColor: '#E6F0E6', borderRadius: 4, paddingVertical: 16, paddingHorizontal: 20, flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' },
-  investLabel: { fontSize: 12, color: GREEN_DARK, fontFamily: 'Helvetica-Bold' },
-  investValue: { fontSize: 22, color: GREEN_DARK, fontFamily: 'Helvetica-Bold' },
-  investNote: { marginTop: 6, fontSize: 8, color: GRAY_LIGHT },
+  // Investment
+  investment: { marginTop: 20, backgroundColor: TINT, borderRadius: 4, paddingVertical: 18, paddingHorizontal: 22, flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' },
+  investLabel: { fontSize: 13, color: GREEN_DARK, fontFamily: 'Helvetica-Bold' },
+  investValue: { fontSize: 24, color: GREEN_DARK, fontFamily: 'Helvetica-Bold' },
+  investNote: { marginTop: 8, fontSize: 8, color: GRAY_LIGHT },
 
-  // Sketch
-  sketchImg: { width: '100%', objectFit: 'contain', maxHeight: 620 },
-  sketchCaption: { marginTop: 8, fontSize: 9, color: GRAY_LIGHT, textAlign: 'center' },
-
-  termItem: { flexDirection: 'row', marginBottom: 4 },
+  termItem: { flexDirection: 'row', marginBottom: 5 },
   termBullet: { width: 12, color: GREEN },
   termText: { flex: 1, color: GRAY },
-})
 
-function Footer({ reference }: { reference: string }) {
-  return (
-    <View style={styles.footer} fixed>
-      <Text>Flame Spray Technologies</Text>
-      <Text>{reference}</Text>
-      <Text render={({ pageNumber, totalPages }) => `${pageNumber} / ${totalPages}`} />
-    </View>
-  )
-}
+  sketchImg: { width: '100%', objectFit: 'contain', maxHeight: 640 },
+  sketchCaption: { marginTop: 8, fontSize: 9, color: GRAY_LIGHT, textAlign: 'center' },
+})
 
 export interface OffertePDFProps {
   quote: Quote
@@ -96,12 +109,89 @@ export interface OffertePDFProps {
   datum: string
 }
 
+function Header({ systemName }: { systemName: string }) {
+  return (
+    <View style={styles.header} fixed>
+      <Text>PROPOSAL  |  {systemName}</Text>
+      <Text>Flame Spray Technologies</Text>
+    </View>
+  )
+}
+
+function Footer() {
+  return (
+    <View style={styles.footer} fixed>
+      <Text>FST</Text>
+      <Text render={({ pageNumber, totalPages }) => `Page ${pageNumber} of ${totalPages}`} />
+    </View>
+  )
+}
+
+function Paras({ text }: { text: string }) {
+  return (
+    <>
+      {paragraphs(text).map((p, i) => (
+        <Text key={i} style={styles.para}>{p}</Text>
+      ))}
+    </>
+  )
+}
+
 export default function OffertePDF({ quote, lines, madeBy, systemName, schetsen, datum }: OffertePDFProps) {
   const reference = quote.projectnr || quote.klant || '—'
 
-  // Modules gegroepeerd per categorie (volgorde behouden), arbeid apart.
   const moduleLines = lines.filter((l) => l.soort === 'module')
   const laborLines = lines.filter((l) => l.soort === 'arbeid')
+
+  const catHas = (cat: string) => moduleLines.some((l) => (l.categorie || '').toUpperCase().includes(cat))
+  const hasPlasma = catHas('PLASMA GUNS')
+  const hasHVOF = catHas('HVOF GUNS')
+  const hasFeeder = catHas('POWDER FEEDERS')
+
+  // "Including: …" — belangrijkste gekozen modules.
+  const kernCats = ['THERMAL SPRAY SYSTEMS', 'PLASMA GUNS', 'HVOF GUNS', 'POWDER FEEDERS']
+  const including = moduleLines
+    .filter((l) => kernCats.some((c) => (l.categorie || '').toUpperCase().includes(c)))
+    .map((l) => l.omschrijving)
+    .filter(Boolean)
+    .slice(0, 5)
+  const includingText = (including.length ? including : moduleLines.slice(0, 4).map((l) => l.omschrijving)).join(', ')
+
+  // Technische blokken selecteren op configuratie, gematcht op de ECHTE keys.
+  const selectors = ['SYSTEM SET-UP', 'MAIN FEATURES', 'TOUCH SCREEN CONTROL CONSOLE', 'DIGITALLY CONNECTED SMART COMPONENTS', 'ELECTRICAL MODULE']
+  if (hasPlasma) selectors.push('APS GAS MODULE', 'PLASMA POWER SUPPLY')
+  if (hasHVOF) selectors.push('HVOF LIQUID / GAS FUEL MODULE')
+  if (hasFeeder) selectors.push('FST-10/MC POWDER FEEDER', 'POWDER FEEDER HOPPER STATION')
+  selectors.push('JAM BOX MODULE', 'CABLES AND HOSES PACKAGE', 'ELECTRICAL DISTRIBUTION CABINET', 'AIR DISTRIBUTION UNIT', 'SYSTEM SAFETIES', 'INTEGRATION OF AUXILIARY COMPONENTS', 'SYSTEM CALIBRATION', 'SIGNALIZATION STACK LIGHT')
+
+  const blockKeys = Object.keys(blokken)
+  const used = new Set<string>()
+  const techBlocks: { key: string; heading: string; text: string; num: number }[] = []
+  for (const sel of selectors) {
+    const ns = normalize(sel)
+    // "MP-50 SCOPE OF SUPPLY" overslaan (voorkomt dubbeling met de echte Scope of Supply).
+    const key = blockKeys.find((k) => !used.has(k) && !/SCOPE OF SUPPLY/i.test(k) && normalize(k).includes(ns))
+    if (key) {
+      used.add(key)
+      techBlocks.push({ key, heading: cleanHeading(key), text: blokken[key], num: techBlocks.length + 1 })
+    }
+  }
+
+  // Verdeel de technische blokken over meerdere pagina's op basis van tekstlengte.
+  // Eén zeer lange doorlopende <Page> laat de @react-pdf-layout overlopen (NaN); dit voorkomt dat.
+  const TECH_BUDGET = 11000
+  const techPages: (typeof techBlocks)[] = []
+  let cur: typeof techBlocks = []
+  let curLen = 0
+  for (const b of techBlocks) {
+    const len = b.text.length + b.heading.length
+    if (cur.length && curLen + len > TECH_BUDGET) { techPages.push(cur); cur = []; curLen = 0 }
+    cur.push(b)
+    curLen += len
+  }
+  if (cur.length) techPages.push(cur)
+
+  // Scope: modules per categorie (volgorde behouden).
   const catOrder: string[] = []
   const byCat = new Map<string, QuoteLine[]>()
   for (const l of moduleLines) {
@@ -110,107 +200,152 @@ export default function OffertePDF({ quote, lines, madeBy, systemName, schetsen,
     byCat.get(cat)!.push(l)
   }
 
+  const conditions = conditionsRaw.trim()
+
   return (
     <Document title={`Proposal ${reference}`} author="Flame Spray Technologies">
-      {/* Cover + Introduction */}
-      <Page size="A4" style={styles.page}>
-        <View style={styles.topBar} fixed />
-        <Text style={styles.coverKicker}>PROPOSAL</Text>
-        <Text style={styles.coverTitle}>{systemName}</Text>
-        <Text style={styles.coverSystem}>Thermal Spray Coating System</Text>
-
-        <View style={styles.coverBlock}>
-          <View style={styles.coverRow}><Text style={styles.coverLabel}>Customer</Text><Text style={styles.coverValue}>{quote.klant || '—'}</Text></View>
-          <View style={styles.coverRow}><Text style={styles.coverLabel}>FST Reference</Text><Text style={styles.coverValue}>{quote.projectnr || '—'}</Text></View>
-          <View style={styles.coverRow}><Text style={styles.coverLabel}>Date</Text><Text style={styles.coverValue}>{datum}</Text></View>
-          <View style={styles.coverRow}><Text style={styles.coverLabel}>Version</Text><Text style={styles.coverValue}>1</Text></View>
-          <View style={styles.coverRow}><Text style={styles.coverLabel}>Proposal made by</Text><Text style={styles.coverValue}>{madeBy}</Text></View>
+      {/* 1. Cover */}
+      <Page size="A4" style={styles.coverPage}>
+        <View style={styles.coverBand}>
+          <Text style={styles.coverKicker}>PROPOSAL</Text>
+          <Text style={styles.coverTitle}>{systemName}</Text>
         </View>
-
-        <View style={{ marginTop: 40 }}>
-          <Text style={styles.h2}>Introduction</Text>
-          <Text style={styles.para}>{INTRODUCTION}</Text>
+        <View style={styles.coverBody}>
+          {includingText ? (
+            <>
+              <Text style={styles.including}>Including:</Text>
+              <Text style={styles.includingVal}>{includingText}</Text>
+            </>
+          ) : null}
+          <View style={styles.coverBlock}>
+            <View style={styles.coverRow}><Text style={styles.coverLabel}>Customer</Text><Text style={styles.coverValue}>{quote.klant || '—'}</Text></View>
+            <View style={styles.coverRow}><Text style={styles.coverLabel}>Attention</Text><Text style={styles.coverValue}>—</Text></View>
+            <View style={styles.coverRow}><Text style={styles.coverLabel}>FST Reference</Text><Text style={styles.coverValue}>{quote.projectnr || '—'}</Text></View>
+            <View style={styles.coverRow}><Text style={styles.coverLabel}>Proposal made by</Text><Text style={styles.coverValue}>{madeBy}</Text></View>
+            <View style={styles.coverRow}><Text style={styles.coverLabel}>Date</Text><Text style={styles.coverValue}>{datum}</Text></View>
+            <View style={styles.coverRow}><Text style={styles.coverLabel}>Version</Text><Text style={styles.coverValue}>1</Text></View>
+          </View>
         </View>
-
-        <Footer reference={reference} />
       </Page>
 
-      {/* About FST / Support + Scope */}
+      {/* 3. Document Overview */}
       <Page size="A4" style={styles.page}>
-        <View style={styles.topBar} fixed />
-        <Text style={styles.h2}>About FST &amp; Support</Text>
-        {SUPPORT.map((s) => (
-          <View key={s.kop}>
-            <Text style={styles.h3}>{s.kop}</Text>
-            <Text style={styles.para}>{s.tekst}</Text>
+        <Header systemName={systemName} />
+        <Footer />
+        <Text style={styles.chapter}>Document Overview</Text>
+        <Text style={styles.h2}>Revision History</Text>
+        <View style={styles.table}>
+          <View style={styles.tHead}>
+            <Text style={[styles.tCellHead, { width: 70 }]}>Revision</Text>
+            <Text style={[styles.tCellHead, { width: 90 }]}>Date</Text>
+            <Text style={[styles.tCellHead, { flex: 1 }]}>Description</Text>
+          </View>
+          <View style={styles.tRow}>
+            <Text style={[styles.tCell, { width: 70 }]}>Rev 1</Text>
+            <Text style={[styles.tCell, { width: 90 }]}>{datum}</Text>
+            <Text style={[styles.tCell, { flex: 1 }]}>Initial quote</Text>
+          </View>
+        </View>
+      </Page>
+
+      {/* 4. Standaard secties */}
+      <Page size="A4" style={styles.page}>
+        <Header systemName={systemName} />
+        <Footer />
+        <Text style={styles.chapter}>Company &amp; System Information</Text>
+        {STD_ORDER.filter((k) => secties[k]).map((k) => (
+          <View key={k}>
+            <Text style={styles.h2}>{k}</Text>
+            <Paras text={secties[k]} />
           </View>
         ))}
-
-        <View style={{ marginTop: 16 }}>
-          <Text style={styles.h2}>Scope of Supply &amp; Price</Text>
-          {catOrder.map((cat) => (
-            <View key={cat} wrap={false}>
-              <Text style={styles.catHead}>{cat}</Text>
-              {byCat.get(cat)!.map((l) => (
-                <View key={l.id} style={styles.lineRow}>
-                  <Text style={styles.lineDesc}>{l.omschrijving}</Text>
-                  <Text style={styles.lineQty}>{l.aantal ?? 1} ×</Text>
-                </View>
-              ))}
-            </View>
-          ))}
-
-          {laborLines.length > 0 && (
-            <View wrap={false}>
-              <Text style={styles.catHead}>Engineering, Installation &amp; Training</Text>
-              {laborLines.map((l) => (
-                <View key={l.id} style={styles.lineRow}>
-                  <Text style={styles.lineDesc}>{l.omschrijving}</Text>
-                  <Text style={styles.lineQty}>{l.uren != null ? `${l.uren} h` : ''}</Text>
-                </View>
-              ))}
-            </View>
-          )}
-
-          <View style={styles.investment}>
-            <Text style={styles.investLabel}>Total Investment</Text>
-            <Text style={styles.investValue}>{eur.format(quote.verkoopprijs ?? 0)}</Text>
-          </View>
-          <Text style={styles.investNote}>All prices in EUR, excluding VAT.</Text>
-        </View>
-
-        <Footer reference={reference} />
       </Page>
 
-      {/* System Layout / Concept — alleen met schetsen */}
-      {schetsen.map((src, i) => (
-        <Page key={i} size="A4" style={styles.page}>
-          <View style={styles.topBar} fixed />
-          <Text style={styles.h2}>System Layout / Concept</Text>
-          {/* eslint-disable-next-line jsx-a11y/alt-text */}
-          <Image src={src} style={styles.sketchImg} />
-          <Text style={styles.sketchCaption}>Figure {i + 1} — indicative system layout</Text>
-          <Footer reference={reference} />
+      {/* 5. Scope of Supply */}
+      <Page size="A4" style={styles.page}>
+        <Header systemName={systemName} />
+        <Footer />
+        <Text style={styles.chapter}>Scope of Supply</Text>
+        {catOrder.map((cat) => (
+          <View key={cat} wrap={false}>
+            <Text style={styles.catHead}>{cat}</Text>
+            {byCat.get(cat)!.map((l) => (
+              <View key={l.id} style={styles.lineRow}>
+                <Text style={styles.lineDesc}>{l.omschrijving}</Text>
+                <Text style={styles.lineQty}>{l.aantal ?? 1} ×</Text>
+              </View>
+            ))}
+          </View>
+        ))}
+        {laborLines.length > 0 && (
+          <View wrap={false}>
+            <Text style={styles.catHead}>Engineering, Installation &amp; Training</Text>
+            {laborLines.map((l) => (
+              <View key={l.id} style={styles.lineRow}>
+                <Text style={styles.lineDesc}>{l.omschrijving}</Text>
+                <Text style={styles.lineQty}>{l.uren != null ? `${l.uren} h` : ''}</Text>
+              </View>
+            ))}
+          </View>
+        )}
+      </Page>
+
+      {/* 6. Technical Proposal (over meerdere pagina's) */}
+      {techPages.map((groep, gi) => (
+        <Page key={gi} size="A4" style={styles.page}>
+          <Header systemName={systemName} />
+          <Footer />
+          <Text style={styles.chapter}>1. Technical Proposal{gi > 0 ? ' (continued)' : ''}</Text>
+          {groep.map((b) => (
+            <View key={b.key}>
+              <Text style={styles.h2}>1.{b.num}  {b.heading}</Text>
+              <Paras text={b.text} />
+            </View>
+          ))}
         </Page>
       ))}
 
-      {/* Terms */}
+      {/* 7. Investment overview + 8. Conditions of Supply */}
       <Page size="A4" style={styles.page}>
-        <View style={styles.topBar} fixed />
-        <Text style={styles.h2}>Terms &amp; Conditions</Text>
-        {[
-          'All prices are in EUR and exclusive of VAT.',
-          'This proposal is valid for 30 days from the date stated on the cover.',
-          'Delivery time to be confirmed in mutual consultation upon order.',
-          'Flame Spray Technologies is an ISO 9001:2015 and ISO 14001:2015 certified company.',
-        ].map((t, i) => (
-          <View key={i} style={styles.termItem}>
-            <Text style={styles.termBullet}>•</Text>
-            <Text style={styles.termText}>{t}</Text>
-          </View>
-        ))}
-        <Footer reference={reference} />
+        <Header systemName={systemName} />
+        <Footer />
+        <Text style={styles.chapter}>Investment Overview</Text>
+        <Text style={styles.para}>
+          The total investment for the system described in this proposal, in the configuration and scope of
+          supply set out above, is:
+        </Text>
+        <View style={styles.investment}>
+          <Text style={styles.investLabel}>Total Investment</Text>
+          <Text style={styles.investValue}>{eur.format(quote.verkoopprijs ?? 0)}</Text>
+        </View>
+        <Text style={styles.investNote}>All prices in EUR, excluding VAT.</Text>
+
+        <View style={{ marginTop: 24 }}>
+          <Text style={styles.chapter}>Conditions of Supply</Text>
+          {conditions ? (
+            <Paras text={conditions} />
+          ) : (
+            FALLBACK_TERMS.map((t, i) => (
+              <View key={i} style={styles.termItem}>
+                <Text style={styles.termBullet}>•</Text>
+                <Text style={styles.termText}>{t}</Text>
+              </View>
+            ))
+          )}
+        </View>
       </Page>
+
+      {/* 9. System Layout / Concept — schetsen paginabreed */}
+      {schetsen.map((src, i) => (
+        <Page key={i} size="A4" style={styles.page}>
+          <Header systemName={systemName} />
+          <Footer />
+          <Text style={styles.chapter}>System Layout / Concept</Text>
+          {/* eslint-disable-next-line jsx-a11y/alt-text */}
+          <Image src={src} style={styles.sketchImg} />
+          <Text style={styles.sketchCaption}>Figure {i + 1} — indicative system layout</Text>
+        </Page>
+      ))}
     </Document>
   )
 }
