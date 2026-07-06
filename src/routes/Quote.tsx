@@ -1,6 +1,8 @@
 import { useEffect, useMemo, useState } from 'react'
-import type { SystemModule, LaborRate, LaborActivity } from '../types'
-import { getSystemModules, getLaborRates, getLaborActivities } from '../lib/data'
+import { useNavigate } from 'react-router-dom'
+import type { SystemModule, LaborRate, LaborActivity, QuoteLine } from '../types'
+import { getSystemModules, getLaborRates, getLaborActivities, saveQuote } from '../lib/data'
+import { supabase } from '../lib/supabaseClient'
 
 const eur = new Intl.NumberFormat('nl-NL', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 })
 
@@ -11,6 +13,7 @@ function moduleKey(m: SystemModule): string {
 }
 
 export default function Quote() {
+  const navigate = useNavigate()
   const [modules, setModules] = useState<SystemModule[]>([])
   const [rates, setRates] = useState<LaborRate[]>([])
   const [activities, setActivities] = useState<LaborActivity[]>([])
@@ -21,6 +24,10 @@ export default function Quote() {
   const [q, setQ] = useState('')
   const [collapsed, setCollapsed] = useState<Record<string, boolean>>({})
   const [marge, setMarge] = useState('43')
+  const [klant, setKlant] = useState('')
+  const [projectnr, setProjectnr] = useState('')
+  const [saving, setSaving] = useState(false)
+  const [saveError, setSaveError] = useState<string | null>(null)
 
   useEffect(() => {
     Promise.all([getSystemModules(), getLaborRates(), getLaborActivities()]).then(([m, r, a]) => {
@@ -73,6 +80,79 @@ export default function Quote() {
     setLabor(Object.fromEntries(activities.map((a) => [a.activiteit, { checked: false, uren: a.standaard_uren, tarief: 'laag' as const }])))
     setMarge('43')
     setQ('')
+    setKlant('')
+    setProjectnr('')
+    setSaveError(null)
+  }
+
+  const heeftSelectie = useMemo(() => {
+    const modulesGekozen = modules.some((m) => (qty[moduleKey(m)] || 0) > 0)
+    const arbeidGekozen = activities.some((a) => labor[a.activiteit]?.checked)
+    return modulesGekozen || arbeidGekozen
+  }, [modules, qty, activities, labor])
+
+  const kanOpslaan = klant.trim() !== '' && heeftSelectie && !saving
+
+  function buildLines(): Omit<QuoteLine, 'id' | 'quote_id'>[] {
+    const lines: Omit<QuoteLine, 'id' | 'quote_id'>[] = []
+    for (const m of modules) {
+      const aantal = qty[moduleKey(m)] || 0
+      if (aantal <= 0) continue
+      lines.push({
+        soort: 'module',
+        categorie: m.categorie,
+        omschrijving: m.module,
+        aantal,
+        uren: null,
+        tarief: null,
+        kostprijs: m.kostprijs_eur,
+        regel_totaal: m.kostprijs_eur * aantal,
+      })
+    }
+    for (const a of activities) {
+      const st = labor[a.activiteit]
+      if (!st || !st.checked) continue
+      const tarief = st.tarief === 'laag' ? tariefLaag : tariefHoog
+      lines.push({
+        soort: 'arbeid',
+        categorie: null,
+        omschrijving: a.activiteit,
+        aantal: null,
+        uren: st.uren,
+        tarief,
+        kostprijs: null,
+        regel_totaal: (st.uren || 0) * tarief,
+      })
+    }
+    return lines
+  }
+
+  async function opslaan() {
+    if (!kanOpslaan) return
+    setSaving(true)
+    setSaveError(null)
+    try {
+      const { data: userData } = await supabase.auth.getUser()
+      await saveQuote(
+        {
+          projectnr: projectnr.trim() || null,
+          klant: klant.trim(),
+          datum: new Date().toISOString().slice(0, 10),
+          status: 'concept',
+          marge_pct: margePct,
+          materiaalkosten,
+          arbeidskosten,
+          cogs,
+          verkoopprijs,
+          created_by: userData.user?.id ?? null,
+        },
+        buildLines(),
+      )
+      navigate('/offertes')
+    } catch (e) {
+      setSaveError(e instanceof Error ? e.message : 'Opslaan mislukt')
+      setSaving(false)
+    }
   }
 
   const inputCls = 'rounded-md border border-gray-300 px-2 py-1 text-sm focus:border-fst-green focus:ring-1 focus:ring-fst-green outline-none'
@@ -92,6 +172,19 @@ export default function Quote() {
         <button onClick={reset} className="shrink-0 rounded-md border border-gray-300 px-3 py-2 text-sm font-semibold text-gray-600 hover:bg-gray-50">
           Reset
         </button>
+      </div>
+
+      <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div>
+          <label className="block text-xs text-gray-500 mb-1">Klant <span className="text-fst-red">*</span></label>
+          <input value={klant} onChange={(e) => setKlant(e.target.value)} placeholder="Naam klant"
+            className="w-full rounded-md border border-gray-300 px-3 py-2 text-sm focus:border-fst-green focus:ring-1 focus:ring-fst-green outline-none" />
+        </div>
+        <div>
+          <label className="block text-xs text-gray-500 mb-1">Projectnr <span className="text-gray-400">(optioneel)</span></label>
+          <input value={projectnr} onChange={(e) => setProjectnr(e.target.value)} placeholder="bv. P-2026-001"
+            className="w-full rounded-md border border-gray-300 px-3 py-2 text-sm focus:border-fst-green focus:ring-1 focus:ring-fst-green outline-none" />
+        </div>
       </div>
 
       <div className="mt-6 grid grid-cols-1 lg:grid-cols-3 gap-6">
@@ -199,6 +292,16 @@ export default function Quote() {
             <p className="mt-3 text-[11px] text-gray-400">
               Verkoopprijs = COGS ÷ (1 − marge/100). Percentage-modules worden als vast bedrag meegerekend (indicatief).
             </p>
+
+            <div className="mt-4 border-t border-gray-100 pt-4">
+              <button onClick={opslaan} disabled={!kanOpslaan}
+                className="w-full rounded-md bg-fst-green px-4 py-2.5 text-sm font-semibold text-white hover:bg-fst-greenDark disabled:opacity-40 disabled:cursor-not-allowed transition-colors">
+                {saving ? 'Opslaan…' : 'Offerte opslaan'}
+              </button>
+              {!heeftSelectie && <p className="mt-2 text-xs text-gray-400">Kies minstens één module of arbeidsregel.</p>}
+              {heeftSelectie && klant.trim() === '' && <p className="mt-2 text-xs text-gray-400">Vul een klantnaam in om op te slaan.</p>}
+              {saveError && <p className="mt-2 text-xs text-fst-red">Fout bij opslaan: {saveError}</p>}
+            </div>
           </div>
         </div>
       </div>
