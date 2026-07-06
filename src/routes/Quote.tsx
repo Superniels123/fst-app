@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, useSearchParams } from 'react-router-dom'
 import type { SystemModule, LaborRate, LaborActivity, QuoteLine } from '../types'
 import { getSystemModules, getLaborRates, getLaborActivities, saveQuote } from '../lib/data'
 import { supabase } from '../lib/supabaseClient'
@@ -7,9 +7,43 @@ import { supabase } from '../lib/supabaseClient'
 const eur = new Intl.NumberFormat('nl-NL', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 })
 
 type LaborState = { checked: boolean; uren: number; tarief: 'laag' | 'hoog' }
+type Proces = 'HVOF' | 'Plasma' | 'eGun'
+type LaborSpec = { activiteit: string; uren: number; tarief: 'laag' | 'hoog' }
 
 function moduleKey(m: SystemModule): string {
   return `${m.categorie}::${m.module}`
+}
+
+// Deterministische voorinvul-regels voor de wizard. Namen matchen EXACT op de data.
+function wizardPrefill(a: { proces: Proces; turnkey: boolean; robot: boolean; booth: boolean }): {
+  moduleKeys: string[]
+  labor: LaborSpec[]
+} {
+  const moduleKeys = ['THERMAL SPRAY SYSTEMS::50 Series', 'POWDER FEEDERS::PF-50']
+  const labor: LaborSpec[] = [{ activiteit: '50 Series', uren: 128, tarief: 'laag' }]
+
+  if (a.proces === 'HVOF') moduleKeys.push('HVOF GUNS::JP-5000', 'COOLING SYSTEMS::100 - for JP')
+  else if (a.proces === 'Plasma') moduleKeys.push('PLASMA GUNS::F4-MB Plasma Gun', 'COOLING SYSTEMS::50kW - non ferrous for APS')
+  else if (a.proces === 'eGun') moduleKeys.push('HVOF GUNS::eGun + Licence', 'COOLING SYSTEMS::50kW - eGun')
+
+  if (a.turnkey) {
+    moduleKeys.push(
+      'ENGINEERING, INSTALLATION, TRAINING::Project Engineering',
+      'ENGINEERING, INSTALLATION, TRAINING::Project Management',
+      'ENGINEERING, INSTALLATION, TRAINING::Installation at customer & final acceptance',
+      'OTHER ITEMS::Manual(s)',
+      'OTHER ITEMS::Software Engineering',
+    )
+    labor.push(
+      { activiteit: 'Installation at customer & final acceptance', uren: 64, tarief: 'laag' },
+      { activiteit: 'Project engineering', uren: 46.2, tarief: 'hoog' },
+      { activiteit: 'Project management', uren: 46.2, tarief: 'hoog' },
+    )
+  }
+  if (a.robot) moduleKeys.push('AUXILIARY::Robot & TT', 'AUXILIARY::Gun Fixture (Robot)')
+  if (a.booth) moduleKeys.push('AUXILIARY::Spray Booth', 'AUXILIARY::Dust Collector', 'AUXILIARY::Booth & Filter Install')
+
+  return { moduleKeys, labor }
 }
 
 export default function Quote() {
@@ -28,6 +62,17 @@ export default function Quote() {
   const [projectnr, setProjectnr] = useState('')
   const [saving, setSaving] = useState(false)
   const [saveError, setSaveError] = useState<string | null>(null)
+
+  const [searchParams, setSearchParams] = useSearchParams()
+  const [wizardOpen, setWizardOpen] = useState(false)
+  const [step, setStep] = useState(1)
+  const [wKlant, setWKlant] = useState('')
+  const [wProjectnr, setWProjectnr] = useState('')
+  const [wProces, setWProces] = useState<Proces | ''>('')
+  const [wTurnkey, setWTurnkey] = useState(false)
+  const [wRobot, setWRobot] = useState(false)
+  const [wBooth, setWBooth] = useState(false)
+  const [prefilledNote, setPrefilledNote] = useState(false)
 
   useEffect(() => {
     Promise.all([getSystemModules(), getLaborRates(), getLaborActivities()]).then(([m, r, a]) => {
@@ -155,6 +200,56 @@ export default function Quote() {
     }
   }
 
+  // Deep-link /quote?wizard=1 opent de wizard direct.
+  useEffect(() => {
+    if (searchParams.get('wizard') === '1') {
+      setWKlant(klant)
+      setWProjectnr(projectnr)
+      setStep(1)
+      setWizardOpen(true)
+      searchParams.delete('wizard')
+      setSearchParams(searchParams, { replace: true })
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
+
+  function startWizard() {
+    if (heeftSelectie && !window.confirm('Er is al een selectie. De wizard opnieuw draaien overschrijft die. Doorgaan?')) return
+    setWKlant(klant)
+    setWProjectnr(projectnr)
+    setStep(1)
+    setWizardOpen(true)
+  }
+
+  function applyWizard() {
+    if (!wProces) return
+    const { moduleKeys, labor: labSpec } = wizardPrefill({ proces: wProces, turnkey: wTurnkey, robot: wRobot, booth: wBooth })
+
+    const modKeySet = new Set(modules.map(moduleKey))
+    const newQty: Record<string, number> = {}
+    for (const key of moduleKeys) {
+      if (modKeySet.has(key)) newQty[key] = 1
+      else if (import.meta.env.DEV) console.warn('Wizard: module niet gevonden, overgeslagen:', key)
+    }
+
+    const actSet = new Set(activities.map((a) => a.activiteit))
+    const newLabor: Record<string, LaborState> = Object.fromEntries(
+      activities.map((a) => [a.activiteit, { checked: false, uren: a.standaard_uren, tarief: 'laag' as const }]),
+    )
+    for (const l of labSpec) {
+      if (actSet.has(l.activiteit)) newLabor[l.activiteit] = { checked: true, uren: l.uren, tarief: l.tarief }
+      else if (import.meta.env.DEV) console.warn('Wizard: activiteit niet gevonden, overgeslagen:', l.activiteit)
+    }
+
+    setQty(newQty)
+    setLabor(newLabor)
+    setKlant(wKlant.trim())
+    setProjectnr(wProjectnr.trim())
+    setSaveError(null)
+    setWizardOpen(false)
+    setPrefilledNote(true)
+  }
+
   const inputCls = 'rounded-md border border-gray-300 px-2 py-1 text-sm focus:border-fst-green focus:ring-1 focus:ring-fst-green outline-none'
 
   if (loading) return <p className="text-sm text-gray-500">Laden…</p>
@@ -169,10 +264,22 @@ export default function Quote() {
             Vervangt de Excel-calc (F-08-017).
           </p>
         </div>
-        <button onClick={reset} className="shrink-0 rounded-md border border-gray-300 px-3 py-2 text-sm font-semibold text-gray-600 hover:bg-gray-50">
-          Reset
-        </button>
+        <div className="shrink-0 flex gap-2">
+          <button onClick={startWizard} className="rounded-md bg-fst-green px-3 py-2 text-sm font-semibold text-white hover:bg-fst-greenDark transition-colors">
+            Start met wizard
+          </button>
+          <button onClick={reset} className="rounded-md border border-gray-300 px-3 py-2 text-sm font-semibold text-gray-600 hover:bg-gray-50">
+            Reset
+          </button>
+        </div>
       </div>
+
+      {prefilledNote && (
+        <div className="mt-4 flex items-center justify-between gap-3 rounded-md bg-fst-greenTint px-4 py-2.5 text-sm text-fst-greenDark">
+          <span>Voorgevuld via wizard — pas gerust aan.</span>
+          <button onClick={() => setPrefilledNote(false)} className="shrink-0 text-fst-greenDark/70 hover:text-fst-greenDark font-semibold">✕</button>
+        </div>
+      )}
 
       <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div>
@@ -304,6 +411,98 @@ export default function Quote() {
             </div>
           </div>
         </div>
+      </div>
+
+      {wizardOpen && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 p-4" onClick={() => setWizardOpen(false)}>
+          <div className="w-full max-w-lg rounded-lg bg-white shadow-xl" onClick={(e) => e.stopPropagation()}>
+            <div className="px-6 pt-5">
+              <div className="flex items-center justify-between">
+                <h2 className="font-heading text-xl font-bold text-fst-greenDark">Quote-wizard</h2>
+                <span className="text-xs text-gray-400">Stap {step} / 5</span>
+              </div>
+              <div className="mt-2 h-1.5 rounded-full bg-gray-100">
+                <div className="h-1.5 rounded-full bg-fst-green transition-all" style={{ width: `${(step / 5) * 100}%` }} />
+              </div>
+            </div>
+
+            <div className="px-6 py-6 min-h-[190px]">
+              {step === 1 && (
+                <div className="space-y-4">
+                  <p className="text-sm text-gray-600">Voor wie maak je deze offerte?</p>
+                  <div>
+                    <label className="block text-xs text-gray-500 mb-1">Klant</label>
+                    <input value={wKlant} onChange={(e) => setWKlant(e.target.value)} placeholder="Naam klant"
+                      className="w-full rounded-md border border-gray-300 px-3 py-2 text-sm focus:border-fst-green focus:ring-1 focus:ring-fst-green outline-none" />
+                  </div>
+                  <div>
+                    <label className="block text-xs text-gray-500 mb-1">Projectnr <span className="text-gray-400">(optioneel)</span></label>
+                    <input value={wProjectnr} onChange={(e) => setWProjectnr(e.target.value)} placeholder="bv. P-2026-001"
+                      className="w-full rounded-md border border-gray-300 px-3 py-2 text-sm focus:border-fst-green focus:ring-1 focus:ring-fst-green outline-none" />
+                  </div>
+                </div>
+              )}
+
+              {step === 2 && (
+                <div className="space-y-3">
+                  <p className="text-sm text-gray-600">Welk spuitproces? <span className="text-fst-red">*</span></p>
+                  <div className="grid grid-cols-1 gap-2">
+                    {([['HVOF', 'HVOF'], ['Plasma', 'Plasma (APS)'], ['eGun', 'eGun']] as [Proces, string][]).map(([val, label]) => (
+                      <button key={val} onClick={() => setWProces(val)}
+                        className={`rounded-md border px-4 py-2.5 text-sm font-medium text-left transition-colors ${wProces === val ? 'border-fst-green bg-fst-greenTint text-fst-greenDark' : 'border-gray-300 text-gray-700 hover:bg-gray-50'}`}>
+                        {label}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {step === 3 && <JaNee vraag="Turn-key installatie meenemen?" value={wTurnkey} onChange={setWTurnkey} />}
+              {step === 4 && <JaNee vraag="Robot-manipulatie nodig?" value={wRobot} onChange={setWRobot} />}
+              {step === 5 && <JaNee vraag="Spuitcabine (booth) nodig?" value={wBooth} onChange={setWBooth} />}
+            </div>
+
+            <div className="flex items-center justify-between gap-3 border-t border-gray-100 px-6 py-4">
+              <button onClick={() => setWizardOpen(false)} className="text-sm font-semibold text-gray-500 hover:text-gray-700">
+                Annuleren
+              </button>
+              <div className="flex gap-2">
+                {step > 1 && (
+                  <button onClick={() => setStep((s) => s - 1)} className="rounded-md border border-gray-300 px-4 py-2 text-sm font-semibold text-gray-600 hover:bg-gray-50">
+                    Vorige
+                  </button>
+                )}
+                {step < 5 ? (
+                  <button onClick={() => setStep((s) => s + 1)} disabled={step === 2 && !wProces}
+                    className="rounded-md bg-fst-green px-4 py-2 text-sm font-semibold text-white hover:bg-fst-greenDark disabled:opacity-40 disabled:cursor-not-allowed transition-colors">
+                    Volgende
+                  </button>
+                ) : (
+                  <button onClick={applyWizard} disabled={!wProces}
+                    className="rounded-md bg-fst-green px-4 py-2 text-sm font-semibold text-white hover:bg-fst-greenDark disabled:opacity-40 disabled:cursor-not-allowed transition-colors">
+                    Toepassen
+                  </button>
+                )}
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
+  )
+}
+
+function JaNee({ vraag, value, onChange }: { vraag: string; value: boolean; onChange: (v: boolean) => void }) {
+  return (
+    <div className="space-y-3">
+      <p className="text-sm text-gray-600">{vraag}</p>
+      <div className="flex gap-2">
+        {([[true, 'Ja'], [false, 'Nee']] as [boolean, string][]).map(([val, label]) => (
+          <button key={label} onClick={() => onChange(val)}
+            className={`flex-1 rounded-md border px-4 py-2.5 text-sm font-medium transition-colors ${value === val ? 'border-fst-green bg-fst-greenTint text-fst-greenDark' : 'border-gray-300 text-gray-700 hover:bg-gray-50'}`}>
+            {label}
+          </button>
+        ))}
       </div>
     </div>
   )
