@@ -1,5 +1,5 @@
 import { supabase } from './supabaseClient'
-import type { Material, Parameter, Equivalent, ApprovalRow, SystemModule, LaborRate, LaborActivity } from '../types'
+import type { Material, Parameter, Equivalent, ApprovalRow, SystemModule, LaborRate, LaborActivity, Quote, QuoteLine } from '../types'
 import materialsJson from '../data/materials.json'
 import parametersJson from '../data/parameters.json'
 import equivalentsJson from '../data/equivalents.json'
@@ -53,4 +53,38 @@ export async function getLaborActivities(): Promise<LaborActivity[]> {
   const { data, error } = await supabase.from('labor_activities').select('*').order('activiteit')
   if (error || !data || data.length === 0) return laborRatesJson.activiteiten as LaborActivity[]
   return data as LaborActivity[]
+}
+
+type QuoteHeaderInput = Omit<Quote, 'id' | 'created_at'>
+type QuoteLineInput = Omit<QuoteLine, 'id' | 'quote_id'>
+
+export async function saveQuote(header: QuoteHeaderInput, lines: QuoteLineInput[]): Promise<string> {
+  const { data, error } = await supabase.from('quotes').insert(header).select('id').single()
+  if (error || !data) throw error ?? new Error('Opslaan mislukt')
+  const quoteId = data.id as string
+  if (lines.length > 0) {
+    const { error: lineError } = await supabase
+      .from('quote_lines')
+      .insert(lines.map((l) => ({ ...l, quote_id: quoteId })))
+    if (lineError) throw lineError
+  }
+  return quoteId
+}
+
+export async function getQuotes(): Promise<Quote[]> {
+  const { data, error } = await supabase.from('quotes').select('*').order('created_at', { ascending: false })
+  if (error || !data) return []
+  return data as Quote[]
+}
+
+export async function getQuote(id: string): Promise<{ quote: Quote; lines: QuoteLine[] } | null> {
+  const { data: quote } = await supabase.from('quotes').select('*').eq('id', id).maybeSingle()
+  if (!quote) return null
+  const { data: lines } = await supabase.from('quote_lines').select('*').eq('quote_id', id).order('id')
+  return { quote: quote as Quote, lines: (lines ?? []) as QuoteLine[] }
+}
+
+export async function deleteQuote(id: string): Promise<void> {
+  const { error } = await supabase.from('quotes').delete().eq('id', id)
+  if (error) throw error
 }

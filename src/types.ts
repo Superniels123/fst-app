@@ -57,3 +57,31 @@ export interface LaborActivity {
   activiteit: string
   standaard_uren: number
 }
+
+export interface Quote {
+  id: string
+  projectnr: string | null
+  klant: string | null
+  datum: string
+  status: string
+  marge_pct: number
+  materiaalkosten: number
+  arbeidskosten: number
+  cogs: number
+  verkoopprijs: number
+  created_by: string | null
+  created_at: string
+}
+
+export interface QuoteLine {
+  id: number
+  quote_id: string
+  soort: 'module' | 'arbeid' | string
+  categorie: string | null
+  omschrijving: string | null
+  aantal: number | null
+  uren: number | null
+  tarief: number | null
+  kostprijs: number | null
+  regel_totaal: number
+}
