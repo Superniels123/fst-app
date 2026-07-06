@@ -8,6 +8,7 @@ import Parameters from './routes/Parameters'
 import Equivalents from './routes/Equivalents'
 import Approvals from './routes/Approvals'
 import Calculator from './routes/Calculator'
+import Quote from './routes/Quote'
 
 export default function App() {
   return (
@@ -21,6 +22,7 @@ export default function App() {
           <Route path="/equivalenten" element={<Equivalents />} />
           <Route path="/approvals" element={<Approvals />} />
           <Route path="/calculator" element={<Calculator />} />
+          <Route path="/quote" element={<Quote />} />
         </Routes>
       </Layout>
     </AuthGate>
