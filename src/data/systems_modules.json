@@ -1,0 +1,898 @@
+[
+  {
+    "categorie": "THERMAL SPRAY SYSTEMS",
+    "module": "50 Series",
+    "omschrijving": "",
+    "kostprijs_eur": 54919.0,
+    "leverancier": "",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "THERMAL SPRAY SYSTEMS",
+    "module": "Horizon Data reporting",
+    "omschrijving": "Incl. PC",
+    "kostprijs_eur": 4000.0,
+    "leverancier": "",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "THERMAL SPRAY SYSTEMS",
+    "module": "Turn-key Maintenance scheduler",
+    "omschrijving": "",
+    "kostprijs_eur": 3000.0,
+    "leverancier": "",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "THERMAL SPRAY SYSTEMS",
+    "module": "i450",
+    "omschrijving": "",
+    "kostprijs_eur": 38000.0,
+    "leverancier": "",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "THERMAL SPRAY SYSTEMS",
+    "module": "GF-10",
+    "omschrijving": "",
+    "kostprijs_eur": 25000.0,
+    "leverancier": "",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "POWDER FEEDERS",
+    "module": "PF-50",
+    "omschrijving": "",
+    "kostprijs_eur": 11000.0,
+    "leverancier": "Thermach, Inc.",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "POWDER FEEDERS",
+    "module": "PF-50/HP",
+    "omschrijving": "",
+    "kostprijs_eur": 11500.0,
+    "leverancier": "Thermach, Inc.",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "POWDER FEEDERS",
+    "module": "FST 10C",
+    "omschrijving": "One (1) 1,5 liter Hopper",
+    "kostprijs_eur": 14000.0,
+    "leverancier": "Thermach, Inc.",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "POWDER FEEDERS",
+    "module": "FST 20C",
+    "omschrijving": "Two (2) 1.5 liter Hoppers",
+    "kostprijs_eur": 52000.0,
+    "leverancier": "",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "POWDER FEEDERS",
+    "module": "FST 20C upgrade to FST 20C/MC",
+    "omschrijving": "One (1) MFC Line",
+    "kostprijs_eur": 1800.0,
+    "leverancier": "",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "POWDER FEEDERS",
+    "module": "FST 20C/W",
+    "omschrijving": "Two (2) 1.5 liter Hoppers, Weight Loss",
+    "kostprijs_eur": 52000.0,
+    "leverancier": "GTV Verschleißschutz GmbH",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "POWDER FEEDERS",
+    "module": "FST 10C/W",
+    "omschrijving": "One (1) 1,5 liter Hopper, Weight Loss",
+    "kostprijs_eur": 35000.0,
+    "leverancier": "GTV Verschleißschutz GmbH",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "POWDER FEEDERS",
+    "module": "Stand alone version",
+    "omschrijving": "Including Flow Tube Carrrier Gas Control",
+    "kostprijs_eur": 1147.5,
+    "leverancier": "GTV Verschleißschutz GmbH",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "POWDER FEEDERS",
+    "module": "Integrated MFC",
+    "omschrijving": "Per line",
+    "kostprijs_eur": 2847.5,
+    "leverancier": "GTV Verschleißschutz GmbH",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "POWDER FEEDERS",
+    "module": "Extra 1.5 liter Hopper",
+    "omschrijving": "No motor",
+    "kostprijs_eur": 5500.0,
+    "leverancier": "GTV Verschleißschutz GmbH",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "POWDER FEEDERS",
+    "module": "Extra 5 liter Hopper",
+    "omschrijving": "No motor",
+    "kostprijs_eur": 6000.0,
+    "leverancier": "GTV Verschleißschutz GmbH",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "POWDER FEEDERS",
+    "module": "5 liter hopper instead of 1.5 liter hopper",
+    "omschrijving": "Extra price",
+    "kostprijs_eur": 977.5,
+    "leverancier": "GTV Verschleißschutz GmbH",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "POWDER FEEDERS",
+    "module": "Heater jacket 1.5 liter",
+    "omschrijving": "",
+    "kostprijs_eur": 722.5,
+    "leverancier": "GTV Verschleißschutz GmbH",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "POWDER FEEDERS",
+    "module": "Heater jacket 5 liter",
+    "omschrijving": "",
+    "kostprijs_eur": 977.5,
+    "leverancier": "GTV Verschleißschutz GmbH",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "POWDER FEEDERS",
+    "module": "High Pressure Version",
+    "omschrijving": "",
+    "kostprijs_eur": 1000.0,
+    "leverancier": "GTV Verschleißschutz GmbH",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "POWDER FEEDERS",
+    "module": "FST 10C/ECO",
+    "omschrijving": "One (1) 1.5 liter Hopper, Disk speed not closed loop",
+    "kostprijs_eur": 7225.0,
+    "leverancier": "GTV Verschleißschutz GmbH",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "POWDER FEEDERS",
+    "module": "FST 20C/ECO",
+    "omschrijving": "Two (1) 5 liter Hopper, Disk speed not closed loop",
+    "kostprijs_eur": 10625.0,
+    "leverancier": "GTV Verschleißschutz GmbH",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "POWDER FEEDERS",
+    "module": "Carrier Gass MFC Line",
+    "omschrijving": "Argon/Nitrogen 0-20 nlpm",
+    "kostprijs_eur": 2000.0,
+    "leverancier": "GTV Verschleißschutz GmbH",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "POWDER FEEDERS",
+    "module": "Stirrer with drive",
+    "omschrijving": "Price each per line",
+    "kostprijs_eur": 2507.5,
+    "leverancier": "GTV Verschleißschutz GmbH",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "POWDER FEEDERS",
+    "module": "Digital interface",
+    "omschrijving": "On/off",
+    "kostprijs_eur": 1062.5,
+    "leverancier": "GTV Verschleißschutz GmbH",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "POWDER FEEDERS",
+    "module": "High Pressure Version",
+    "omschrijving": "Price each per line",
+    "kostprijs_eur": 425.0,
+    "leverancier": "GTV Verschleißschutz GmbH",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "POWDER FEEDERS",
+    "module": "PF-50 gas module",
+    "omschrijving": "",
+    "kostprijs_eur": 5503.0,
+    "leverancier": "Thermach, Inc.",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "POWDER FEEDERS",
+    "module": "Powder Feeder Stand",
+    "omschrijving": "",
+    "kostprijs_eur": 12000.0,
+    "leverancier": "GTV Verschleißschutz GmbH",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "COOLING SYSTEMS",
+    "module": "50kW - non ferrous for APS",
+    "omschrijving": "PC502NF",
+    "kostprijs_eur": 25000.0,
+    "leverancier": "",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "COOLING SYSTEMS",
+    "module": "50kW - eGun",
+    "omschrijving": "PC502",
+    "kostprijs_eur": 17000.0,
+    "leverancier": "",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "COOLING SYSTEMS",
+    "module": "100 - for JP",
+    "omschrijving": "PC1122",
+    "kostprijs_eur": 28000.0,
+    "leverancier": "",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "COOLING SYSTEMS",
+    "module": "WW heat exchanger",
+    "omschrijving": "",
+    "kostprijs_eur": 40000.0,
+    "leverancier": "",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "COOLING SYSTEMS",
+    "module": "Digital interface",
+    "omschrijving": "",
+    "kostprijs_eur": 810.0,
+    "leverancier": "",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "COOLING SYSTEMS",
+    "module": "DI Package (included)",
+    "omschrijving": "",
+    "kostprijs_eur": 1700.0,
+    "leverancier": "",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "COOLING SYSTEMS",
+    "module": "Pump Cnst. Pressure (Freq. Controlled)",
+    "omschrijving": "",
+    "kostprijs_eur": 900.0,
+    "leverancier": "",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "COOLING SYSTEMS",
+    "module": "based on UL, without certificate",
+    "omschrijving": "",
+    "kostprijs_eur": 1000.0,
+    "leverancier": "",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "COOLING SYSTEMS",
+    "module": "Outdoor Installation [no frost allowed]",
+    "omschrijving": "",
+    "kostprijs_eur": 2500.0,
+    "leverancier": "",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "PLASMA GUNS",
+    "module": "F4-MB Plasma Gun",
+    "omschrijving": "",
+    "kostprijs_eur": 8000.0,
+    "leverancier": "TPS Solutions GmbH",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "PLASMA GUNS",
+    "module": "F4-MBX Plasma torch",
+    "omschrijving": "",
+    "kostprijs_eur": 8500.0,
+    "leverancier": "TPS Solutions GmbH",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "PLASMA GUNS",
+    "module": "F4-HBS",
+    "omschrijving": "",
+    "kostprijs_eur": 8000.0,
+    "leverancier": "TPS Solutions GmbH",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "PLASMA GUNS",
+    "module": "F4 MBX/45 Plasma torch",
+    "omschrijving": "",
+    "kostprijs_eur": 10561.0,
+    "leverancier": "TPS Solutions GmbH",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "PLASMA GUNS",
+    "module": "F1-PRO 90/650",
+    "omschrijving": "",
+    "kostprijs_eur": 9500.0,
+    "leverancier": "TPS Solutions GmbH",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "PLASMA GUNS",
+    "module": "F1-PRO 90/500",
+    "omschrijving": "",
+    "kostprijs_eur": 8612.0,
+    "leverancier": "TPS Solutions GmbH",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "PLASMA GUNS",
+    "module": "F1-PRO 45/650",
+    "omschrijving": "",
+    "kostprijs_eur": 9500.0,
+    "leverancier": "TPS Solutions GmbH",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "PLASMA GUNS",
+    "module": "cGun",
+    "omschrijving": "",
+    "kostprijs_eur": 18000.0,
+    "leverancier": "TPS Solutions GmbH",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "PLASMA GUNS",
+    "module": "SG-100",
+    "omschrijving": "",
+    "kostprijs_eur": 2000.0,
+    "leverancier": "Thermach, Inc.",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "PLASMA GUNS",
+    "module": "2700 Ext, 24\"",
+    "omschrijving": "",
+    "kostprijs_eur": 3936.0,
+    "leverancier": "Thermach, Inc.",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "PLASMA GUNS",
+    "module": "2086 Ext, 24\"",
+    "omschrijving": "",
+    "kostprijs_eur": 3807.36,
+    "leverancier": "Thermach, Inc.",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "PLASMA GUNS",
+    "module": "3MB",
+    "omschrijving": "",
+    "kostprijs_eur": 943.4,
+    "leverancier": "",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "PLASMA GUNS",
+    "module": "3MBT-18\"-30",
+    "omschrijving": "",
+    "kostprijs_eur": 2113.21,
+    "leverancier": "",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "PLASMA GUNS",
+    "module": "3MBT-18\"-90",
+    "omschrijving": "",
+    "kostprijs_eur": 1962.26,
+    "leverancier": "",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "PLASMA GUNS",
+    "module": "3MBT-24\"-30",
+    "omschrijving": "",
+    "kostprijs_eur": 2264.15,
+    "leverancier": "",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "PLASMA GUNS",
+    "module": "3MBT-24\"-90",
+    "omschrijving": "",
+    "kostprijs_eur": 2113.21,
+    "leverancier": "",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "PLASMA GUNS",
+    "module": "9MB [OEM]",
+    "omschrijving": "",
+    "kostprijs_eur": 8250.0,
+    "leverancier": "",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "PLASMA GUNS",
+    "module": "Supply Hose & Cables",
+    "omschrijving": "Length:",
+    "kostprijs_eur": 500.0,
+    "leverancier": "",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "PLASMA GUNS",
+    "module": "Gun Hose and Cables",
+    "omschrijving": "Length:",
+    "kostprijs_eur": 1000.0,
+    "leverancier": "",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "PLASMA GUNS",
+    "module": "Injectors, Holders etc.",
+    "omschrijving": "",
+    "kostprijs_eur": 500.0,
+    "leverancier": "",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "PLASMA GUNS",
+    "module": "Sinplex",
+    "omschrijving": "Incl Hoses & Cables",
+    "kostprijs_eur": 29000.0,
+    "leverancier": "",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "HVOF GUNS",
+    "module": "JP-5000",
+    "omschrijving": "",
+    "kostprijs_eur": 7500.0,
+    "leverancier": "Thermach, Inc.",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "HVOF GUNS",
+    "module": "eGun + Licence",
+    "omschrijving": "",
+    "kostprijs_eur": 3500.0,
+    "leverancier": "",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "HVOF GUNS",
+    "module": "Jet Kote",
+    "omschrijving": "",
+    "kostprijs_eur": 5000.0,
+    "leverancier": "",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "HVOF GUNS",
+    "module": "DJ-2600 (Hydrogen) [OEM]",
+    "omschrijving": "",
+    "kostprijs_eur": 18000.0,
+    "leverancier": "",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "HVOF GUNS",
+    "module": "DJ-2700 (Propane)",
+    "omschrijving": "",
+    "kostprijs_eur": 16000.0,
+    "leverancier": "",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "HVOF GUNS",
+    "module": "Supply Hose & Cables",
+    "omschrijving": "Length:",
+    "kostprijs_eur": 500.0,
+    "leverancier": "",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "HVOF GUNS",
+    "module": "Gun Hoses & Cables",
+    "omschrijving": "Length",
+    "kostprijs_eur": 1000.0,
+    "leverancier": "",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "HVOF GUNS",
+    "module": "Injectors, Holders etc.",
+    "omschrijving": "",
+    "kostprijs_eur": 500.0,
+    "leverancier": "",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "HVOF GUNS",
+    "module": "Flame Sensor DJ",
+    "omschrijving": "",
+    "kostprijs_eur": 3000.0,
+    "leverancier": "",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "AUXILIARY",
+    "module": "Spray Booth",
+    "omschrijving": "Always get quote",
+    "kostprijs_eur": 55000.0,
+    "leverancier": "Füchtenkötter Brandis GmbH&Co.KG",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "AUXILIARY",
+    "module": "Spray Hood",
+    "omschrijving": "",
+    "kostprijs_eur": 5000.0,
+    "leverancier": "Füchtenkötter Brandis GmbH&Co.KG",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "AUXILIARY",
+    "module": "Dust Collector",
+    "omschrijving": "APS and HVOF LF",
+    "kostprijs_eur": 82000.0,
+    "leverancier": "Camfil APC GmbH",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "AUXILIARY",
+    "module": "Booth & Filter Install",
+    "omschrijving": "",
+    "kostprijs_eur": 36950.0,
+    "leverancier": "Trios Luchttechniek",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "AUXILIARY",
+    "module": "Robot & TT",
+    "omschrijving": "Always get quote",
+    "kostprijs_eur": 165000.0,
+    "leverancier": "Rodomach Speciaalmachines BV",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "AUXILIARY",
+    "module": "Engineering, Installation & training",
+    "omschrijving": "",
+    "kostprijs_eur": 5000.0,
+    "leverancier": "Rodomach Speciaalmachines BV",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "AUXILIARY",
+    "module": "EDC",
+    "omschrijving": "",
+    "kostprijs_eur": 8500.0,
+    "leverancier": "",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "AUXILIARY",
+    "module": "Gun Fixture (Robot)",
+    "omschrijving": "",
+    "kostprijs_eur": 1000.0,
+    "leverancier": "Rodomach Speciaalmachines BV",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "AUXILIARY",
+    "module": "Integration, H&C, Sensors, Cable Trays and other",
+    "omschrijving": "",
+    "kostprijs_eur": 500.0,
+    "leverancier": "Egmond Elektrogroothandel BV",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "AUXILIARY",
+    "module": "Air Distribution Unit",
+    "omschrijving": "Cooling Jets/ Gun Air / Manul Air Gun / Prop Valve",
+    "kostprijs_eur": 2335.0,
+    "leverancier": "",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "AUXILIARY",
+    "module": "Temperature Sensor",
+    "omschrijving": "Integrated with Robot",
+    "kostprijs_eur": 3000.0,
+    "leverancier": "",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "AUXILIARY",
+    "module": "IP Camera",
+    "omschrijving": "",
+    "kostprijs_eur": 4000.0,
+    "leverancier": "",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "AUXILIARY",
+    "module": "Robot Studio 3yr Licence",
+    "omschrijving": "",
+    "kostprijs_eur": 3500.0,
+    "leverancier": "",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "AUXILIARY",
+    "module": "Accuraspray 4.0",
+    "omschrijving": "",
+    "kostprijs_eur": 28000.0,
+    "leverancier": "Tecnar",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "AUXILIARY",
+    "module": "FST I Smart Assistance 1 yr incl Smart Glass",
+    "omschrijving": "",
+    "kostprijs_eur": 3500.0,
+    "leverancier": "",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "TRANSPORT",
+    "module": "Thermal Spray System",
+    "omschrijving": "To FST",
+    "kostprijs_eur": 500.0,
+    "leverancier": "",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "TRANSPORT",
+    "module": "Cooling System",
+    "omschrijving": "To FST",
+    "kostprijs_eur": 500.0,
+    "leverancier": "",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "TRANSPORT",
+    "module": "Thermal Spray Torches",
+    "omschrijving": "To FST",
+    "kostprijs_eur": 100.0,
+    "leverancier": "",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "TRANSPORT",
+    "module": "Spray Booth",
+    "omschrijving": "To FST",
+    "kostprijs_eur": 3000.0,
+    "leverancier": "",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "TRANSPORT",
+    "module": "Dust Collector",
+    "omschrijving": "To FST",
+    "kostprijs_eur": 1500.0,
+    "leverancier": "",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "TRANSPORT",
+    "module": "Robot, TT, Spray Lathe etc",
+    "omschrijving": "To FST",
+    "kostprijs_eur": 500.0,
+    "leverancier": "",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "TRANSPORT",
+    "module": "Shipping to customer",
+    "omschrijving": "Per Crate",
+    "kostprijs_eur": 7000.0,
+    "leverancier": "",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "TRANSPORT",
+    "module": "Packing, crates",
+    "omschrijving": "",
+    "kostprijs_eur": 3000.0,
+    "leverancier": "",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "OTHER ITEMS",
+    "module": "Software Engineering",
+    "omschrijving": "Turn-key only x2",
+    "kostprijs_eur": 1000.0,
+    "leverancier": "MA-IT",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "OTHER ITEMS",
+    "module": "Manual(s)",
+    "omschrijving": "Turn-key only",
+    "kostprijs_eur": 1000.0,
+    "leverancier": "",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "OTHER ITEMS",
+    "module": "Manual Translation",
+    "omschrijving": "",
+    "kostprijs_eur": 3000.0,
+    "leverancier": "",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "OTHER ITEMS",
+    "module": "Manual 50-series",
+    "omschrijving": "",
+    "kostprijs_eur": 250.0,
+    "leverancier": "",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "ENGINEERING, INSTALLATION, TRAINING",
+    "module": "Project Engineering",
+    "omschrijving": "",
+    "kostprijs_eur": 3000.0,
+    "leverancier": "",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "ENGINEERING, INSTALLATION, TRAINING",
+    "module": "Project Management",
+    "omschrijving": "",
+    "kostprijs_eur": 3000.0,
+    "leverancier": "",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "ENGINEERING, INSTALLATION, TRAINING",
+    "module": "Installation at customer & final acceptance",
+    "omschrijving": "",
+    "kostprijs_eur": 6400.0,
+    "leverancier": "",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "ENGINEERING, INSTALLATION, TRAINING",
+    "module": "R&D + System Development",
+    "omschrijving": "1% COGS",
+    "kostprijs_eur": 1085.24,
+    "leverancier": "",
+    "prijs_type": "percentage"
+  },
+  {
+    "categorie": "ENGINEERING, INSTALLATION, TRAINING",
+    "module": "Calibration System at FST",
+    "omschrijving": "",
+    "kostprijs_eur": 400.0,
+    "leverancier": "",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "ENGINEERING, INSTALLATION, TRAINING",
+    "module": "Packing by FST",
+    "omschrijving": "Labor / day",
+    "kostprijs_eur": 400.0,
+    "leverancier": "",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "ENGINEERING, INSTALLATION, TRAINING",
+    "module": "Calibration at customer site",
+    "omschrijving": "",
+    "kostprijs_eur": 1200.0,
+    "leverancier": "",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "ENGINEERING, INSTALLATION, TRAINING",
+    "module": "Master / slave integration existing equipment",
+    "omschrijving": "",
+    "kostprijs_eur": 3000.0,
+    "leverancier": "",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "OTHER SOFT COST",
+    "module": "Overhead",
+    "omschrijving": "1% over sales price",
+    "kostprijs_eur": 872.5,
+    "leverancier": "",
+    "prijs_type": "percentage"
+  },
+  {
+    "categorie": "OTHER SOFT COST",
+    "module": "Insurance",
+    "omschrijving": "0,1% over sales price",
+    "kostprijs_eur": 174.5,
+    "leverancier": "",
+    "prijs_type": "percentage"
+  },
+  {
+    "categorie": "OTHER SOFT COST",
+    "module": "Warrantee",
+    "omschrijving": "3%  of total cost price",
+    "kostprijs_eur": 5235.0,
+    "leverancier": "",
+    "prijs_type": "percentage"
+  },
+  {
+    "categorie": "OTHER SOFT COST",
+    "module": "Bank Guarantee Costs (2%)",
+    "omschrijving": "5%  of down payment (use 40%)",
+    "kostprijs_eur": 3490.0,
+    "leverancier": "",
+    "prijs_type": "percentage"
+  },
+  {
+    "categorie": "OTHER SOFT COST",
+    "module": "Unforseen",
+    "omschrijving": "2% over sales price",
+    "kostprijs_eur": 25000.0,
+    "leverancier": "",
+    "prijs_type": "percentage"
+  },
+  {
+    "categorie": "OTHER SOFT COST",
+    "module": "Commission FST Sales Mngr",
+    "omschrijving": "3% over sales",
+    "kostprijs_eur": 3490.0,
+    "leverancier": "",
+    "prijs_type": "percentage"
+  },
+  {
+    "categorie": "OTHER SOFT COST",
+    "module": "L/C and other financial costs",
+    "omschrijving": "1% over sales price",
+    "kostprijs_eur": 1745.0,
+    "leverancier": "",
+    "prijs_type": "percentage"
+  },
+  {
+    "categorie": "OTHER SOFT COST",
+    "module": "Legal Costs",
+    "omschrijving": "0,1% over sales price - Contract check AH",
+    "kostprijs_eur": 174.5,
+    "leverancier": "",
+    "prijs_type": "percentage"
+  },
+  {
+    "categorie": "OTHER SOFT COST",
+    "module": "Other",
+    "omschrijving": "",
+    "kostprijs_eur": 25000.0,
+    "leverancier": "",
+    "prijs_type": "vast"
+  },
+  {
+    "categorie": "OTHER SOFT COST",
+    "module": "ACTUAL SALES PRICE",
+    "omschrijving": "",
+    "kostprijs_eur": 65976.5,
+    "leverancier": "",
+    "prijs_type": "vast"
+  }
+]

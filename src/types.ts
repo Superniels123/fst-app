@@ -37,3 +37,23 @@ export interface ApprovalRow {
   metco: string | null
   approvals: Record<string, string>
 }
+
+export interface SystemModule {
+  categorie: string
+  module: string
+  omschrijving: string | null
+  kostprijs_eur: number
+  leverancier: string | null
+  prijs_type: 'vast' | 'percentage' | string
+}
+
+export interface LaborRate {
+  soort: string
+  per_uur: number
+  per_dag: number
+}
+
+export interface LaborActivity {
+  activiteit: string
+  standaard_uren: number
+}

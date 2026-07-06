@@ -1,0 +1,68 @@
+{
+  "tarieven": [
+    {
+      "soort": "Labor low (service engineer)",
+      "per_uur": 50,
+      "per_dag": 400
+    },
+    {
+      "soort": "Labor high (project manager, training)",
+      "per_uur": 65,
+      "per_dag": 520
+    }
+  ],
+  "activiteiten": [
+    {
+      "activiteit": "50 Series",
+      "standaard_uren": 128.0
+    },
+    {
+      "activiteit": "PF-50 gas module",
+      "standaard_uren": 24.0
+    },
+    {
+      "activiteit": "Turn-key manufacturing at FST",
+      "standaard_uren": 0.0
+    },
+    {
+      "activiteit": "Installation at customer & final acceptance",
+      "standaard_uren": 64.0
+    },
+    {
+      "activiteit": "Calibration System at FST",
+      "standaard_uren": 8.0
+    },
+    {
+      "activiteit": "Packing by FST",
+      "standaard_uren": 0.0
+    },
+    {
+      "activiteit": "Calibration at customer site",
+      "standaard_uren": 0.0
+    },
+    {
+      "activiteit": "Kick-off meeting",
+      "standaard_uren": 0.0
+    },
+    {
+      "activiteit": "Project engineering",
+      "standaard_uren": 46.2
+    },
+    {
+      "activiteit": "Project management",
+      "standaard_uren": 46.2
+    },
+    {
+      "activiteit": "Turn-key testing, pre-acceptance at FST",
+      "standaard_uren": 0.0
+    },
+    {
+      "activiteit": "Training at FST",
+      "standaard_uren": 0.0
+    },
+    {
+      "activiteit": "Coating development According to ISO xxxxxx (Price per Coating) at FST",
+      "standaard_uren": 0.0
+    }
+  ]
+}
