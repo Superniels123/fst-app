@@ -9,6 +9,8 @@ import Equivalents from './routes/Equivalents'
 import Approvals from './routes/Approvals'
 import Calculator from './routes/Calculator'
 import Quote from './routes/Quote'
+import Offertes from './routes/Offertes'
+import OfferteDetail from './routes/OfferteDetail'
 
 export default function App() {
   return (
@@ -23,6 +25,8 @@ export default function App() {
           <Route path="/approvals" element={<Approvals />} />
           <Route path="/calculator" element={<Calculator />} />
           <Route path="/quote" element={<Quote />} />
+          <Route path="/offertes" element={<Offertes />} />
+          <Route path="/offerte/:id" element={<OfferteDetail />} />
         </Routes>
       </Layout>
     </AuthGate>
