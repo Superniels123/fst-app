@@ -1,6 +1,7 @@
 import { Document, Page, View, Text, Image, StyleSheet } from '@react-pdf/renderer'
 import type { Quote, QuoteLine } from '../types'
 import template from '../data/proposal_template.json'
+import logo from '../assets/fst-logo.png'
 
 const GREEN = '#008C3C'
 const GREEN_DARK = '#00662B'
@@ -49,29 +50,34 @@ function cleanHeading(k: string): string {
 }
 
 const styles = StyleSheet.create({
-  page: { paddingTop: 74, paddingBottom: 54, paddingHorizontal: 42, fontSize: 10.5, color: '#1f2937', fontFamily: 'Helvetica', lineHeight: 1.4 },
-  coverPage: { padding: 0, fontSize: 10.5, color: '#1f2937', fontFamily: 'Helvetica', lineHeight: 1.4 },
+  page: { paddingTop: 66, paddingBottom: 52, paddingHorizontal: 46, fontSize: 10, color: '#1f2937', fontFamily: 'Helvetica', lineHeight: 1.4 },
+  coverPage: { padding: 0, fontSize: 10, color: '#1f2937', fontFamily: 'Helvetica', lineHeight: 1.4 },
 
   // Kop/voet (fixed)
-  header: { position: 'absolute', top: 26, left: 42, right: 42, flexDirection: 'row', justifyContent: 'space-between', borderBottomWidth: 1, borderBottomColor: LINE, paddingBottom: 6, fontSize: 8, color: GRAY_LIGHT },
-  footer: { position: 'absolute', bottom: 26, left: 42, right: 42, borderTopWidth: 1, borderTopColor: LINE, paddingTop: 6, fontSize: 8, color: GRAY_LIGHT, flexDirection: 'row', justifyContent: 'space-between' },
+  header: { position: 'absolute', top: 24, left: 46, right: 46, flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', borderBottomWidth: 1, borderBottomColor: LINE, paddingBottom: 6 },
+  headerLogo: { width: 64 },
+  headerRight: { fontSize: 8, color: GRAY_LIGHT },
+  footer: { position: 'absolute', bottom: 24, left: 46, right: 46, borderTopWidth: 1, borderTopColor: LINE, paddingTop: 6, fontSize: 8, color: GRAY_LIGHT, flexDirection: 'row', justifyContent: 'space-between' },
 
   // Cover
-  coverBand: { backgroundColor: GREEN, paddingTop: 64, paddingBottom: 40, paddingHorizontal: 48 },
+  coverLogoZone: { paddingTop: 44, paddingHorizontal: 48, paddingBottom: 24 },
+  coverLogo: { width: 168 },
+  coverBand: { backgroundColor: GREEN, paddingVertical: 34, paddingHorizontal: 48 },
   coverKicker: { fontSize: 13, color: '#ffffff', fontFamily: 'Helvetica-Bold', letterSpacing: 3, opacity: 0.9 },
-  coverTitle: { fontSize: 40, color: '#ffffff', fontFamily: 'Helvetica-Bold', marginTop: 6 },
-  coverBody: { paddingHorizontal: 48, paddingTop: 32 },
-  including: { fontSize: 11, color: GRAY, marginBottom: 4 },
-  includingVal: { fontSize: 11, color: '#1f2937' },
-  coverBlock: { marginTop: 40, borderTopWidth: 2, borderTopColor: GREEN, paddingTop: 18 },
-  coverRow: { flexDirection: 'row', marginBottom: 7 },
-  coverLabel: { width: 140, color: GRAY, fontFamily: 'Helvetica-Bold' },
+  coverTitle: { fontSize: 34, color: '#ffffff', fontFamily: 'Helvetica-Bold', marginTop: 6 },
+  coverBody: { paddingHorizontal: 48, paddingTop: 28 },
+  including: { fontSize: 10, color: GRAY, fontFamily: 'Helvetica-Bold', marginBottom: 3 },
+  includingVal: { fontSize: 11, color: '#1f2937', marginBottom: 8 },
+  coverBlock: { marginTop: 24, borderTopWidth: 2, borderTopColor: GREEN, paddingTop: 18 },
+  coverRow: { flexDirection: 'row', marginBottom: 8 },
+  coverLabel: { width: 150, color: GRAY, fontFamily: 'Helvetica-Bold' },
   coverValue: { flex: 1, color: '#1f2937' },
+  coverFooter: { position: 'absolute', bottom: 40, left: 48, right: 48, borderTopWidth: 2, borderTopColor: GREEN, paddingTop: 8, fontSize: 9, color: GREEN_DARK, fontFamily: 'Helvetica-Bold' },
 
-  // Secties
-  chapter: { fontSize: 18, color: GREEN_DARK, fontFamily: 'Helvetica-Bold', marginBottom: 10 },
-  h2: { fontSize: 13, color: GREEN_DARK, fontFamily: 'Helvetica-Bold', marginTop: 14, marginBottom: 5 },
-  para: { color: GRAY, marginBottom: 7 },
+  // Secties — één typografische schaal
+  chapter: { fontSize: 14, color: GREEN_DARK, fontFamily: 'Helvetica-Bold', marginBottom: 8 },
+  h2: { fontSize: 11, color: GREEN_DARK, fontFamily: 'Helvetica-Bold', marginTop: 14, marginBottom: 6 },
+  para: { color: GRAY, marginBottom: 8 },
 
   // Revision history
   table: { borderWidth: 1, borderColor: LINE, borderRadius: 3, marginTop: 6 },
@@ -80,19 +86,19 @@ const styles = StyleSheet.create({
   tCellHead: { padding: 6, fontSize: 9, fontFamily: 'Helvetica-Bold', color: GREEN_DARK },
   tCell: { padding: 6, fontSize: 9, color: GRAY },
 
-  // Scope
-  catHead: { fontSize: 10, color: GREEN_DARK, fontFamily: 'Helvetica-Bold', textTransform: 'uppercase', letterSpacing: 0.5, marginTop: 12, marginBottom: 3 },
+  // Scope — uitgelijnde kolommen
+  catHead: { fontSize: 10, color: GREEN_DARK, fontFamily: 'Helvetica-Bold', textTransform: 'uppercase', letterSpacing: 0.5, marginTop: 14, marginBottom: 4, borderBottomWidth: 1, borderBottomColor: TINT, paddingBottom: 3 },
   lineRow: { flexDirection: 'row', paddingVertical: 3, borderBottomWidth: 1, borderBottomColor: LINE },
-  lineDesc: { flex: 1, color: '#1f2937' },
-  lineQty: { width: 60, textAlign: 'right', color: GRAY },
+  lineDesc: { flexGrow: 1, flexShrink: 1, color: '#1f2937', paddingRight: 8 },
+  lineQty: { width: 64, textAlign: 'right', color: '#1f2937', fontFamily: 'Helvetica-Bold' },
 
-  // Investment
-  investment: { marginTop: 20, backgroundColor: TINT, borderRadius: 4, paddingVertical: 18, paddingHorizontal: 22, flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' },
-  investLabel: { fontSize: 13, color: GREEN_DARK, fontFamily: 'Helvetica-Bold' },
-  investValue: { fontSize: 24, color: GREEN_DARK, fontFamily: 'Helvetica-Bold' },
-  investNote: { marginTop: 8, fontSize: 8, color: GRAY_LIGHT },
+  // Investment — omkaderde box
+  investment: { marginTop: 16, borderWidth: 1, borderColor: GREEN, backgroundColor: TINT, borderRadius: 5, paddingVertical: 22, paddingHorizontal: 24, alignItems: 'center' },
+  investLabel: { fontSize: 10, color: GREEN_DARK, fontFamily: 'Helvetica-Bold', textTransform: 'uppercase', letterSpacing: 1.5 },
+  investValue: { fontSize: 28, color: GREEN_DARK, fontFamily: 'Helvetica-Bold', marginTop: 6 },
+  investNote: { marginTop: 6, fontSize: 9, color: GRAY },
 
-  termItem: { flexDirection: 'row', marginBottom: 5 },
+  termItem: { flexDirection: 'row', marginBottom: 6 },
   termBullet: { width: 12, color: GREEN },
   termText: { flex: 1, color: GRAY },
 
@@ -112,8 +118,9 @@ export interface OffertePDFProps {
 function Header({ systemName }: { systemName: string }) {
   return (
     <View style={styles.header} fixed>
-      <Text>PROPOSAL  |  {systemName}</Text>
-      <Text>Flame Spray Technologies</Text>
+      {/* eslint-disable-next-line jsx-a11y/alt-text */}
+      <Image src={logo} style={styles.headerLogo} />
+      <Text style={styles.headerRight}>{systemName}</Text>
     </View>
   )
 }
@@ -121,7 +128,7 @@ function Header({ systemName }: { systemName: string }) {
 function Footer() {
   return (
     <View style={styles.footer} fixed>
-      <Text>FST</Text>
+      <Text>Flame Spray Technologies</Text>
       <Text render={({ pageNumber, totalPages }) => `Page ${pageNumber} of ${totalPages}`} />
     </View>
   )
@@ -134,6 +141,16 @@ function Paras({ text }: { text: string }) {
         <Text key={i} style={styles.para}>{p}</Text>
       ))}
     </>
+  )
+}
+
+// Kop + tekst; minPresenceAhead houdt de kop van de bodem van een pagina (geen zwevende koppen).
+function Section({ heading, text }: { heading: string; text: string }) {
+  return (
+    <View>
+      <Text style={styles.h2} minPresenceAhead={54}>{heading}</Text>
+      <Paras text={text} />
+    </View>
   )
 }
 
@@ -206,6 +223,10 @@ export default function OffertePDF({ quote, lines, madeBy, systemName, schetsen,
     <Document title={`Proposal ${reference}`} author="Flame Spray Technologies">
       {/* 1. Cover */}
       <Page size="A4" style={styles.coverPage}>
+        <View style={styles.coverLogoZone}>
+          {/* eslint-disable-next-line jsx-a11y/alt-text */}
+          <Image src={logo} style={styles.coverLogo} />
+        </View>
         <View style={styles.coverBand}>
           <Text style={styles.coverKicker}>PROPOSAL</Text>
           <Text style={styles.coverTitle}>{systemName}</Text>
@@ -213,7 +234,7 @@ export default function OffertePDF({ quote, lines, madeBy, systemName, schetsen,
         <View style={styles.coverBody}>
           {includingText ? (
             <>
-              <Text style={styles.including}>Including:</Text>
+              <Text style={styles.including}>Including</Text>
               <Text style={styles.includingVal}>{includingText}</Text>
             </>
           ) : null}
@@ -226,6 +247,7 @@ export default function OffertePDF({ quote, lines, madeBy, systemName, schetsen,
             <View style={styles.coverRow}><Text style={styles.coverLabel}>Version</Text><Text style={styles.coverValue}>1</Text></View>
           </View>
         </View>
+        <Text style={styles.coverFooter}>Flame Spray Technologies   ·   www.fst.nl</Text>
       </Page>
 
       {/* 3. Document Overview */}
@@ -254,10 +276,7 @@ export default function OffertePDF({ quote, lines, madeBy, systemName, schetsen,
         <Footer />
         <Text style={styles.chapter}>Company &amp; System Information</Text>
         {STD_ORDER.filter((k) => secties[k]).map((k) => (
-          <View key={k}>
-            <Text style={styles.h2}>{k}</Text>
-            <Paras text={secties[k]} />
-          </View>
+          <Section key={k} heading={k} text={secties[k]} />
         ))}
       </Page>
 
@@ -297,10 +316,7 @@ export default function OffertePDF({ quote, lines, madeBy, systemName, schetsen,
           <Footer />
           <Text style={styles.chapter}>1. Technical Proposal{gi > 0 ? ' (continued)' : ''}</Text>
           {groep.map((b) => (
-            <View key={b.key}>
-              <Text style={styles.h2}>1.{b.num}  {b.heading}</Text>
-              <Paras text={b.text} />
-            </View>
+            <Section key={b.key} heading={`1.${b.num}  ${b.heading}`} text={b.text} />
           ))}
         </Page>
       ))}
@@ -317,8 +333,8 @@ export default function OffertePDF({ quote, lines, madeBy, systemName, schetsen,
         <View style={styles.investment}>
           <Text style={styles.investLabel}>Total Investment</Text>
           <Text style={styles.investValue}>{eur.format(quote.verkoopprijs ?? 0)}</Text>
+          <Text style={styles.investNote}>All prices in EUR, excluding VAT.</Text>
         </View>
-        <Text style={styles.investNote}>All prices in EUR, excluding VAT.</Text>
 
         <View style={{ marginTop: 24 }}>
           <Text style={styles.chapter}>Conditions of Supply</Text>
